@@ -1,2 +1,2 @@
-# smart-neighborhood
+# Smart Neighborhood
 IoT project
