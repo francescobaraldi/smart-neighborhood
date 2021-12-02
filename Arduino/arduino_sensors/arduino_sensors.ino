@@ -20,5 +20,7 @@ void loop(){
   current_potentiometer_value = analogRead(potentiometer_pin);
   current_photoresistor_value = analogRead(photoresistor_pin);
   thermometer_value = analogRead(thermometer_pin);
+  Serial.println(current_potentiometer_value);
+  Serial.println(current_photoresistor_value);
   Serial.println(thermometer_value);
 }
