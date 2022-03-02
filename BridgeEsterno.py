@@ -38,7 +38,7 @@ class BridgeEsterno():
 
 
     def process_data(self):
-        if len(self.inbuffer) < 3 or self.inbuffer[0] != b'\xff':
+        if len(self.inbuffer) != 5 or self.inbuffer[0] != b'\xff':
             print("Errore: il pacchetto ricevuto non ha un formato corretto.")
             return False
         numval = int.from_bytes(self.inbuffer[1], byteorder='little')

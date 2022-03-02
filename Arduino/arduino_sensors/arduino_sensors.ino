@@ -15,9 +15,6 @@ void setup(){
   pinMode(potentiometer_pin, INPUT);
   pinMode(photoresistor_pin, INPUT);
   pinMode(thermometer_pin, INPUT);
-  
-  previous_potentiometer_value = analogRead(potentiometer_pin);
-  
   lasttime = millis();
 }
 
