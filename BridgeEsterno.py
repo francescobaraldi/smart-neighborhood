@@ -1,9 +1,11 @@
 import serial
 import serial.tools.list_ports
+import requests
 
 class BridgeEsterno():
     
-    def __init__(self, portname: str = None, port_description: str = "arduino", frequency: int = 9600):
+    def __init__(self, portname: str = None, port_description: str = "arduino", frequency: int = 9600, url="http://localhost:8000/"):
+        self.url = url
         self.portname = portname
         self.port_description = port_description
         if self.portname is None:
@@ -51,7 +53,14 @@ class BridgeEsterno():
         print("Potentiometer value: " + str(potentiometer_value))
         print("Photoresistor value: " + str(photoresistor_value))
         print("Thermometer value: " + str(thermometer_value))
-
+        data = {'potentiometer': potentiometer_value, 'photoresistor': photoresistor_value, 'thermometer': thermometer_value}
+        self.send_data(data)
+        
+    def send_data(self, data):
+        ret = requests.post(self.url+"new_data/", json=data)
+        if ret.status_code != 200:
+            print("Errore: " + str(ret.content))
+        print("Dati aggiornati correttamente")
 
 if __name__ == '__main__':
     bridge = BridgeEsterno()
