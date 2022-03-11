@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block head %}
+    <title>Smart Neighborhood | Pagina Principale</title>
+{% endblock %}
+{% block body %}
+    <header>
+        <h1>Smart Neighborhood | Pagina Principale</h1>
+        <h2>Benvenuto {{request.user.username}}</h2>
+    </header>
+    <section>
+        {% if case %}
+            {% for casa in case %}
+                <p>Casa in via {{casa.via}}, numero civico {{casa.numero_civico}}</p>
+                <ul>
+                    {% for finestra in casa.finestra_set.all %}
+                    <li>
+                        {{finestra.descrizione}}, lato {{finestra.posizione}} - stato: {{finestra.stato}} - <a href="{% url 'houses:aggiorna_finestra' finestra.id %}" >{% if finestra.stato == "open" %}Chiudi la finestra{% else %}Apri la finestra{% endif %}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+            <p></p>
+        {% else %}
+            <p>Non hai case. Contatta l'amministratore per aggiungerne.</p>
+        {% endif %}
+        <a href="/logout" >Logout</a>
+    </section>
+{% endblock %}

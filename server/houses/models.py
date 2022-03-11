@@ -12,7 +12,7 @@ class Casa(models.Model):
     numero_civico = models.IntegerField()
     
     def __str__(self):
-        return "Casa in via %s, $d" % (self.via, self.numero_civico)
+        return "Casa in via %s, %d" % (self.via, self.numero_civico)
     
 class Finestra(models.Model):
     casa = models.ForeignKey(Casa, on_delete=models.CASCADE)

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% comment %} Main page to authenticate users. {% endcomment %}
+{% block head %}
+    <title>Smart Neighborhood | Registrati</title>
+{% endblock %}
+{% block body %}
+    <header>
+        <h1>Smart Neighborhood | Registrati</h1>
+        <h2>Pagina di Registrazione</h2>
+    </header>
+    <section>
+        <form method="post">
+            {% csrf_token %}
+            {% if error %}
+                <p>
+                    {{error}}
+                </p>
+            {% endif %}
+            <p>
+                Username: {{form.username}}
+            </p>
+            <p>
+                Password: {{form.password}}
+            </p>
+            <input type="submit" value="Registrati" />
+        </form>
+    </section>
+{% endblock %}
