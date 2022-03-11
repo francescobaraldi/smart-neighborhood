@@ -9,14 +9,10 @@ class BridgeEsterno():
         self.portname = portname
         self.port_description = port_description
         if self.portname is None:
-            self.port_description = port_description
             ports = serial.tools.list_ports.comports()
             for port in ports:
                 if self.port_description.lower() in port.description.lower():
                     self.portname = port.device
-        if self.portname is None:
-            print(f"Connection failed: port {self.port_description} not found.")
-            raise Exception
         try:
             self.serial = serial.Serial(self.portname, frequency, timeout=0)
         except:
@@ -29,9 +25,9 @@ class BridgeEsterno():
     def loop(self):
         while (True):
             if self.serial is not None:
-                if self.serial.in_waiting>0:
-                    lastchar=self.serial.read(1)
-                    if lastchar==b'\xfe':
+                if self.serial.in_waiting > 0:
+                    lastchar = self.serial.read(1)
+                    if lastchar == b'\xfe':
                         print("Value received")
                         self.process_data()
                         self.inbuffer =[]
@@ -57,10 +53,10 @@ class BridgeEsterno():
         self.send_data(data)
         
     def send_data(self, data):
-        ret = requests.post(self.url+"new_data/", json=data)
+        ret = requests.post(self.url+"/houses/new_data/", json=data)
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
-        print("Dati aggiornati correttamente")
+        print(ret.content)
 
 if __name__ == '__main__':
     bridge = BridgeEsterno()

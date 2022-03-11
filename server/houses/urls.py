@@ -7,4 +7,5 @@ from . import views
 app_name = "houses"
 urlpatterns = [
     path('new_data/', views.new_data, name="new_data"),
+    path('update_windows/', views.update_windows, name="update_windows"),
 ]

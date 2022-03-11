@@ -22,7 +22,7 @@ void loop(){
   if (millis() - lasttime > 5000) {
     lasttime = millis();
     
-    potentiometer_value = analogRead(potentiometer_pin); // soglia = 128
+    potentiometer_value = analogRead(potentiometer_pin); // controllare la velocità del vento: deltaValue ogni 5 secondi -> possibile deltaValue = 25
     photoresistor_value = analogRead(photoresistor_pin); // soglia = 100 (selezionare uint8 in realterm)
     thermometer_value = analogRead(thermometer_pin);
     therm<ometer_degrees = ((thermometer_value / 1024) * 5 - 0.5) * 100;

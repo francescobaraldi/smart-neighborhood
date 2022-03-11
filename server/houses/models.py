@@ -22,3 +22,10 @@ class Finestra(models.Model):
     
     def __str__(self):
         return "Finestra %s" % self.posizione
+
+
+class DatiAmbientali(models.Model):
+    timestamp = models.DateTimeField()
+    potentiometer_value = models.FloatField()
+    photoresistor_value = models.FloatField()
+    thermometer_value = models.FloatField()

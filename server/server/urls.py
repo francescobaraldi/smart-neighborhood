@@ -19,5 +19,5 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('new_data/', include("houses.urls", namespace="houses")),
+    path('houses/', include("houses.urls", namespace="houses")),
 ]
