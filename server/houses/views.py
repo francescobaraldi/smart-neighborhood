@@ -37,6 +37,16 @@ def aggiorna_finestra(request, finestra_id):
     else:
         finestra.stato = "open"
     finestra.save()
+    eng = engine.Engine("http://localhost:8000/houses/", [pos[0] for pos in POSIZIONI_FINESTRE], ['close', 'open'])
+    
+    # ERRORE: in questo modo aggiorno tutte le finestre con la posizione 'finestra.posizione'
+    # necessario implementare lato MQTT messaggi specifici per ogni servo motore
+    # Possibilità di inserire nel model della finestra il coidce univcolo dell'arduino a cui è associato il servomotore e creare topic
+    # separati per comandi specifici per una sola finestra, ma se con un arduino gestiamo più finestre questo approccio non va bene
+    if finestra.stato == 'closed':
+        eng.update_window(finestra.posizione, 'close')
+    else:
+        eng.update_window(finestra.posizione, 'open')  
     # TODO: Mandare il comando all'arduino per chiudere/aprire davvero la finestra tramite MQTT (da implementare)
     return HttpResponseRedirect("/houses/")
 
@@ -50,7 +60,8 @@ def new_data(request):
             new_dati_ambientali = ser.save(commit=False)
             new_dati_ambientali.timestamp = datetime.now()
             new_dati_ambientali.save()
-            engine.process_data(data)
+            eng = engine.Engine("http://localhost:8000/houses/", [pos[0] for pos in POSIZIONI_FINESTRE], ['close', 'open'])
+            eng.process_data(data)
             return JsonResponse({'message': "Dati aggiornati correttamente"})
         return JsonResponse(ser.errors)
 
