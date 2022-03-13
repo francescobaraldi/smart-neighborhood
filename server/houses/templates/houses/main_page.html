@@ -23,6 +23,6 @@
         {% else %}
             <p>Non hai case. Contatta l'amministratore per aggiungerne.</p>
         {% endif %}
-        <a href="/logout" >Logout</a>
+        <a href="{% url 'logout_page' %}" >Logout</a>
     </section>
 {% endblock %}

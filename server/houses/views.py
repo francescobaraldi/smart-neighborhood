@@ -17,10 +17,6 @@ import sys
 sys.path.append(str(settings.ROOT_PROJECT))
 from engine import engine
 
-    
-def logout_page(request):
-    logout(request)
-    return HttpResponseRedirect("/houses/")
 
 @login_required
 def main_page(request):
@@ -41,7 +37,7 @@ def aggiorna_finestra(request, finestra_id):
     
     # ERRORE: in questo modo aggiorno tutte le finestre con la posizione 'finestra.posizione'
     # necessario implementare lato MQTT messaggi specifici per ogni servo motore
-    # Possibilità di inserire nel model della finestra il coidce univcolo dell'arduino a cui è associato il servomotore e creare topic
+    # Possibilità di inserire nel model della finestra il coidce univoco dell'arduino a cui è associato il servomotore e creare topic
     # separati per comandi specifici per una sola finestra, ma se con un arduino gestiamo più finestre questo approccio non va bene
     if finestra.stato == 'closed':
         eng.update_window(finestra.posizione, 'close')
