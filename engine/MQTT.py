@@ -43,7 +43,6 @@ class MQTTReader: # serve al bridge interno per ricevere i messaggi
             # TODO: scrivere sulla seriale ma in questo caso non su tutti gli arduino ma solo su quello specificato e sul pin speicifcato
 
 
-
 class MQTTWriter: # serve all'engine per mandare i messaggi
     def __init__(self, broker_ip, port):
         self.broker_ip = broker_ip

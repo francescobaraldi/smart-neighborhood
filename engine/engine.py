@@ -59,7 +59,6 @@ class Engine:
             self.mqtt.publish_general_message('sud', 'open')
             return self.manage_windows("open", "all")
 
-
     def process_data(self, data):
         # TODO: gestire le priorità: quale sensore ha priorità più alta nella decisione?
         ret_potentiometer = self.process_potentiometer_data(data)

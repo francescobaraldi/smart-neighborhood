@@ -2,8 +2,8 @@ import serial
 import serial.tools.list_ports
 import requests
 
-class BridgeEsterno():
-    
+
+class BridgeEsterno():    
     def __init__(self, portname: str = None, port_description: str = "arduino", frequency: int = 9600, url="http://localhost:8000/"):
         self.url = url
         self.portname = portname
@@ -21,7 +21,6 @@ class BridgeEsterno():
         print(f"Connecting to {self.portname}")
         self.inbuffer = []
     
-
     def loop(self):
         while (True):
             if self.serial is not None:
@@ -33,7 +32,6 @@ class BridgeEsterno():
                         self.inbuffer =[]
                     else:
                         self.inbuffer.append(lastchar)
-
 
     def process_data(self):
         if len(self.inbuffer) != 5 or self.inbuffer[0] != b'\xff':
@@ -57,6 +55,7 @@ class BridgeEsterno():
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
         print(ret.content)
+
 
 if __name__ == '__main__':
     bridge = BridgeEsterno()
