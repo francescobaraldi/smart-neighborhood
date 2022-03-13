@@ -1,6 +1,6 @@
 import requests
 from django.http import JsonResponse
-from .MQTT import MQTT
+from .MQTT import MQTTWriter
 
 
 THRESHOLDS = {
@@ -14,7 +14,7 @@ class Engine:
         self.url = url
         self.posizioni = posizioni
         self.comandi = comandi
-        self.mqtt = MQTT("127.0.0.1", 1883, self.posizioni, self.comandi)
+        self.mqtt = MQTTWriter("127.0.0.1", 1883)
     
     def manage_windows(self, state, position):
         data = {'posizione': position, 'state': state}
@@ -27,36 +27,36 @@ class Engine:
         delta_value = data['value'] - data['old_value']
         if delta_value < 0 and delta_value > -THRESHOLDS['potentioemter']: # se negativo suppongo direzione del vento sud->nord
             # chiudi le finestre a sud
-            self.mqtt.publish_message('sud', 'close')
+            self.mqtt.publish_general_message('sud', 'close')
             return self.manage_windows("closed", "sud")
         elif delta_value > 0 and delta_value > THRESHOLDS['potentiometer']: # se positivo suppongo direzione dlel vento nord->sud
             # chiudi le finestre a nord
-            self.mqtt.publish_message('nord', 'close')
+            self.mqtt.publish_general_message('nord', 'close')
             return self.manage_windows("closed", "nord")
         return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
     def process_photoresistor_data(self, data):
         if data['value'] <= THRESHOLDS['photoresistor']:
             # chiudi le finestre
-            self.mqtt.publish_message('nord', 'close')
-            self.mqtt.publish_message('sud', 'close')
+            self.mqtt.publish_general_message('nord', 'close')
+            self.mqtt.publish_general_message('sud', 'close')
             return self.manage_windows("closed", "all")
         else:
             # apri le finestre
-            self.mqtt.publish_message('nord', 'open')
-            self.mqtt.publish_message('sud', 'open')
+            self.mqtt.publish_general_message('nord', 'open')
+            self.mqtt.publish_general_message('sud', 'open')
             return self.manage_windows("open", "all")
 
     def process_thermometer_data(self, data):
         if data['value'] <= THRESHOLDS['thermometer']:
             # chiudi le finestre
-            self.mqtt.publish_message('nord', 'close')
-            self.mqtt.publish_message('sud', 'close')
+            self.mqtt.publish_general_message('nord', 'close')
+            self.mqtt.publish_general_message('sud', 'close')
             return self.manage_windows("closed", "all")
         else:
             # apri le finestre
-            self.mqtt.publish_message('nord', 'open')
-            self.mqtt.publish_message('sud', 'open')
+            self.mqtt.publish_general_message('nord', 'open')
+            self.mqtt.publish_general_message('sud', 'open')
             return self.manage_windows("open", "all")
 
 
@@ -73,5 +73,5 @@ class Engine:
             return ret_thermometer
         return ret_potentiometer
     
-    def update_window(self, posizione, comando):
-        self.mqtt.publish_message(posizione, comando)
+    def update_window(self, id_arduino, pin, comando):
+        self.mqtt.publish_specific_message(id_arduino, pin, comando)
