@@ -4,7 +4,7 @@ from .MQTT import MQTTWriter
 
 
 THRESHOLDS = {
-    'potentioemter': 25,
+    'potentiometer': 25,
     'photoresistor': 100,
     'thermometer': 10,
 }
@@ -25,7 +25,7 @@ class Engine:
 
     def process_potentiometer_data(self, data):
         delta_value = data['value'] - data['old_value']
-        if delta_value < 0 and delta_value > -THRESHOLDS['potentioemter']: # se negativo suppongo direzione del vento sud->nord
+        if delta_value < 0 and delta_value > -THRESHOLDS['potentiometer']: # se negativo suppongo direzione del vento sud->nord
             # chiudi le finestre a sud
             self.mqtt.publish_general_message('sud', 'close')
             return self.manage_windows("closed", "sud")
