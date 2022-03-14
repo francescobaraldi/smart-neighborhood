@@ -19,6 +19,8 @@ class Finestra(models.Model):
     stato = models.CharField(max_length=10, choices=STATI_FINESTRE)
     posizione = models.CharField(max_length=10, choices=POSIZIONI_FINESTRE)
     descrizione = models.CharField(max_length=50)
+    id_arduino = models.CharField(max_length=100, default="000")
+    pin = models.CharField(max_length=10, default="A0")
     
     def __str__(self):
         return "Finestra %s" % self.posizione

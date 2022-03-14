@@ -4,7 +4,6 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout
 from django.contrib.auth.models import User
-from telegram import LoginUrl
 from .models import *
 from .forms import *
 from .serializers import *
@@ -17,6 +16,10 @@ import sys
 sys.path.append(str(settings.ROOT_PROJECT))
 from engine import engine
 
+
+################################################################################
+# Views per interfaccia utente #
+################################################################################
 
 @login_required
 def main_page(request):
@@ -35,16 +38,15 @@ def aggiorna_finestra(request, finestra_id):
     finestra.save()
     eng = engine.Engine("http://localhost:8000/houses/", [pos[0] for pos in POSIZIONI_FINESTRE], ['close', 'open'])
     
-    # ERRORE: in questo modo aggiorno tutte le finestre con la posizione 'finestra.posizione'
-    # necessario implementare lato MQTT messaggi specifici per ogni servo motore
-    # Possibilità di inserire nel model della finestra il coidce univoco dell'arduino a cui è associato il servomotore e creare topic
-    # separati per comandi specifici per una sola finestra, ma se con un arduino gestiamo più finestre questo approccio non va bene
     if finestra.stato == 'closed':
-        eng.update_window(finestra.posizione, 'close')
+        eng.update_window(finestra.id_arduino, finestra.pin, 'close')
     else:
-        eng.update_window(finestra.posizione, 'open')  
-    # TODO: Mandare il comando all'arduino per chiudere/aprire davvero la finestra tramite MQTT (da implementare)
+        eng.update_window(finestra.id_arduino, finestra.pin, 'open')
     return HttpResponseRedirect("/houses/")
+
+################################################################################
+# Views per software #
+################################################################################
 
 @csrf_exempt
 def new_data(request):
@@ -54,7 +56,7 @@ def new_data(request):
         ser = DatiAmbientaliSerializer(data=data)
         if ser.is_valid():
             new_dati_ambientali = ser.save(commit=False)
-            new_dati_ambientali.timestamp = datetime.now()
+            new_dati_ambientali.timestamp = datetime.datetime.now()
             new_dati_ambientali.save()
             eng = engine.Engine("http://localhost:8000/houses/", [pos[0] for pos in POSIZIONI_FINESTRE], ['close', 'open'])
             eng.process_data(data)
