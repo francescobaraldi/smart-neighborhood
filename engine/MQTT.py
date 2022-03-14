@@ -2,13 +2,13 @@ import paho.mqtt.client as mqtt
 
 
 class MQTTReader: # serve al bridge interno per ricevere i messaggi
-    def __init__(self, broker_ip, port, posizioni, comandi, arduino, ser): # arduino dict: {'id_arduino': ['pin', ...], ...}
+    def __init__(self, broker_ip, port, posizioni, comandi, arduino, sers): # arduino dict: {'id_arduino': ['pin', ...], ...}
         self.broker_ip = broker_ip
         self.port = port
         self.posizioni = posizioni
         self.comandi = comandi
         self.arduino = arduino
-        self.ser = ser
+        self.sers = sers
         self.setupMQTT()
 
     def setupMQTT(self):
@@ -24,23 +24,27 @@ class MQTTReader: # serve al bridge interno per ricevere i messaggi
         for posizione in self.posizioni:
             for comando in self.comandi:
                 self.clientMQTT.subscribe("finestre/%s/%s/" % (posizione, comando))
-        for key, pins in self.arduino.items():
+        for id_arduino, pins in self.arduino.items():
             for pin in pins:
                 for comando in self.comandi:
-                    self.clientMQTT.subscribe("finestre/%s/%s/%s/" % (key, pin, comando))
+                    self.clientMQTT.subscribe("finestre/%s/%s/%s/" % (id_arduino, pin, comando))
 
     def on_message(self, client, userdata, msg):
         print("Message received on topic: %s" % msg.topic)
         fields = msg.topic.split("/")
+        encode_name = {'close': 0, 'open': 1}
         if len(fields) == 3:
-            posizione = fields[1]
             comando = fields[2]
-            # TODO: scrivere sulla seriale dell'arduino degli attuatori per mandare il comando specifico alle finestre specifiche
+            for ser in self.sers:
+                self.ser.write(bytes(encode_name[comando], 'utf-8'))
         elif len(fields) == 4:
             id_arduino = fields[1]
             pin = fields[2]
             comando = fields[3]
-            # TODO: scrivere sulla seriale ma in questo caso non su tutti gli arduino ma solo su quello specificato e sul pin speicifcato
+            for ser in self.sers:
+                if ser.port == id_arduino:
+                    self.ser.write(bytes(encode_name[pin], 'utf-8'))
+                    self.ser.write(bytes(encode_name[comando], 'utf-8'))
 
 
 class MQTTWriter: # serve all'engine per mandare i messaggi

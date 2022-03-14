@@ -4,7 +4,7 @@ from .MQTT import MQTTWriter
 
 
 THRESHOLDS = {
-    'potentiometer': 25,
+    'potentiometer': 128,
     'photoresistor': 100,
     'thermometer': 10,
 }
@@ -21,18 +21,19 @@ class Engine:
         ret = requests.post(self.url+"update_windows/", data=data)
         return ret
 
-    # data: {'value': newdata, 'old_value': olddata}
+    # data: {'value': newdata}
 
     def process_potentiometer_data(self, data):
-        delta_value = data['value'] - data['old_value']
-        if delta_value < 0 and delta_value > -THRESHOLDS['potentiometer']: # se negativo suppongo direzione del vento sud->nord
+        if data['value'] >= THRESHOLDS['potentiometer']:
             # chiudi le finestre a sud
-            self.mqtt.publish_general_message('sud', 'close')
-            return self.manage_windows("closed", "sud")
-        elif delta_value > 0 and delta_value > THRESHOLDS['potentiometer']: # se positivo suppongo direzione dlel vento nord->sud
-            # chiudi le finestre a nord
             self.mqtt.publish_general_message('nord', 'close')
-            return self.manage_windows("closed", "nord")
+            self.mqtt.publish_general_message('sud', 'close')
+            return self.manage_windows("closed", "all")
+        elif data['value'] < THRESHOLDS['potentiometer']:
+            # apri le finestre a nord
+            self.mqtt.publish_general_message('nord', 'open')
+            self.mqtt.publish_general_message('sud', 'open')
+            return self.manage_windows("open", "all")
         return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
     def process_photoresistor_data(self, data):
