@@ -36,13 +36,13 @@ def aggiorna_finestra(request, finestra_id):
     else:
         finestra.stato = "open"
     finestra.save()
-    eng = engine.Engine("http://localhost:8000/houses/", [pos[0] for pos in POSIZIONI_FINESTRE], ['close', 'open'])
-    
+    eng = engine.Engine("http://localhost:8000/houses/", ['close', 'open'])
     if finestra.stato == 'closed':
-        eng.update_window(finestra.id_arduino, finestra.pin, 'close')
+        eng.update_window(finestra.device_name, finestra.pin, 'close')
     else:
-        eng.update_window(finestra.id_arduino, finestra.pin, 'open')
+        eng.update_window(finestra.device_name, finestra.pin, 'open')
     return HttpResponseRedirect("/houses/")
+
 
 ################################################################################
 # Views per software #
@@ -58,7 +58,7 @@ def new_data(request):
             new_dati_ambientali = ser.save(commit=False)
             new_dati_ambientali.timestamp = datetime.datetime.now()
             new_dati_ambientali.save()
-            eng = engine.Engine("http://localhost:8000/houses/", [pos[0] for pos in POSIZIONI_FINESTRE], ['close', 'open'])
+            eng = engine.Engine("http://localhost:8000/houses/", ['close', 'open'])
             eng.process_data(data)
             return JsonResponse({'message': "Dati aggiornati correttamente"})
         return JsonResponse(ser.errors)
@@ -67,11 +67,8 @@ def new_data(request):
 def update_windows(request):
     if request.method == "POST":
         data = json.loads(request.body)
-        if data['posizione'] == "all":
-            windows = get_list_or_404(Finestra)
-        else:
-            # windows = Finestra.objects.filter(posizione=data['posizione'])
-            windows = get_list_or_404(Finestra, posizione=data['posizione'])
+        # windows = Finestra.objects.filter(posizione=data['posizione'])
+        windows = get_list_or_404(Finestra)
         for window in windows:
             window.state = data['state']
             window.save()

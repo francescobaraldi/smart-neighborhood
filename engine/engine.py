@@ -6,59 +6,52 @@ from .MQTT import MQTTWriter
 THRESHOLDS = {
     'potentiometer': 128,
     'photoresistor': 100,
-    'thermometer': 10,
+    'temperature': 10,
 }
 
 class Engine:
-    def __init__(self, url, posizioni, comandi):
+    def __init__(self, url, comandi):
         self.url = url
-        self.posizioni = posizioni
         self.comandi = comandi
         self.mqtt = MQTTWriter("127.0.0.1", 1883)
     
-    def manage_windows(self, state, position):
-        data = {'posizione': position, 'state': state}
+    def manage_windows(self, state):
+        data = {'state': state}
         ret = requests.post(self.url+"update_windows/", data=data)
         return ret
 
-    # data: {'value': newdata}
+    # data: {'potentiometer': potentiometer_data, 'photoresistor': photoresistor_data, 'temperature': temperature_data}
 
     def process_potentiometer_data(self, data):
-        if data['value'] >= THRESHOLDS['potentiometer']:
-            # chiudi le finestre a sud
-            self.mqtt.publish_general_message('nord', 'close')
-            self.mqtt.publish_general_message('sud', 'close')
-            return self.manage_windows("closed", "all")
-        elif data['value'] < THRESHOLDS['potentiometer']:
-            # apri le finestre a nord
-            self.mqtt.publish_general_message('nord', 'open')
-            self.mqtt.publish_general_message('sud', 'open')
-            return self.manage_windows("open", "all")
+        if data['potentiometer'] >= THRESHOLDS['potentiometer']:
+            # chiudi le finestre
+            self.mqtt.publish_general_message('close')
+            return self.manage_windows("closed")
+        elif data['potentiometer'] < THRESHOLDS['potentiometer']:
+            # apri le finestre
+            self.mqtt.publish_general_message('open')
+            return self.manage_windows("open")
         return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
     def process_photoresistor_data(self, data):
-        if data['value'] <= THRESHOLDS['photoresistor']:
+        if data['photoresistor'] <= THRESHOLDS['photoresistor']:
             # chiudi le finestre
-            self.mqtt.publish_general_message('nord', 'close')
-            self.mqtt.publish_general_message('sud', 'close')
-            return self.manage_windows("closed", "all")
+            self.mqtt.publish_general_message('close')
+            return self.manage_windows("closed")
         else:
             # apri le finestre
-            self.mqtt.publish_general_message('nord', 'open')
-            self.mqtt.publish_general_message('sud', 'open')
-            return self.manage_windows("open", "all")
+            self.mqtt.publish_general_message('open')
+            return self.manage_windows("open")
 
-    def process_thermometer_data(self, data):
-        if data['value'] <= THRESHOLDS['thermometer']:
+    def process_temperature_data(self, data):
+        if data['temperature'] <= THRESHOLDS['temperature']:
             # chiudi le finestre
-            self.mqtt.publish_general_message('nord', 'close')
-            self.mqtt.publish_general_message('sud', 'close')
-            return self.manage_windows("closed", "all")
+            self.mqtt.publish_general_message('close')
+            return self.manage_windows("closed")
         else:
             # apri le finestre
-            self.mqtt.publish_general_message('nord', 'open')
-            self.mqtt.publish_general_message('sud', 'open')
-            return self.manage_windows("open", "all")
+            self.mqtt.publish_general_message('open')
+            return self.manage_windows("open")
 
     def process_data(self, data):
         # TODO: gestire le priorità: quale sensore ha priorità più alta nella decisione?
@@ -73,5 +66,5 @@ class Engine:
             return ret_thermometer
         return ret_potentiometer
     
-    def update_window(self, id_arduino, pin, comando):
-        self.mqtt.publish_specific_message(id_arduino, pin, comando)
+    def update_window(self, device_name, pin, comando):
+        self.mqtt.publish_specific_message(device_name, pin, comando)

@@ -1,14 +1,16 @@
 import paho.mqtt.client as mqtt
 
+"""
+    Two types of topic:
+    1) General (all the windows) -> /finestre/{command}/
+    2) Specific for one windows -> /finestre/{device_name}/{pin}/{command}/
+"""
 
 class MQTTReader: # serve al bridge interno per ricevere i messaggi
-    def __init__(self, broker_ip, port, posizioni, comandi, arduino, sers): # arduino dict: {'id_arduino': ['pin', ...], ...}
+    def __init__(self, broker_ip, port, serials):
         self.broker_ip = broker_ip
         self.port = port
-        self.posizioni = posizioni
-        self.comandi = comandi
-        self.arduino = arduino
-        self.sers = sers
+        self.serials = serials
         self.setupMQTT()
 
     def setupMQTT(self):
@@ -21,30 +23,26 @@ class MQTTReader: # serve al bridge interno per ricevere i messaggi
 
     def on_connect(self, client, userdata, flags, rc):
         print("Connected with result code " + str(rc))
-        for posizione in self.posizioni:
-            for comando in self.comandi:
-                self.clientMQTT.subscribe("finestre/%s/%s/" % (posizione, comando))
-        for id_arduino, pins in self.arduino.items():
-            for pin in pins:
-                for comando in self.comandi:
-                    self.clientMQTT.subscribe("finestre/%s/%s/%s/" % (id_arduino, pin, comando))
+        self.clientMQTT.subscribe("finestre/#/")
+        for serial in self.serials:
+            self.clientMQTT.subscribe("finestre/%s/#/" % serial.port)
 
     def on_message(self, client, userdata, msg):
         print("Message received on topic: %s" % msg.topic)
         fields = msg.topic.split("/")
         encode_name = {'close': 0, 'open': 1}
-        if len(fields) == 3:
-            comando = fields[2]
-            for ser in self.sers:
-                self.ser.write(bytes(encode_name[comando], 'utf-8'))
+        if len(fields) == 2:
+            comando = fields[1]
+            for serial in self.serials:
+                serial.write(bytes(encode_name[comando], 'utf-8'))
         elif len(fields) == 4:
-            id_arduino = fields[1]
+            device_name = fields[1]
             pin = fields[2]
             comando = fields[3]
-            for ser in self.sers:
-                if ser.port == id_arduino:
-                    self.ser.write(bytes(encode_name[pin], 'utf-8'))
-                    self.ser.write(bytes(encode_name[comando], 'utf-8'))
+            for serial in self.serials:
+                if serial.port == device_name:
+                    serial.write(bytes(encode_name[pin], 'utf-8'))
+                    serial.write(bytes(encode_name[comando], 'utf-8'))
 
 
 class MQTTWriter: # serve all'engine per mandare i messaggi
@@ -56,7 +54,6 @@ class MQTTWriter: # serve all'engine per mandare i messaggi
     def setupMQTT(self):
         self.clientMQTT = mqtt.Client()
         self.clientMQTT.on_connect = self.on_connect
-        self.clientMQTT.on_message = self.on_message
         print("Connecting...")
         self.clientMQTT.connect(self.broker_ip, self.port, 60)
         self.clientMQTT.loop_start()
@@ -64,8 +61,8 @@ class MQTTWriter: # serve all'engine per mandare i messaggi
     def on_connect(self, client, userdata, flags, rc):
         print("Connected with result code " + str(rc))
         
-    def publish_general_message(self, posizione, comando):
-        self.clientMQTT.publish("finestre/%s/%s/" % (posizione, comando))
+    def publish_general_message(self, comando):
+        self.clientMQTT.publish("finestre/%s/" % comando)
     
-    def publish_specific_message(self, id_arduino, pin, comando):
-        self.clientMQTT.publish("finestre/%s/%s/%s/" % (id_arduino, pin, comando))
+    def publish_specific_message(self, device_name, pin, comando):
+        self.clientMQTT.publish("finestre/%s/%s/%s/" % (device_name, pin, comando))

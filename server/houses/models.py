@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 STATI_FINESTRE = [("open", "Aperta"), ("closed", "Chiusa")]
-POSIZIONI_FINESTRE = [("nord", "Nord"), ("sud", "Sud")]
 
 class Casa(models.Model):
     proprietario = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -17,9 +16,8 @@ class Casa(models.Model):
 class Finestra(models.Model):
     casa = models.ForeignKey(Casa, on_delete=models.CASCADE)
     stato = models.CharField(max_length=10, choices=STATI_FINESTRE)
-    posizione = models.CharField(max_length=10, choices=POSIZIONI_FINESTRE)
     descrizione = models.CharField(max_length=50)
-    id_arduino = models.CharField(max_length=100, default="000")
+    device_name = models.CharField(max_length=100, default="000")
     pin = models.CharField(max_length=10, default="A0")
     
     def __str__(self):
