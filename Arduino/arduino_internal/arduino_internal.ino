@@ -71,17 +71,17 @@ void loop() {
 
   if (Serial.available() == 2) {  // primo byte è pin del servo da azionare, secondo byte è la nuova posizione del servo
 
-    // Leggere dati dal bridge (seriale) e in base agli stati ricevuti o alla pressione del push button aprire o chiudere le due finestre
+    // Leggere dati dal bridge (seriale) e in base alla nuova posizione ricevuta modifico lo stato del servo motore relativo al pin ricevuto
     int servo_pin = Serial.read();
     int new_pos = Serial.read();
 
     if (servo_pin == finestra_nord_pin) {
-      if (new_pos == OPEN && pos_nord == CLOSED) {
+      if (new_pos == OPEN) {
         for (; pos_nord < OPEN; pos_nord += 1) {
           finestra_nord.write(pos_nord);
           delay(15);
         }
-      } else if (new_pos == CLOSED && pos_nord == OPEN) {
+      } else if (new_pos == CLOSED) {
         for (; pos_nord > CLOSED; pos_nord -= 1) {
           finestra_nord.write(pos_nord);
           delay(15);
@@ -89,12 +89,12 @@ void loop() {
       }
     }
     else {
-      if (new_pos == OPEN && pos_sud == CLOSED) {
+      if (new_pos == OPEN) {
         for (; pos_sud < OPEN; pos_sud += 1) {
           finestra_sud.write(pos_sud);
           delay(15);
         }
-      } else if (new_pos == CLOSED && pos_sud == OPEN) {
+      } else if (new_pos == CLOSED) {
         for (; pos_sud > CLOSED; pos_sud -= 1) {
           finestra_sud.write(pos_sud);
           delay(15);
