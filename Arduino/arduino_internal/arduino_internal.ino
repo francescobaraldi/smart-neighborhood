@@ -29,74 +29,77 @@ void loop() {
   button_value_nord = digitalRead(button_nord_pin); // HIGH = button pressed (--> cambia stato della finestra nord), LOW = button released
   int pos_nord = finestra_nord.read();
   int pos_sud = finestra_sud.read();
-  
+
   if (pos_nord == CLOSED || button_value_nord == HIGH) {
-      Serial.write(0xff);
-      Serial.write(0x01); // Lunghezza payload in byte
-      Serial.write((char)(finestra_nord_pin));
-      Serial.write(0xfe);
-      for (; pos_nord < OPEN; pos_nord += 1) {
-        finestra_nord.write(pos_nord);
-        delay(15);
-      }
-    } else if (pos_nord == OPEN || button_value_nord == HIGH) {
-      Serial.write(0xff);
-      Serial.write(0x01); // Lunghezza payload in byte
-      Serial.write((char)(finestra_nord_pin));
-      Serial.write(0xfe);
-      for (; pos_nord > CLOSED; pos_nord -= 1) {
-        finestra_nord.write(pos_nord);
-        delay(15);
+    Serial.write(0xff);
+    Serial.write(0x01); // Lunghezza payload in byte
+    Serial.write((char)(finestra_nord_pin));
+    Serial.write(0xfe);
+    for (; pos_nord < OPEN; pos_nord += 1) {
+      finestra_nord.write(pos_nord);
+      delay(15);
+    }
+  } else if (pos_nord == OPEN || button_value_nord == HIGH) {
+    Serial.write(0xff);
+    Serial.write(0x01); // Lunghezza payload in byte
+    Serial.write((char)(finestra_nord_pin));
+    Serial.write(0xfe);
+    for (; pos_nord > CLOSED; pos_nord -= 1) {
+      finestra_nord.write(pos_nord);
+      delay(15);
+    }
+  }
+  if (pos_sud == CLOSED || button_value_sud == HIGH) {
+    Serial.write(0xff);
+    Serial.write(0x01); // Lunghezza payload in byte
+    Serial.write((char)(finestra_sud_pin));
+    Serial.write(0xfe);
+    for (; pos_sud < OPEN; pos_sud += 1) {
+      finestra_sud.write(pos_sud);
+      delay(15);
+    }
+  } else if (pos_sud == OPEN || button_value_sud == HIGH) {
+    Serial.write(0xff);
+    Serial.write(0x01); // Lunghezza payload in byte
+    Serial.write((char)(finestra_sud_pin));
+    Serial.write(0xfe);
+    for (; pos_sud > CLOSED; pos_sud -= 1) {
+      finestra_sud.write(pos_sud);
+      delay(15);
+    }
+  }
+
+  if (Serial.available() == 2) {  // primo byte è pin del servo da azionare, secondo byte è la nuova posizione del servo
+
+    // Leggere dati dal bridge (seriale) e in base agli stati ricevuti o alla pressione del push button aprire o chiudere le due finestre
+    int servo_pin = Serial.read();
+    int new_pos = Serial.read();
+
+    if (servo_pin == finestra_nord_pin) {
+      if (new_pos == OPEN && pos_nord == CLOSED) {
+        for (; pos_nord < OPEN; pos_nord += 1) {
+          finestra_nord.write(pos_nord);
+          delay(15);
+        }
+      } else if (new_pos == CLOSED && pos_nord == OPEN) {
+        for (; pos_nord > CLOSED; pos_nord -= 1) {
+          finestra_nord.write(pos_nord);
+          delay(15);
+        }
       }
     }
-    if (pos_sud == CLOSED || button_value_sud == HIGH) {
-      Serial.write(0xff);
-      Serial.write(0x01); // Lunghezza payload in byte
-      Serial.write((char)(finestra_sud_pin));
-      Serial.write(0xfe);
-      for (; pos_sud < OPEN; pos_sud += 1) {
-        finestra_sud.write(pos_sud);
-        delay(15);
-      }
-    } else if (pos_sud == OPEN || button_value_sud == HIGH) {
-      Serial.write(0xff);
-      Serial.write(0x01); // Lunghezza payload in byte
-      Serial.write((char)(finestra_sud_pin));
-      Serial.write(0xfe);
-      for (; pos_sud > CLOSED; pos_sud -= 1) {
-        finestra_sud.write(pos_sud);
-        delay(15);
+    else {
+      if (new_pos == OPEN && pos_sud == CLOSED) {
+        for (; pos_sud < OPEN; pos_sud += 1) {
+          finestra_sud.write(pos_sud);
+          delay(15);
+        }
+      } else if (new_pos == CLOSED && pos_sud == OPEN) {
+        for (; pos_sud > CLOSED; pos_sud -= 1) {
+          finestra_sud.write(pos_sud);
+          delay(15);
+        }
       }
     }
-  
-  if (Serial.available() > 0) {
-	  
-	  // Leggere dati dal bridge (seriale) e in base agli stati ricevuti o alla pressione del push button aprire o chiudere le due finestre
-	  // Dati ricevuti: stato per ogni servo (chiuso, aperto)
-	  int new_pos_nord = Serial.read();
-	  int new_pos_sud = Serial.read();
-	    
-	  if (new_pos_nord == OPEN && pos_nord == CLOSED) {
-	    for (; pos_nord < OPEN; pos_nord += 1) {
-	      finestra_nord.write(pos_nord);
-	      delay(15);
-	    }
-	  } else if (new_pos_nord == CLOSED && pos_nord == OPEN) {
-	    for (; pos_nord > CLOSED; pos_nord -= 1) {
-	      finestra_nord.write(pos_nord);
-	      delay(15);
-	    }
-	  }
-	  if (new_pos_sud == OPEN && pos_sud == CLOSED) {
-	    for (; pos_sud < OPEN; pos_sud += 1) {
-	      finestra_sud.write(pos_sud);
-	      delay(15);
-	    }
-	  } else if (new_pos_sud == CLOSED && pos_sud == OPEN) {
-	    for (; pos_sud > CLOSED; pos_sud -= 1) {
-	      finestra_sud.write(pos_sud);
-	      delay(15);
-	    }
-	  }
   }
 }
