@@ -34,20 +34,18 @@ class BridgeEsterno():
                         self.inbuffer.append(lastchar)
 
     def process_data(self):
-        if len(self.inbuffer) != 5 or self.inbuffer[0] != b'\xff':
+        if len(self.inbuffer) != 4 or self.inbuffer[0] != b'\xff':
             print("Errore: il pacchetto ricevuto non ha un formato corretto.")
             return False
         numval = int.from_bytes(self.inbuffer[1], byteorder='little')
-        if numval != 3:
+        if numval != 2:
             print("Errore: il pacchetto ricevuto non ha i dati corretti.")
             return False
         potentiometer_value = int.from_bytes(self.inbuffer[2], byteorder='little')
         photoresistor_value = int.from_bytes(self.inbuffer[3], byteorder='little')
-        thermometer_value = int.from_bytes(self.inbuffer[4], byteorder='little')
         print("Potentiometer value: " + str(potentiometer_value))
         print("Photoresistor value: " + str(photoresistor_value))
-        print("Thermometer value: " + str(thermometer_value))
-        data = {'potentiometer': potentiometer_value, 'photoresistor': photoresistor_value, 'thermometer': thermometer_value}
+        data = {'potentiometer': potentiometer_value, 'photoresistor': photoresistor_value}
         self.send_data(data)
         
     def send_data(self, data):
