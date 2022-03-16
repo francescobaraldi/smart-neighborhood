@@ -15,6 +15,11 @@ from django.conf import settings
 import sys
 sys.path.append(str(settings.ROOT_PROJECT))
 from engine import engine
+from threading import Timer
+import requests
+
+def turn_off_timeout(device_name, pin):
+    return HttpResponseRedirect("/houses/window/turnoff/%s/%s/" % (device_name, pin))
 
 
 ################################################################################
@@ -27,7 +32,7 @@ def main_page(request):
     return render(request, "houses/main_page.html", {'request': request, 'case': case})
 
 @login_required
-def aggiorna_finestra(request, finestra_id):
+def turn_on_timeout_change_state_web(request, finestra_id):
     finestra = get_object_or_404(Finestra, pk=finestra_id)
     if request.user != finestra.casa.proprietario:
         return HttpResponse("Non sei il proprietario di questa finestra")
@@ -35,7 +40,10 @@ def aggiorna_finestra(request, finestra_id):
         finestra.stato = "closed"
     else:
         finestra.stato = "open"
+    finestra.timeout = True
     finestra.save()
+    timer = Timer(1800, turn_off_timeout, [finestra.device_name, finestra.pin])
+    timer.start()
     eng = engine.Engine("http://localhost:8000/houses/", ['close', 'open'])
     if finestra.stato == 'closed':
         eng.update_window(finestra.device_name, finestra.pin, 'close')
@@ -64,7 +72,7 @@ def new_data(request):
         return JsonResponse(ser.errors)
 
 @csrf_exempt
-def update_windows(request):
+def update_all_windows(request):
     if request.method == "POST":
         data = json.loads(request.body)
         # windows = Finestra.objects.filter(posizione=data['posizione'])
@@ -73,3 +81,26 @@ def update_windows(request):
             window.state = data['state']
             window.save()
         return JsonResponse({'message': "Finestre aggiornate correttamente"})
+    
+def get_window(request, device_name, pin):
+    window = Finestra.objects.filter(device_name=device_name, pin=pin)
+    if len(window) != 1:
+        return JsonResponse({'error': "Errore"})
+    return JsonResponse({'stato': window[0].stato})
+
+def turn_on_timeout_change_state_button(request, device_name, pin, stato):
+    window = Finestra.objects.filter(device_name=device_name, pin=pin)
+    if len(window) != 1:
+        return JsonResponse({'error': "Errore"})
+    window.state = stato
+    window.timeout = True
+    window.save()
+    return JsonResponse({'message': "Cambiato stato correttamente"})
+
+def turn_off_timeout(request, device_name, pin):
+    window = Finestra.objects.filter(device_name=device_name, pin=pin)
+    if len(window) != 1:
+        return JsonResponse({'error': "Errore"})
+    window.timeout = False
+    window.save()
+    return JsonResponse({'message': "Timeout spento correttamente"})

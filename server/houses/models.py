@@ -19,6 +19,7 @@ class Finestra(models.Model):
     descrizione = models.CharField(max_length=50)
     device_name = models.CharField(max_length=100, default="000")
     pin = models.CharField(max_length=10, default="A0")
+    timeout = models.BooleanField(default=False)
     
     def __str__(self):
         return "Finestra %s" % self.posizione
