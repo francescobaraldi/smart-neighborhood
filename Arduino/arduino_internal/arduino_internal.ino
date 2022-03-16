@@ -29,6 +29,9 @@ void loop() {
   button_value_nord = digitalRead(button_nord_pin); // HIGH = button pressed (--> cambia stato della finestra nord), LOW = button released
   int pos_nord = finestra_nord.read();
   int pos_sud = finestra_sud.read();
+  
+  // scriviamo sulla seriale per comunicare al bridge che cambiamo stato manualmente:
+  // quindi il bridge imposterà un timeout
 
   if (pos_nord == CLOSED || button_value_nord == HIGH) {
     Serial.write(0xff);
