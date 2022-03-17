@@ -2,6 +2,7 @@ import serial
 import serial.tools.list_ports
 import requests
 from threading import Timer
+from engine.MQTT import MQTTReader
 
 
 class BridgeInterno():    
@@ -21,6 +22,7 @@ class BridgeInterno():
             raise Exception
         print(f"Connecting to {self.portname}")
         self.inbuffer = []
+        self.mqtt = MQTTReader("127.0.0.1", 1883, [self.serial])
     
     def loop(self):
         while (True):
@@ -59,6 +61,7 @@ class BridgeInterno():
         timer.start()
         
     # TODO: gestire messaggi da MQTT (quindi da decisioni su dati climatici e non manuali) e conseguente azionamento finestre (e scrivere su seriale)
+    # TODO: gestire nell'MQTTReader la scrittura del pin anche nel caso generale
 
 
 if __name__ == '__main__':
