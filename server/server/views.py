@@ -1,9 +1,6 @@
-from django.shortcuts import render, get_object_or_404, get_list_or_404
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth import login, logout, authenticate
-import json
+from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.contrib.auth import login, logout
 from houses.forms import *
 
 def logout_page(request):

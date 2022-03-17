@@ -4,7 +4,7 @@
 {% endblock %}
 {% block body %}
     <header>
-        <h1>Smart Neighborhood | Pagina Principale</h1>
+        <h1>Smart Neighborhood</h1>
         <h2>Benvenuto {{request.user.username}}</h2>
     </header>
     <section>
@@ -14,7 +14,7 @@
                 <ul>
                     {% for finestra in casa.finestra_set.all %}
                     <li>
-                        {{finestra.descrizione}}, lato {{finestra.posizione}} - stato: {{finestra.stato}} - <a href="{% url 'houses:aggiorna_finestra' finestra.id %}" >{% if finestra.stato == "open" %}Chiudi la finestra{% else %}Apri la finestra{% endif %}</a>
+                        {{finestra.descrizione}}, lato {{finestra.posizione}} - stato: {{finestra.stato}} - <a href="{% url 'houses:turn_on_timeout_change_state_web' finestra.id %}" >{% if finestra.stato == "open" %}Chiudi la finestra{% else %}Apri la finestra{% endif %}</a>
                     </li>
                     {% endfor %}
                 </ul>

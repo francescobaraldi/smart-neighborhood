@@ -49,7 +49,7 @@ class BridgeEsterno():
         self.send_data(data)
         
     def send_data(self, data):
-        ret = requests.post(self.url+"/houses/new_data/", json=data)
+        ret = requests.post(self.url+"/houses/data/", json=data)
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
         print(ret.content)

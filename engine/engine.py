@@ -12,15 +12,13 @@ THRESHOLDS = {
 }
 
 class Engine:
-    def __init__(self, url, comandi):
+    def __init__(self, url):
         self.url = url
-        self.comandi = comandi
         self.mqtt = MQTTWriter("127.0.0.1", 1883)
         self.openweather = OpenWeather("Modena, Italia", "a4d0ee049787674041208b1744a3a95b")
     
-    def manage_windows(self, state):
-        data = {'state': state}
-        ret = requests.post(self.url+"update_windows/", data=data)
+    def update_windows_database(self, state):
+        ret = requests.post(self.url+"window/all/%s/" % state)
         return ret
 
     # data: {'potentiometer': potentiometer_data, 'photoresistor': photoresistor_data}
@@ -33,10 +31,10 @@ class Engine:
         close_conditions = (data['weather_id'] // 100 not in THRESHOLDS['weather']) + data['temperature'] < THRESHOLDS['temperature'] + data['potentiometer'] > THRESHOLDS['potentiometer'] + data['photoresistor'] < THRESHOLDS['photoresistor']
         if open_conditions >= 2:
             self.mqtt.publish_general_message('open')
-            return self.manage_windows('open')
+            return self.update_windows_database('open')
         elif close_conditions >= 3:
             self.mqtt.publish_general_message('close')
-            return self.manage_windows('closed')
+            return self.update_windows_database('closed')
     
-    def update_window(self, device_name, pin, comando):
+    def move_window(self, device_name, pin, comando):
         self.mqtt.publish_specific_message(device_name, pin, comando)
