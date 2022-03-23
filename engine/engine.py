@@ -2,6 +2,7 @@ import requests
 from django.http import JsonResponse
 from .MQTT import MQTTWriter
 from .open_weather import OpenWeather
+from .bot_telegram import send_notification
 
 
 THRESHOLDS = {
@@ -31,9 +32,11 @@ class Engine:
         close_conditions = (data['weather_id'] // 100 not in THRESHOLDS['weather']) + data['temperature'] < THRESHOLDS['temperature'] + data['potentiometer'] > THRESHOLDS['potentiometer'] + data['photoresistor'] < THRESHOLDS['photoresistor']
         if open_conditions >= 2:
             self.mqtt.publish_general_message('open')
+            send_notification('open')
             return self.update_windows_database('open')
         elif close_conditions >= 3:
             self.mqtt.publish_general_message('close')
+            send_notification('close')
             return self.update_windows_database('closed')
     
     def move_window(self, device_name, pin, comando):

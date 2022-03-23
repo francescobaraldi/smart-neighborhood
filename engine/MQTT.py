@@ -34,6 +34,7 @@ class MQTTReader: # serve al bridge interno per ricevere i messaggi
         if len(fields) == 2:
             comando = fields[1]
             for serial in self.serials:
+                serial.write(bytes('255', 'utf-8'))
                 serial.write(bytes(encode_name[comando], 'utf-8'))
         elif len(fields) == 4:
             device_name = fields[1]
