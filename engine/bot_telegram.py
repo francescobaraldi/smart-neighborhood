@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(leve
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
-chat_ids = []
+chat_ids = [] # La lista delle chat va salvata nel db in modo permanente
 state_dict = {'open': 'aperti', 'close': 'chiusi'}
 web_app_url = "http://localhost:8000/houses/"
 
