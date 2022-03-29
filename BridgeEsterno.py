@@ -56,5 +56,5 @@ class BridgeEsterno():
 
 
 if __name__ == '__main__':
-    bridge = BridgeEsterno()
+    bridge = BridgeEsterno(url="http://localhost:8000/")
     bridge.loop()

@@ -59,11 +59,8 @@ class BridgeInterno():
             print("Errore: " + str(ret.content))
         timer = Timer(1800, self.turn_off_timeout, [self.portname, window_pin])
         timer.start()
-        
-    # TODO: gestire messaggi da MQTT (quindi da decisioni su dati climatici e non manuali) e conseguente azionamento finestre (e scrivere su seriale)
-    # TODO: gestire nell'MQTTReader la scrittura del pin anche nel caso generale
 
 
 if __name__ == '__main__':
-    bridge = BridgeInterno()
+    bridge = BridgeInterno(url="http://localhost:8000/")
     bridge.loop()
