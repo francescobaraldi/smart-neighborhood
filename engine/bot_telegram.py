@@ -1,6 +1,6 @@
 import logging
 from telegram.ext import Updater, CommandHandler
-from config_telegram import BOTKEY
+from .config_telegram import BOTKEY
 
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
