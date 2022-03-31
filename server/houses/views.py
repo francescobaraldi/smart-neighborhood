@@ -44,7 +44,7 @@ def turn_on_timeout_change_state_web(request, finestra_id):
     finestra.save()
     timer = Timer(1800, turn_off_timeout, [finestra.device_name, finestra.pin])
     timer.start()
-    eng = engine.Engine("http://localhost:8000/houses/", ['close', 'open'])
+    eng = engine.Engine()
     if finestra.stato == 'closed':
         eng.move_window(finestra.device_name, finestra.pin, 'close')
     else:
@@ -68,7 +68,7 @@ def new_data(request):
             new_dati_ambientali = ser.save(commit=False)
             new_dati_ambientali.timestamp = datetime.datetime.now()
             new_dati_ambientali.save()
-            eng = engine.Engine("http://localhost:8000/houses/", ['close', 'open'])
+            eng = engine.Engine()
             eng.process_data(data)
             return JsonResponse({'message': "Dati aggiornati correttamente"})
         return JsonResponse(ser.errors)

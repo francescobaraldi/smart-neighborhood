@@ -3,6 +3,7 @@ import serial.tools.list_ports
 import requests
 from threading import Timer
 from engine.MQTT import MQTTReader
+from engine.config import WEB_APP_URL
 
 
 class BridgeInterno():    
@@ -37,7 +38,7 @@ class BridgeInterno():
                         self.inbuffer.append(lastchar)
                         
     def turn_off_timeout(self, device_name, pin):
-        ret = requests.get(self.url+"houses/window/turnoff/%s/%s/" % (device_name, pin))
+        ret = requests.get(self.url+"window/turnoff/%s/%s/" % (device_name, pin))
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
 
@@ -50,11 +51,11 @@ class BridgeInterno():
             print("Errore: il pacchetto ricevuto non ha i dati corretti.")
             return False
         window_pin = int.from_bytes(self.inbuffer[2], byteorder='little') # Ricevo il pin della finestra il cui stato è stato cambiato dall'utente tramite il bottone
-        ret = requests.get(self.url+"houses/window/%s/%s/" % (self.portname, str(window_pin)))
+        ret = requests.get(self.url+"window/%s/%s/" % (self.portname, str(window_pin)))
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
         stato = ret.content['stato']
-        ret = requests.get(self.url+"houses/%s/%s/%s/" % (self.portname, window_pin, stato))
+        ret = requests.get(self.url+"%s/%s/%s/" % (self.portname, window_pin, stato))
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
         timer = Timer(1800, self.turn_off_timeout, [self.portname, window_pin])
@@ -62,5 +63,5 @@ class BridgeInterno():
 
 
 if __name__ == '__main__':
-    bridge = BridgeInterno(url="http://localhost:8000/")
+    bridge = BridgeInterno(url=WEB_APP_URL)
     bridge.loop()

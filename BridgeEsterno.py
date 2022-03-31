@@ -1,6 +1,7 @@
 import serial
 import serial.tools.list_ports
 import requests
+from engine.config import WEB_APP_URL
 
 
 class BridgeEsterno():    
@@ -49,12 +50,12 @@ class BridgeEsterno():
         self.send_data(data)
         
     def send_data(self, data):
-        ret = requests.post(self.url+"/houses/data/", json=data)
+        ret = requests.post(self.url+"/data/", json=data)
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
         print(ret.content)
 
 
 if __name__ == '__main__':
-    bridge = BridgeEsterno(url="http://localhost:8000/")
+    bridge = BridgeEsterno(url=WEB_APP_URL)
     bridge.loop()

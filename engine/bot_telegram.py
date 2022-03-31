@@ -1,6 +1,6 @@
 import logging
 from telegram.ext import Updater, CommandHandler
-from .config_telegram import BOTKEY
+from .config import BOTKEY_TELEGRAM, WEB_APP_URL
 
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -9,7 +9,6 @@ logger.setLevel(logging.DEBUG)
 
 chat_ids = [] # La lista delle chat va salvata nel db in modo permanente
 state_dict = {'open': 'aperti', 'close': 'chiusi'}
-web_app_url = "http://localhost:8000/houses/"
 
 
 def start(update, context):
@@ -28,12 +27,12 @@ def send_notification(new_state):
     for chat_id in chat_ids:
         updater.bot.send_message(chat_id=chat_id,
                                  text='Il sistema smart_neighborhood ha deciso che i tuoi scuri verrano %s. \
-                                 Se vuoi gestirli manualmente utilizza la web app %s' % (state_dict[new_state], web_app_url))
+                                 Se vuoi gestirli manualmente utilizza la web app %s' % (state_dict[new_state], WEB_APP_URL))
 
 
 def start_bot():
     global updater
-    updater = Updater(BOTKEY, use_context=True)
+    updater = Updater(BOTKEY_TELEGRAM, use_context=True)
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))

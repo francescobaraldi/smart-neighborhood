@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from .MQTT import MQTTWriter
 from .open_weather import OpenWeather
 from .bot_telegram import send_notification
+from .config import SERVER_IP, WEB_APP_URL, LOCATION_OPENWEATHER, API_KEY_OPENWEATHER
 
 
 THRESHOLDS = {
@@ -13,13 +14,12 @@ THRESHOLDS = {
 }
 
 class Engine:
-    def __init__(self, url):
-        self.url = url
-        self.mqtt = MQTTWriter("127.0.0.1", 1883)
-        self.openweather = OpenWeather("Modena, Italia", "a4d0ee049787674041208b1744a3a95b")
+    def __init__(self):
+        self.mqtt = MQTTWriter(SERVER_IP, 1883)
+        self.openweather = OpenWeather(LOCATION_OPENWEATHER, API_KEY_OPENWEATHER)
     
     def update_windows_database(self, state):
-        ret = requests.post(self.url+"window/all/%s/" % state)
+        ret = requests.post(WEB_APP_URL+"window/all/%s/" % state)
         return ret
 
     # data: {'potentiometer': potentiometer_data, 'photoresistor': photoresistor_data}
