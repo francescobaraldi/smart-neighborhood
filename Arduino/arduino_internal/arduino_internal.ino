@@ -79,6 +79,42 @@ states get_new_state(states current_state, int pin) {
   return future_state;
 }
 
+void write_on_serial(char pin) {
+  Serial.write(0xff);
+  Serial.write(0x01); // Lunghezza payload in byte
+  Serial.write(pin);
+  Serial.write(0xfe);
+}
+
+void open_nord_window(int cur_position) {
+  for (; cur_position <= OPEN_NORD; ++cur_position) {
+    finestra_nord.write(cur_position);
+    delay(10);
+  }
+}
+
+void close_nord_window(int cur_position) {
+  for (; cur_position >= CLOSED_NORD; --cur_position) {
+    finestra_nord.write(cur_position);
+    delay(10);
+  }
+}
+
+void open_sud_window(int cur_position) {
+  for (; cur_position >= OPEN_SUD; --cur_position) {
+    finestra_sud.write(cur_position);
+    delay(10);
+  }
+}
+
+void close_sud_window(int cur_position) {
+  for (; cur_position <= CLOSED_SUD; ++cur_position) {
+    finestra_sud.write(cur_position);
+    delay(10);
+  }
+}
+
+
 void loop() {
   output_symbols out_nord;
   output_symbols out_sud;
@@ -90,115 +126,66 @@ void loop() {
     current_state_nord = get_new_state(current_state_nord, button_nord_pin);
     current_state_sud = get_new_state(current_state_sud, button_sud_pin);
 
-    if (current_state_nord == S1) {
+    // aggiorno gli stati della FSM
+    if (current_state_nord == S1)
       out_nord = MOVE;
-    } else {
+    else
       out_nord = NOT_MOVE;
-    }
-    if (current_state_sud == S1) {
-      out_sud = MOVE;
-    } else {
-      out_sud = NOT_MOVE;
-    }
 
-    // scriviamo sulla seriale per comunicare al bridge che cambiamo stato manualmente: il bridge imposterà un timeout
+    if (current_state_sud == S1)
+      out_sud = MOVE;
+    else
+      out_sud = NOT_MOVE;
+
 
     if (out_nord == MOVE) {
       if (pos_nord == CLOSED_NORD) {
-        Serial.write(0xff);
-        Serial.write(0x01); // Lunghezza payload in byte
-        Serial.write((char)(finestra_nord_pin));
-        Serial.write(0xfe);
-        for (; pos_nord <= OPEN_NORD; ++pos_nord) {
-          finestra_nord.write(pos_nord);
-          delay(10);
-        }
-      } else if (pos_nord == OPEN_NORD) {
-        Serial.write(0xff);
-        Serial.write(0x01);
-        Serial.write((char)(finestra_nord_pin));
-        Serial.write(0xfe);
-        for (; pos_nord >= CLOSED_NORD; --pos_nord) {
-          finestra_nord.write(pos_nord);
-          delay(10);
-        }
+        write_on_serial(finestra_nord_pin); // scriviamo su seriale per comunicare al bridge cambio stato manuale: bridge imposterà un timeout
+        open_nord_window(pos_nord);
+      }
+      else if (pos_nord == OPEN_NORD) {
+        write_on_serial(finestra_nord_pin);
+        close_nord_window(pos_nord);
       }
     }
-
     if (out_sud == MOVE) {
       if (pos_sud == CLOSED_SUD) {
-        Serial.write(0xff);
-        Serial.write(0x01);
-        Serial.write((char)(finestra_sud_pin));
-        Serial.write(0xfe);
-        for (; pos_sud >= OPEN_SUD; --pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
-      } else if (pos_sud == OPEN_SUD) {
-        Serial.write(0xff);
-        Serial.write(0x01);
-        Serial.write((char)(finestra_sud_pin));
-        Serial.write(0xfe);
-        for (; pos_sud <= CLOSED_SUD; ++pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
+        write_on_serial(finestra_sud_pin);
+        open_sud_window(pos_sud);
+      }
+      else if (pos_sud == OPEN_SUD) {
+        write_on_serial(finestra_sud_pin);
+        close_sud_window(pos_sud);
       }
     }
   }
 
-  if (Serial.available() == 2) {  // primo byte è pin del servo da azionare, secondo byte è la nuova posizione del servo
-    // Leggere dati dal bridge (seriale) e in base alla nuova posizione ricevuta modifico lo stato del servo motore relativo al pin ricevuto
+  if (Serial.available() == 2) {
+    // Leggo dati dal bridge (seriale) e in base alla nuova posizione ricevuta modifico lo stato del servo motore relativo al pin ricevuto
+    // Primo byte è pin del servo da azionare, secondo byte è la nuova posizione del servo
     int servo_pin = Serial.read();
     int new_pos = Serial.read();
 
     if (servo_pin == 255) { // aziona tutti i servo: primo byte è 255, secondo byte è la nuova posizione di TUTTI i servo
       if (new_pos == OPEN) { // apro finestre NORD e SUD (per quella/e già aperte non succede nulla)
-        for (; pos_nord <= OPEN_NORD; ++pos_nord) {
-          finestra_nord.write(pos_nord);
-          delay(10);
-        }
-
-        for (; pos_sud >= OPEN_SUD; --pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
+        open_nord_window(pos_nord);
+        open_sud_window(pos_sud);
       } else if (new_pos == CLOSED) { // chiudo finestre NORD e SUD (per quella/e già chiuse non succede nulla)
-        for (; pos_nord >= CLOSED_NORD; --pos_nord) {
-          finestra_nord.write(pos_nord);
-          delay(10);
-        }
-
-        for (; pos_sud <= CLOSED_SUD; ++pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
+        close_nord_window(pos_nord);
+        close_sud_window(pos_sud);
       }
-    } else if (servo_pin == finestra_nord_pin) {
-      if (new_pos == OPEN) {
-        for (; pos_nord <= OPEN_NORD; ++pos_nord) {
-          finestra_nord.write(pos_nord);
-          delay(10);
-        }
-      } else if (new_pos == CLOSED) {
-        for (; pos_nord >= CLOSED_NORD; --pos_nord) {
-          finestra_nord.write(pos_nord);
-          delay(10);
-        }
-      }
-    } else if (servo_pin == finestra_sud_pin) {
-      if (new_pos == OPEN) {
-        for (; pos_sud >= OPEN_SUD; --pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
-      } else if (new_pos == CLOSED) {
-        for (; pos_sud <= CLOSED_SUD; ++pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
-      }
+      
+    } else if (servo_pin == finestra_nord_pin) { // aziona servo della finestra nord
+      if (new_pos == OPEN)
+        open_nord_window(pos_nord);
+      else if (new_pos == CLOSED)
+        close_nord_window(pos_nord);
+        
+    } else if (servo_pin == finestra_sud_pin) { // aziona servo della finestra sud
+      if (new_pos == OPEN)
+        open_sud_window(pos_sud);
+      else if (new_pos == CLOSED)
+        close_sud_window(pos_sud);
     }
   }
 }
