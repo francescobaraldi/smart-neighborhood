@@ -175,20 +175,6 @@ void loop() {
           delay(10);
         }
       }
-
-
-      if (pos_sud == CLOSED_SUD) {
-        for (; pos_sud >= OPEN_SUD; --pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
-      } else if (pos_sud == OPEN_SUD) {
-        for (; pos_sud <= CLOSED_SUD; ++pos_sud) {
-          finestra_sud.write(pos_sud);
-          delay(10);
-        }
-      }
-
     } else if (servo_pin == finestra_nord_pin) {
       if (new_pos == OPEN) {
         for (; pos_nord <= OPEN_NORD; ++pos_nord) {
