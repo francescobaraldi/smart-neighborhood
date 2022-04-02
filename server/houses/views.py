@@ -71,7 +71,7 @@ def new_data(request):
             #new_dati_ambientali.timestamp = datetime.datetime.now()
             #new_dati_ambientali.save()
             #return JsonResponse({'message': "Dati aggiornati correttamente"})
-        return JsonResponse(ser.errors)
+        return JsonResponse(data)
 
 
 @csrf_exempt
