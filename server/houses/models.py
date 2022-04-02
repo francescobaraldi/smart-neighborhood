@@ -30,3 +30,9 @@ class DatiAmbientali(models.Model):
     potentiometer_value = models.FloatField()
     photoresistor_value = models.FloatField()
     thermometer_value = models.FloatField()
+
+class ChatTelegram(models.Model):
+    chat_id = models.CharField(max_length=255)
+    
+    def __str__(self):
+        return "Chat id: " + self.chat_id

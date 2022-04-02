@@ -13,4 +13,6 @@ urlpatterns = [
     path('window/<slug:device_name>/<slug:pin>/', views.get_window, name="get_window"),
     path('window/turnoff/<slug:device_name>/<slug:pin>/', views.turn_off_timeout, name="turn_off_timeout"),
     path('window/<slug:device_name>/<slug:pin>/<slug:stato>/', views.turn_on_timeout_change_state_button, name="turn_on_timeout_change_state_button"),
+    path('chat/add/', views.add_chat_telegram, name="add_chat_telegram"),
+    path('chat/all/', views.get_chats_telegram, name="get_chats_telegram"),
 ]

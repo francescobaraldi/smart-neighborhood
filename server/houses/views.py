@@ -111,3 +111,21 @@ def turn_off_timeout(request, device_name, pin):
     window.timeout = False
     window.save()
     return JsonResponse({'message': "Timeout spento correttamente"})
+
+def add_chat_telegram(request):
+    data = json.loads(request.body)
+    ser = ChatTelegramSerializer(data=data)
+    if ser.is_valid():
+        ser.save()
+        return JsonResponse({'message': "Chat telegram inserita correttamente"})
+    return JsonResponse(ser.errors, status=400)
+
+def get_chats_telegram(request):
+    chats = ChatTelegram.objects.all()
+    data = {}
+    dataChats = []
+    for chat in chats:
+        ser = ChatTelegramSerializer(instance=chat)
+        dataChats.append(ser.data)
+    data['chats'] = dataChats
+    return JsonResponse(data)
