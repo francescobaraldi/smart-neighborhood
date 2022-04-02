@@ -1,9 +1,8 @@
 import requests
-from django.http import JsonResponse
-from .MQTT import MQTTWriter
-from .open_weather import OpenWeather
-from .bot_telegram import send_notification
-from .config import SERVER_IP, WEB_APP_URL, LOCATION_OPENWEATHER, API_KEY_OPENWEATHER
+import cloud.MQTT as MQTT
+import cloud.open_weather as open_weather
+import cloud.bot_telegram as bot_telegram
+import cloud.config as config
 
 
 THRESHOLDS = {
@@ -15,11 +14,11 @@ THRESHOLDS = {
 
 class Engine:
     def __init__(self):
-        self.mqtt = MQTTWriter(SERVER_IP, 1883)
-        self.openweather = OpenWeather(LOCATION_OPENWEATHER, API_KEY_OPENWEATHER)
+        self.mqtt = MQTT.MQTTWriter(config.SERVER_IP, 1883)
+        self.openweather = open_weather.OpenWeather(config.LOCATION_OPENWEATHER, config.API_KEY_OPENWEATHER)
     
     def update_windows_database(self, state):
-        ret = requests.post("http://" + WEB_APP_URL+"window/all/%s/" % state)
+        ret = requests.post("http://" + config.WEB_APP_URL+"window/all/%s/" % state)
         return ret
 
     # data: {'potentiometer': potentiometer_data, 'photoresistor': photoresistor_data}
@@ -32,11 +31,11 @@ class Engine:
         close_conditions = (data['weather_id'] // 100 not in THRESHOLDS['weather']) + (data['temperature'] < THRESHOLDS['temperature']) + (data['potentiometer'] > THRESHOLDS['potentiometer']) + (data['photoresistor'] < THRESHOLDS['photoresistor'])
         if open_conditions >= 2:
             self.mqtt.publish_general_message('open')
-            send_notification('open')
+            bot_telegram.send_notification('open')
             return self.update_windows_database('open')
         elif close_conditions >= 3:
             self.mqtt.publish_general_message('close')
-            send_notification('close')
+            bot_telegram.send_notification('close')
             return self.update_windows_database('closed')
     
     def move_window(self, device_name, pin, comando):

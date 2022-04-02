@@ -1,8 +1,7 @@
 import serial
 import serial.tools.list_ports
 import requests
-from tables import Description
-from engine.config import WEB_APP_URL
+from cloud.config import WEB_APP_URL
 
 
 class BridgeEsterno():    
