@@ -163,10 +163,11 @@ void loop() {
   if (Serial.available() == 2) {
     // Leggo dati dal bridge (seriale) e in base alla nuova posizione ricevuta modifico lo stato del servo motore relativo al pin ricevuto
     // Primo byte è pin del servo da azionare, secondo byte è la nuova posizione del servo
-    int servo_pin = Serial.read();
-    int new_pos = Serial.read();
+    int servo_pin = Serial.read() - '0';
+    int new_pos = Serial.read() - '0';
 
-    if (servo_pin == 255) { // aziona tutti i servo: primo byte è 255, secondo byte è la nuova posizione di TUTTI i servo
+    if (servo_pin + '0' == '?' ) { // aziona tutti i servo: primo byte è 255, secondo byte è la nuova posizione di TUTTI i servo
+      // leggiamo da seriale il carattere '?' e lo riconvertiamo con + '0'
       if (new_pos == OPEN) { // apro finestre NORD e SUD (per quella/e già aperte non succede nulla)
         open_nord_window(pos_nord);
         open_sud_window(pos_sud);
