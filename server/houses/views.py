@@ -63,14 +63,14 @@ def new_data(request):
     if request.method == "POST":
         # TODO: eliminare timestamp vecchi per non sovraccaricare il db?
         data = json.loads(request.body)
-        ser = DatiAmbientaliSerializer(data=data)
-        if ser.is_valid():
-            new_dati_ambientali = ser.save(commit=False)
-            new_dati_ambientali.timestamp = datetime.datetime.now()
-            new_dati_ambientali.save()
-            eng = engine.Engine()
-            eng.process_data(data)
-            return JsonResponse({'message': "Dati aggiornati correttamente"})
+        eng = engine.Engine()
+        eng.process_data(data)
+        #ser = DatiAmbientaliSerializer(data=data)
+        #if ser.is_valid():
+            #new_dati_ambientali = ser.save(commit=False)
+            #new_dati_ambientali.timestamp = datetime.datetime.now()
+            #new_dati_ambientali.save()
+            #return JsonResponse({'message': "Dati aggiornati correttamente"})
         return JsonResponse(ser.errors)
 
 
