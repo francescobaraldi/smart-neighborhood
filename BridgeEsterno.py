@@ -1,17 +1,19 @@
 import serial
 import serial.tools.list_ports
 import requests
+from tables import Description
 from engine.config import WEB_APP_URL
 
 
 class BridgeEsterno():    
-    def __init__(self, portname: str = None, port_description: str = "arduino", frequency: int = 9600, url="http://localhost:8000/"):
+    def __init__(self, portname: str = None, port_description: str = "IOUSBHostDevice", frequency: int = 9600, url="http://localhost:8000/"):
         self.url = url
         self.portname = portname
         self.port_description = port_description
         if self.portname is None:
             ports = serial.tools.list_ports.comports()
             for port in ports:
+                print(port.description)
                 if self.port_description.lower() in port.description.lower():
                     self.portname = port.device
         try:
@@ -50,12 +52,13 @@ class BridgeEsterno():
         self.send_data(data)
         
     def send_data(self, data):
-        ret = requests.post(self.url+"/data/", json=data)
+        ret = requests.post(self.url+"data/", json=data)
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
+            raise Exception
         print(ret.content)
 
 
 if __name__ == '__main__':
-    bridge = BridgeEsterno(url=WEB_APP_URL)
+    bridge = BridgeEsterno(url="http://" + WEB_APP_URL)
     bridge.loop()

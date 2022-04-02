@@ -11,6 +11,6 @@ urlpatterns = [
     path('data/', views.new_data, name="new_data"),
     path('window/all/<slug:stato>/', views.change_state_all_windows, name="change_state_all_windows"),
     path('window/<slug:device_name>/<slug:pin>/', views.get_window, name="get_window"),
-    path('window/<slug:device_name>/<slug:pin>/<slug:stato>/', views.turn_on_timeout_change_state_button, name="turn_on_timeout_change_state_button"),
     path('window/turnoff/<slug:device_name>/<slug:pin>/', views.turn_off_timeout, name="turn_off_timeout"),
+    path('window/<slug:device_name>/<slug:pin>/<slug:stato>/', views.turn_on_timeout_change_state_button, name="turn_on_timeout_change_state_button"),
 ]

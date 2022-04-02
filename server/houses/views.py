@@ -44,7 +44,7 @@ def turn_on_timeout_change_state_web(request, finestra_id):
     finestra.save()
     timer = Timer(1800, turn_off_timeout, [finestra.device_name, finestra.pin])
     timer.start()
-    eng = engine.Engine()
+    eng = engine.get_engine()
     if finestra.stato == 'closed':
         eng.move_window(finestra.device_name, finestra.pin, 'close')
     else:
@@ -63,7 +63,7 @@ def new_data(request):
     if request.method == "POST":
         # TODO: eliminare timestamp vecchi per non sovraccaricare il db?
         data = json.loads(request.body)
-        eng = engine.Engine()
+        eng = engine.get_engine()
         eng.process_data(data)
         #ser = DatiAmbientaliSerializer(data=data)
         #if ser.is_valid():
@@ -78,7 +78,7 @@ def new_data(request):
 def change_state_all_windows(request, stato):
     windows = get_list_or_404(Finestra)
     for window in windows:
-        window.state = stato
+        window.stato = stato
         window.save()
     return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
@@ -93,18 +93,21 @@ def get_window(request, device_name, pin):
 def turn_on_timeout_change_state_button(request, device_name, pin, stato):
     window = Finestra.objects.filter(device_name=device_name, pin=pin)
     if len(window) != 1:
-        return JsonResponse({'error': "Errore"})
+        return JsonResponse({'error': "Errore"}, status=400)
     window = window[0]
-    window.state = stato
+    window.stato = stato
     window.timeout = True
     window.save()
+    timer = Timer(1800, turn_off_timeout, [window.device_name, window.pin])
+    timer.start()
     return JsonResponse({'message': "Cambiato stato correttamente"})
 
 
 def turn_off_timeout(request, device_name, pin):
     window = Finestra.objects.filter(device_name=device_name, pin=pin)
     if len(window) != 1:
-        return JsonResponse({'error': "Errore"})
+        return JsonResponse({'error': "Errore"}, status=400)
+    window = window[0]
     window.timeout = False
     window.save()
     return JsonResponse({'message': "Timeout spento correttamente"})

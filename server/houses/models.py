@@ -22,7 +22,7 @@ class Finestra(models.Model):
     timeout = models.BooleanField(default=False)
     
     def __str__(self):
-        return "Finestra %s" % self.posizione
+        return "Finestra %s" % (self.descrizione)
 
 
 class DatiAmbientali(models.Model):
