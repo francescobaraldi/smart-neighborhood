@@ -6,7 +6,8 @@ import paho.mqtt.client as mqtt
     2) Specific for one windows -> /finestre/{device_name}/{pin}/{command}/
 """
 
-class MQTTReader: # serve al bridge interno per ricevere i messaggi
+
+class MQTTReader:  # serve al bridge interno per ricevere i messaggi
     def __init__(self, broker_ip, port, serials):
         self.broker_ip = broker_ip
         self.port = port
@@ -23,18 +24,19 @@ class MQTTReader: # serve al bridge interno per ricevere i messaggi
 
     def on_connect(self, client, userdata, flags, rc):
         print("Connected with result code " + str(rc))
-        self.clientMQTT.subscribe("finestre/#/")
+        self.clientMQTT.subscribe("finestre/#")
         for serial in self.serials:
-            self.clientMQTT.subscribe("finestre/%s/#/" % serial.port)
+            self.clientMQTT.subscribe("finestre/%s/#" % serial.port)
 
     def on_message(self, client, userdata, msg):
         print("Message received on topic: %s" % msg.topic)
         fields = msg.topic.split("/")
-        encode_name = {'close': 0, 'open': 1}
+        fields.pop()  # remove last item of the list (empty string)
+        encode_name = {'close': '0', 'open': '1'}
         if len(fields) == 2:
             comando = fields[1]
             for serial in self.serials:
-                serial.write(bytes('255', 'utf-8'))
+                serial.write(bytes('?', 'utf-8'))  # ? : carattere ascii usato per identificare tutte le finestre
                 serial.write(bytes(encode_name[comando], 'utf-8'))
         elif len(fields) == 4:
             device_name = fields[1]
@@ -46,7 +48,7 @@ class MQTTReader: # serve al bridge interno per ricevere i messaggi
                     serial.write(bytes(encode_name[comando], 'utf-8'))
 
 
-class MQTTWriter: # serve all'engine per mandare i messaggi
+class MQTTWriter:  # serve all'engine per mandare i messaggi
     def __init__(self, broker_ip, port):
         self.broker_ip = broker_ip
         self.port = port
@@ -61,9 +63,9 @@ class MQTTWriter: # serve all'engine per mandare i messaggi
 
     def on_connect(self, client, userdata, flags, rc):
         print("Connected with result code " + str(rc))
-        
+
     def publish_general_message(self, comando):
-        self.clientMQTT.publish("finestre/%s/" % comando)
-    
+        self.clientMQTT.publish("finestre/%s" % comando)
+
     def publish_specific_message(self, device_name, pin, comando):
-        self.clientMQTT.publish("finestre/%s/%s/%s/" % (device_name, pin, comando))
+        self.clientMQTT.publish("finestre/%s/%s/%s" % (device_name, pin, comando))
