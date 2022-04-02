@@ -1,5 +1,5 @@
 import logging
-from itsdangerous import json
+import json
 from telegram.ext import Updater, CommandHandler
 import cloud.config as config
 import requests
