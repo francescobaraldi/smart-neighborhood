@@ -1,0 +1,8 @@
+Django==4.0.3
+djangorestframework==3.13.1
+paho_mqtt==1.6.1
+pyserial==3.5
+python_telegram_bot==13.11
+requests==2.27.1
+tables==3.7.0
+telegram==0.0.1
