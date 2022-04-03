@@ -2,8 +2,8 @@ import serial
 import serial.tools.list_ports
 import requests
 from threading import Timer
-from engine.MQTT import MQTTReader
-from engine.config import WEB_APP_URL, SERVER_IP
+from cloud.MQTT import MQTTReader
+from cloud.config import WEB_APP_URL, SERVER_IP
 import json
 
 
@@ -82,5 +82,5 @@ class BridgeInterno:
 
 
 if __name__ == '__main__':
-    bridge = BridgeInterno(url="http://" + WEB_APP_URL)
+    bridge = BridgeInterno(url=WEB_APP_URL)
     bridge.loop()

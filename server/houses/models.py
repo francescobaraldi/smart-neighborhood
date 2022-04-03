@@ -20,9 +20,10 @@ class Finestra(models.Model):
     device_name = models.CharField(max_length=100, default="000")
     pin = models.CharField(max_length=10, default="A0")
     timeout = models.BooleanField(default=False)
+    ultima_modifica = models.DateTimeField(blank=True)
     
     def __str__(self):
-        return "Finestra %s" % (self.descrizione)
+        return self.descrizione
 
 
 class DatiAmbientali(models.Model):
@@ -30,3 +31,9 @@ class DatiAmbientali(models.Model):
     potentiometer_value = models.FloatField()
     photoresistor_value = models.FloatField()
     thermometer_value = models.FloatField()
+
+class ChatTelegram(models.Model):
+    chat_id = models.CharField(max_length=255)
+    
+    def __str__(self):
+        return "Chat id: " + self.chat_id

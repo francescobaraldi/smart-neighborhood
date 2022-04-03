@@ -7,11 +7,12 @@ from .forms import *
 from .serializers import *
 import json
 import datetime
+from django.utils import timezone
 import sys
 from django.conf import settings
 import sys
 sys.path.append(str(settings.ROOT_PROJECT))
-from engine import engine
+from cloud import engine
 from threading import Timer
 
 
@@ -40,6 +41,7 @@ def turn_on_timeout_change_state_web(request, finestra_id):
         finestra.stato = "closed"
     else:
         finestra.stato = "open"
+    finestra.ultima_modifica = timezone.now()
     finestra.timeout = True
     finestra.save()
     timer = Timer(1800, turn_off_timeout, [finestra.device_name, finestra.pin])
@@ -79,6 +81,7 @@ def change_state_all_windows(request, stato):
     windows = get_list_or_404(Finestra)
     for window in windows:
         window.stato = stato
+        # Qui non aggiorno la data di ultima modifica perchè la decisione è presa dall'engine: aggiorno solo se la decisione la prende l'utente
         window.save()
     return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
@@ -96,6 +99,7 @@ def turn_on_timeout_change_state_button(request, device_name, pin, stato):
         return JsonResponse({'error': "Errore"}, status=400)
     window = window[0]
     window.stato = stato
+    window.ultima_modifica = timezone.now()
     window.timeout = True
     window.save()
     timer = Timer(1800, turn_off_timeout, [window.device_name, window.pin])
@@ -111,3 +115,33 @@ def turn_off_timeout(request, device_name, pin):
     window.timeout = False
     window.save()
     return JsonResponse({'message': "Timeout spento correttamente"})
+
+@csrf_exempt
+def add_chat_telegram(request):
+    data = json.loads(request.body)
+    ser = ChatTelegramSerializer(data=data)
+    if ser.is_valid():
+        ser.save()
+        return JsonResponse({'message': "Chat telegram inserita correttamente"})
+    return JsonResponse(ser.errors, status=400)
+
+def get_chats_telegram(request):
+    chats = ChatTelegram.objects.all()
+    data = {}
+    dataChats = []
+    for chat in chats:
+        ser = ChatTelegramSerializer(instance=chat)
+        dataChats.append(ser.data)
+    data['chats'] = dataChats
+    return JsonResponse(data)
+
+def get_last_changes(request):
+    one_hour_ago = timezone.now() - datetime.timedelta(hours=1)
+    windows = Finestra.objects.filter(ultima_modifica__gt=one_hour_ago)
+    data = {}
+    dataFinestre = []
+    for window in windows:
+        ser = FinestraSerializer(instance=window)
+        dataFinestre.append(ser.data)
+    data['windows'] = dataFinestre
+    return JsonResponse(data)

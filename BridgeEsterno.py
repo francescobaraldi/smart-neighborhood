@@ -1,8 +1,7 @@
 import serial
 import serial.tools.list_ports
 import requests
-from tables import Description
-from engine.config import WEB_APP_URL
+from cloud.config import WEB_APP_URL
 
 
 class BridgeEsterno():    
@@ -60,5 +59,5 @@ class BridgeEsterno():
 
 
 if __name__ == '__main__':
-    bridge = BridgeEsterno(url="http://" + WEB_APP_URL)
+    bridge = BridgeEsterno(url=WEB_APP_URL)
     bridge.loop()
