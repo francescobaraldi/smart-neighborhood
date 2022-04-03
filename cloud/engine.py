@@ -27,6 +27,7 @@ class Engine:
         data_openweather = self.openweather.get_data()
         data['temperature'] = data_openweather['main']['temp'] - 273.15 - 5
         data['weather_id'] = data_openweather['weather'][0]['id']
+        # TODO: considerare nella logica decisionale anche le ultime azioni delle case vicine
         open_conditions =  (data['weather_id'] // 100 in THRESHOLDS['weather']) + (data['temperature'] >= THRESHOLDS['temperature']) + (data['potentiometer'] <= THRESHOLDS['potentiometer']) + (data['photoresistor'] >= THRESHOLDS['photoresistor'])
         close_conditions = (data['weather_id'] // 100 not in THRESHOLDS['weather']) + (data['temperature'] < THRESHOLDS['temperature']) + (data['potentiometer'] > THRESHOLDS['potentiometer']) + (data['photoresistor'] < THRESHOLDS['photoresistor'])
         if open_conditions >= 2:
@@ -50,4 +51,3 @@ def get_engine():
         eng = Engine()
         singleton = True
     return eng
-    

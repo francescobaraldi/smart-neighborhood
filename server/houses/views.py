@@ -7,6 +7,7 @@ from .forms import *
 from .serializers import *
 import json
 import datetime
+from django.utils import timezone
 import sys
 from django.conf import settings
 import sys
@@ -40,7 +41,7 @@ def turn_on_timeout_change_state_web(request, finestra_id):
         finestra.stato = "closed"
     else:
         finestra.stato = "open"
-    finestra.ultima_modifica = datetime.datetime.now()
+    finestra.ultima_modifica = timezone.now()
     finestra.timeout = True
     finestra.save()
     timer = Timer(1800, turn_off_timeout, [finestra.device_name, finestra.pin])
@@ -80,7 +81,7 @@ def change_state_all_windows(request, stato):
     windows = get_list_or_404(Finestra)
     for window in windows:
         window.stato = stato
-        window.ultima_modifica = datetime.datetime.now()
+        # Qui non aggiorno la data di ultima modifica perchè la decisione è presa dall'engine: aggiorno solo se la decisione la prende l'utente
         window.save()
     return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
@@ -98,7 +99,7 @@ def turn_on_timeout_change_state_button(request, device_name, pin, stato):
         return JsonResponse({'error': "Errore"}, status=400)
     window = window[0]
     window.stato = stato
-    window.ultima_modifica = datetime.datetime.now()
+    window.ultima_modifica = timezone.now()
     window.timeout = True
     window.save()
     timer = Timer(1800, turn_off_timeout, [window.device_name, window.pin])
@@ -115,6 +116,7 @@ def turn_off_timeout(request, device_name, pin):
     window.save()
     return JsonResponse({'message': "Timeout spento correttamente"})
 
+@csrf_exempt
 def add_chat_telegram(request):
     data = json.loads(request.body)
     ser = ChatTelegramSerializer(data=data)
