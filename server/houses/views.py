@@ -134,3 +134,14 @@ def get_chats_telegram(request):
         dataChats.append(ser.data)
     data['chats'] = dataChats
     return JsonResponse(data)
+
+def get_last_changes(request):
+    one_hour_ago = timezone.now() - datetime.timedelta(hours=1)
+    windows = Finestra.objects.filter(ultima_modifica__gt=one_hour_ago)
+    data = {}
+    dataFinestre = []
+    for window in windows:
+        ser = FinestraSerializer(instance=window)
+        dataFinestre.append(ser.data)
+    data['windows'] = dataFinestre
+    return JsonResponse(data)

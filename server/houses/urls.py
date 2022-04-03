@@ -7,6 +7,7 @@ from . import views
 app_name = "houses"
 urlpatterns = [
     path('', views.main_page, name="main_page"),
+    path('window/changed/', views.get_last_changes, name='get_last_changes'),
     path('window/<int:finestra_id>/', views.turn_on_timeout_change_state_web, name="turn_on_timeout_change_state_web"),
     path('data/', views.new_data, name="new_data"),
     path('window/all/<slug:stato>/', views.change_state_all_windows, name="change_state_all_windows"),

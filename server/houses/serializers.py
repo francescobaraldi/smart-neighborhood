@@ -10,3 +10,8 @@ class ChatTelegramSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatTelegram
         fields = ['chat_id']
+        
+class FinestraSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Finestra
+        fields = '__all__'

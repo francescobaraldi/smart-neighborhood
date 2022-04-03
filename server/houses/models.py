@@ -23,7 +23,7 @@ class Finestra(models.Model):
     ultima_modifica = models.DateTimeField(blank=True)
     
     def __str__(self):
-        return "Finestra %s" % (self.descrizione)
+        return self.descrizione
 
 
 class DatiAmbientali(models.Model):
