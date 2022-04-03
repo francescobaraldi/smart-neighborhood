@@ -82,5 +82,5 @@ class BridgeInterno:
 
 
 if __name__ == '__main__':
-    bridge = BridgeInterno(url="http://" + WEB_APP_URL)
+    bridge = BridgeInterno(url=WEB_APP_URL)
     bridge.loop()

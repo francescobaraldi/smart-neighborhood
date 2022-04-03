@@ -18,7 +18,7 @@ class Engine:
         self.openweather = open_weather.OpenWeather(config.LOCATION_OPENWEATHER, config.API_KEY_OPENWEATHER)
     
     def update_windows_database(self, state):
-        ret = requests.post("http://" + config.WEB_APP_URL+"window/all/%s/" % state)
+        ret = requests.post(config.WEB_APP_URL + "window/all/%s/" % state)
         return ret
 
     # data: {'potentiometer': potentiometer_data, 'photoresistor': photoresistor_data}

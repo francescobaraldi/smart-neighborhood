@@ -16,17 +16,17 @@ def start(update, context):
     """Send a message when the command /start is issued."""
     update.message.reply_text('Benvenuto nel bot di smart_neighborhood!')
     chat_id = update['message']['chat']['id']
-    ret = requests.get("http://" + config.SERVER_IP + "houses/chat/all/")
+    ret = requests.get(config.WEB_APP_URL + "chat/all/")
     if ret.status_code != 200:
         raise Exception
     chats = json.loads(ret.content)['chats']
-    new = True
+    is_new = True
     for chat in chats:
         if chat['chat_id'] == chat_id:
-            new = False
+            is_new = False
             break
-    if new:
-        ret = requests.post("http://" + config.SERVER_IP + "/houses/chat/add", json={'chat_id': chat_id})
+    if is_new:
+        ret = requests.post(config.WEB_APP_URL + "chat/add", json={'chat_id': chat_id})
         if ret.status_code != 200:
             raise Exception
 
@@ -35,7 +35,7 @@ def help(update, context):
     update.message.reply_text('Questo bot invia un messaggio ogni volta che il sistema smart_neighborhood apre o chiude gli scuri in modo autonomo.')
     
 def send_notification(new_state):
-    ret = requests.get("http://" + config.SERVER_IP + "/houses/chat/all/")
+    ret = requests.get(config.WEB_APP_URL + "chat/all/")
     if ret.status_code != 200:
         raise Exception
     chats = json.loads(ret.content)['chats']

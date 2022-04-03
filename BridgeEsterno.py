@@ -59,5 +59,5 @@ class BridgeEsterno():
 
 
 if __name__ == '__main__':
-    bridge = BridgeEsterno(url="http://" + WEB_APP_URL)
+    bridge = BridgeEsterno(url=WEB_APP_URL)
     bridge.loop()
