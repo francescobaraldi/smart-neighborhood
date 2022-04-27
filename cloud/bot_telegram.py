@@ -13,7 +13,6 @@ state_dict = {'open': 'aperti', 'close': 'chiusi'}
 
 
 def start(update, context):
-    """Send a message when the command /start is issued."""
     update.message.reply_text('Benvenuto nel bot di smart_neighborhood!')
     chat_id = update['message']['chat']['id']
     ret = requests.get(config.WEB_APP_URL + "chat/all/")
@@ -31,7 +30,6 @@ def start(update, context):
             raise Exception
 
 def help(update, context):
-    """Send a message when the command /help is issued."""
     update.message.reply_text('Questo bot invia un messaggio ogni volta che il sistema smart_neighborhood apre o chiude gli scuri in modo autonomo.')
     
 def send_notification(new_state):
