@@ -26,12 +26,14 @@ def turn_off_timeout(device_name, pin):
 ################################################################################
 
 
+@csrf_exempt
 @login_required
 def main_page(request):
     case = Casa.objects.filter(proprietario=request.user)
     return render(request, "houses/main_page.html", {'request': request, 'case': case})
 
 
+@csrf_exempt
 @login_required
 def turn_on_timeout_change_state_web(request, finestra_id):
     finestra = get_object_or_404(Finestra, pk=finestra_id)
@@ -85,7 +87,8 @@ def change_state_all_windows(request, stato):
         window.save()
     return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
-    
+
+@csrf_exempt
 def get_window(request, device_name, pin):
     window = Finestra.objects.filter(device_name=device_name, pin=pin)
     if len(window) != 1:
@@ -93,6 +96,7 @@ def get_window(request, device_name, pin):
     return JsonResponse({'stato': window[0].stato})
 
 
+@csrf_exempt
 def turn_on_timeout_change_state_button(request, device_name, pin, stato):
     window = Finestra.objects.filter(device_name=device_name, pin=pin)
     if len(window) != 1:
@@ -107,6 +111,7 @@ def turn_on_timeout_change_state_button(request, device_name, pin, stato):
     return JsonResponse({'message': "Cambiato stato correttamente"})
 
 
+@csrf_exempt
 def turn_off_timeout(request, device_name, pin):
     window = Finestra.objects.filter(device_name=device_name, pin=pin)
     if len(window) != 1:
@@ -125,6 +130,8 @@ def add_chat_telegram(request):
         return JsonResponse({'message': "Chat telegram inserita correttamente"})
     return JsonResponse(ser.errors, status=400)
 
+
+@csrf_exempt
 def get_chats_telegram(request):
     chats = ChatTelegram.objects.all()
     data = {}
@@ -135,6 +142,8 @@ def get_chats_telegram(request):
     data['chats'] = dataChats
     return JsonResponse(data)
 
+
+@csrf_exempt
 def get_last_changes(request):
     one_hour_ago = timezone.now() - datetime.timedelta(hours=1)
     windows = Finestra.objects.filter(ultima_modifica__gt=one_hour_ago)
