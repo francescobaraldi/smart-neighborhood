@@ -1,4 +1,4 @@
-# Smart Neighborhood
+# Smart Neighborhood System for Shutters Management
 
 IoT university project developed for the MSc course of Internet of Things and 3D Intelligent Systems.
 
