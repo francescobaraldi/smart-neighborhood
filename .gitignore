@@ -1,2 +1,4 @@
 .DS_Store
 */__pychache__/*
+*/.config.py
+*/settings.py
