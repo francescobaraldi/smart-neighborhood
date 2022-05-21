@@ -82,18 +82,25 @@ def new_data(request):
 def change_state_all_windows(request, stato):
     windows = get_list_or_404(Finestra)
     for window in windows:
-        window.stato = stato
-        # Qui non aggiorno la data di ultima modifica perchè la decisione è presa dall'engine: aggiorno solo se la decisione la prende l'utente
-        window.save()
+        if not window.timeout:
+            window.stato = stato
+            # Qui non aggiorno la data di ultima modifica perchè la decisione è presa dall'engine: aggiorno solo se la decisione la prende l'utente
+            window.save()
     return JsonResponse({'message': "Finestre aggiornate correttamente"})
 
 
 @csrf_exempt
 def get_window(request, device_name, pin):
-    window = Finestra.objects.filter(device_name=device_name, pin=pin)
-    if len(window) != 1:
-        return JsonResponse({'error': "Errore"})
-    return JsonResponse({'stato': window[0].stato})
+    if pin == "?":
+        windows = Finestra.objects.filter(device_name=device_name)
+    else:
+        windows = Finestra.objects.filter(device_name=device_name, pin=pin)
+        if len(windows) != 1:
+            return JsonResponse({'error': "Errore"})
+    data = []
+    for window in windows:
+        data.append({'stato': window.stato, 'timeout': window.timeout, 'pin': window.pin})
+    return JsonResponse({'windows': data})
 
 
 @csrf_exempt

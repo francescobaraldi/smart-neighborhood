@@ -68,7 +68,7 @@ class BridgeInterno:
         if ret.status_code != 200:
             print("Errore: " + str(ret.content))
             raise Exception
-        stato = json.loads(ret.content)['stato']
+        stato = json.loads(ret.content)['windows'][0]['stato']
         if stato == 'open':
             stato = 'closed'
         else:

@@ -1,8 +1,12 @@
 import logging
 import json
 from telegram.ext import Updater, CommandHandler
-import cloud.config as config
 import requests
+import sys
+from pathlib import Path
+root = Path(__file__).resolve().parent.parent
+sys.path.append(str(root))
+import cloud.config as config
 
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')

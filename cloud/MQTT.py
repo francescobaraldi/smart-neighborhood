@@ -1,4 +1,11 @@
 import paho.mqtt.client as mqtt
+import requests
+import sys
+from pathlib import Path
+root = Path(__file__).resolve().parent.parent
+sys.path.append(str(root))
+import cloud.config as config
+import json
 
 """
     Two types of topic:
@@ -31,13 +38,19 @@ class MQTTReader:  # serve al bridge interno per ricevere i messaggi
     def on_message(self, client, userdata, msg):
         print("Message received on topic: %s" % msg.topic)
         fields = msg.topic.split("/")
-        fields.pop()  # remove last item of the list (empty string)
+        # fields.pop()  # remove last item of the list (empty string)
         encode_name = {'close': '0', 'open': '1'}
         if len(fields) == 2:
             comando = fields[1]
             for serial in self.serials:
-                serial.write(bytes('?', 'utf-8'))  # ? : carattere ascii usato per identificare tutte le finestre
-                serial.write(bytes(encode_name[comando], 'utf-8'))
+                ret = requests.get(config.WEB_APP_URL + "window/%s/?/" % serial.portname)
+                if ret.status_code != 200:
+                    raise Exception
+                windows = json.loads(ret.content)['windows']
+                for window in windows:
+                    if not window['timeout']:    
+                        serial.write(bytes(window['pin'], 'utf-8'))
+                        serial.write(bytes(encode_name[comando], 'utf-8'))
         elif len(fields) == 4:
             device_name = fields[1]
             pin = fields[2]

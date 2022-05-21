@@ -166,22 +166,12 @@ void loop() {
     int servo_pin = Serial.read() - '0';
     int new_pos = Serial.read() - '0';
 
-    if (servo_pin + '0' == '?' ) { // aziona tutti i servo: primo byte è 255, secondo byte è la nuova posizione di TUTTI i servo
-      // leggiamo da seriale il carattere '?' e lo riconvertiamo con + '0'
-      if (new_pos == OPEN) { // apro finestre NORD e SUD (per quella/e già aperte non succede nulla)
-        open_nord_window(pos_nord);
-        open_sud_window(pos_sud);
-      } else if (new_pos == CLOSED) { // chiudo finestre NORD e SUD (per quella/e già chiuse non succede nulla)
-        close_nord_window(pos_nord);
-        close_sud_window(pos_sud);
-      }
-      
-    } else if (servo_pin == finestra_nord_pin) { // aziona servo della finestra nord
+    if (servo_pin == finestra_nord_pin) { // aziona servo della finestra nord
       if (new_pos == OPEN)
         open_nord_window(pos_nord);
       else if (new_pos == CLOSED)
         close_nord_window(pos_nord);
-        
+
     } else if (servo_pin == finestra_sud_pin) { // aziona servo della finestra sud
       if (new_pos == OPEN)
         open_sud_window(pos_sud);
