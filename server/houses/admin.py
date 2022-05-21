@@ -11,3 +11,4 @@ class CasaAdmin(admin.ModelAdmin):
     inlines = [FinestraInline]
     
 admin.site.register(Casa, CasaAdmin)
+admin.site.register(ChatTelegram)

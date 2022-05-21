@@ -43,7 +43,7 @@ class MQTTReader:  # serve al bridge interno per ricevere i messaggi
         if len(fields) == 2:
             comando = fields[1]
             for serial in self.serials:
-                ret = requests.get(config.WEB_APP_URL + "window/%s/?/" % serial.portname)
+                ret = requests.get(config.WEB_APP_URL + "window/%s/all/" % serial.port)
                 if ret.status_code != 200:
                     raise Exception
                 windows = json.loads(ret.content)['windows']

@@ -65,16 +65,10 @@ def turn_on_timeout_change_state_web(request, finestra_id):
 @csrf_exempt
 def new_data(request):
     if request.method == "POST":
-        # TODO: eliminare timestamp vecchi per non sovraccaricare il db?
         data = json.loads(request.body)
+        print(data)
         eng = engine.get_engine()
         eng.process_data(data)
-        #ser = DatiAmbientaliSerializer(data=data)
-        #if ser.is_valid():
-            #new_dati_ambientali = ser.save(commit=False)
-            #new_dati_ambientali.timestamp = datetime.datetime.now()
-            #new_dati_ambientali.save()
-            #return JsonResponse({'message': "Dati aggiornati correttamente"})
         return JsonResponse(data)
 
 
@@ -91,7 +85,7 @@ def change_state_all_windows(request, stato):
 
 @csrf_exempt
 def get_window(request, device_name, pin):
-    if pin == "?":
+    if pin == "all":
         windows = Finestra.objects.filter(device_name=device_name)
     else:
         windows = Finestra.objects.filter(device_name=device_name, pin=pin)

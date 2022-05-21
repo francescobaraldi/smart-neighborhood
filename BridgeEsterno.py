@@ -30,12 +30,12 @@ class BridgeEsterno():
                     lastchar = self.serial.read(1)
                     if lastchar == b'\xfe':
                         print("Value received")
-                        self.process_data()
+                        self.process_data_bridge()
                         self.inbuffer =[]
                     else:
                         self.inbuffer.append(lastchar)
 
-    def process_data(self):
+    def process_data_bridge(self):
         if len(self.inbuffer) != 4 or self.inbuffer[0] != b'\xff':
             print("Errore: il pacchetto ricevuto non ha un formato corretto.")
             return False
@@ -53,7 +53,7 @@ class BridgeEsterno():
     def send_data(self, data):
         ret = requests.post(self.url+"data/", json=data)
         if ret.status_code != 200:
-            print("Errore: " + str(ret.content))
+            print("Errore: ")
             raise Exception
         print(ret.content)
 
