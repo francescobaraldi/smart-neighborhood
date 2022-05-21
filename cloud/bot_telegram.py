@@ -13,6 +13,8 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(leve
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
+state_dict = {'open': 'aperti', 'close': 'chiusi'}
+
 class BotTelegram:
     def __init__(self):
         self.updater = self.start_bot()
@@ -49,20 +51,20 @@ class BotTelegram:
     def help(self, update, context):
         update.message.reply_text('Questo bot invia un messaggio ogni volta che il sistema smart_neighborhood apre o chiude gli scuri in modo autonomo.')
     
-    def send_notification(self, new_state):
-        ret = requests.get(config.WEB_APP_URL + "chat/all/")
+
+def send_notification(new_state):
+    ret = requests.get(config.WEB_APP_URL + "chat/all/")
+    if ret.status_code != 200:
+        raise Exception
+    chats = json.loads(ret.content)['chats']
+    for chat in chats:
+        text = "Il sistema smart_neighborhood ha deciso che i tuoi scuri verrano %s. \
+                                Se vuoi gestirli manualmente utilizza la web app %s" % (state_dict[new_state], config.WEB_APP_URL)
+        url = 'https://api.telegram.org/bot' + config.BOTKEY_TELEGRAM + '/sendMessage?chat_id=' + chat['chat_id'] + '&parse_mode=Markdown&text=' + text
+        ret = requests.get(url)
         if ret.status_code != 200:
             raise Exception
-        chats = json.loads(ret.content)['chats']
-        for chat in chats:
-            self.updater.bot.send_message(chat_id=chat['chat_id'],
-                                    text='Il sistema smart_neighborhood ha deciso che i tuoi scuri verrano %s. \
-                                    Se vuoi gestirli manualmente utilizza la web app %s' % (self.state_dict[new_state], config.WEB_APP_URL))
 
-
-def get_bot_telegram():
-    global bot_telegram 
-    return bot_telegram
 
 if __name__ == "__main__":
     global updater

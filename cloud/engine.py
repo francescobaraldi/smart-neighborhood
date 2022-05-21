@@ -1,7 +1,7 @@
 import requests
 import cloud.MQTT as MQTT
 import cloud.open_weather as open_weather
-import cloud.bot_telegram
+import cloud.bot_telegram as bot_telegram
 import cloud.config as config
 import json
 
@@ -29,7 +29,6 @@ class Engine:
     # data: {'potentiometer': potentiometer_data, 'photoresistor': photoresistor_data}
 
     def process_data(self, data):
-        #bot_telegram = cloud.bot_telegram.get_bot_telegram()
         data_openweather = self.openweather.get_data()
         data['temperature'] = data_openweather['main']['temp'] - 273.15
         data['weather_id'] = data_openweather['weather'][0]['id']
@@ -37,11 +36,11 @@ class Engine:
         close_conditions = (data['weather_id'] // 100 in THRESHOLDS['weather_bad']) + (data['temperature'] < THRESHOLDS['temperature_low']) + (data['potentiometer'] > THRESHOLDS['potentiometer_high']) + (data['photoresistor'] < THRESHOLDS['photoresistor_low'])
         if open_conditions >= 2:
             self.mqtt.publish_general_message('open')
-            #bot_telegram.send_notification('open')
+            bot_telegram.send_notification('open')
             return self.update_windows_database('open')
         elif close_conditions >= 3:
             self.mqtt.publish_general_message('close')
-            #bot_telegram.send_notification('close')
+            bot_telegram.send_notification('close')
             return self.update_windows_database('closed')
         else:  # Se entro qua sono in una situazione ambigua
             ret = requests.get(config.WEB_APP_URL + "window/changed")
@@ -61,11 +60,11 @@ class Engine:
             
             if num_closed > 1 >= num_open:  # Almeno 2 vicini hanno chiuso le finestre nell'ultima ora -> chiudi le finestre
                 self.mqtt.publish_general_message('close')
-                #bot_telegram.send_notification('close')
+                bot_telegram.send_notification('close')
                 return self.update_windows_database('closed')
             elif num_open > 1 >= num_closed:  # Almeno 2 vicini hanno aperto le finestre nell'ultima ora -> apro le finestre
                 self.mqtt.publish_general_message('open')
-                #bot_telegram.send_notification('open')
+                bot_telegram.send_notification('open')
                 return self.update_windows_database('open')
             # else: significa che o num_closed = num_open -> non faccio niente,
             #       o ci sono meno di 2 vicini che hanno modificato le finestre nell'ultima ora -> non faccio niente
