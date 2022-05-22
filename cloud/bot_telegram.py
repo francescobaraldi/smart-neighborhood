@@ -58,9 +58,8 @@ def send_notification(new_state):
         raise Exception
     chats = json.loads(ret.content)['chats']
     for chat in chats:
-        text = "Il sistema smart_neighborhood ha deciso che i tuoi scuri verrano %s. \
-                                Se vuoi gestirli manualmente utilizza la web app %s" % (state_dict[new_state], config.WEB_APP_URL)
-        url = 'https://api.telegram.org/bot' + config.BOTKEY_TELEGRAM + '/sendMessage?chat_id=' + chat['chat_id'] + '&parse_mode=Markdown&text=' + text
+        text = "Il+sistema+smart\_neighborhood+ha+deciso+che+i+tuoi+scuri+verrano+%s.+Se+vuoi+gestirli+manualmente+utilizza+la+web+app+%s" % (state_dict[new_state], config.WEB_APP_URL)
+        url = "https://api.telegram.org/bot" + config.BOTKEY_TELEGRAM + "/sendMessage?chat_id=" + chat['chat_id'] + "&parse_mode=Markdown&text=" + text
         ret = requests.get(url)
         if ret.status_code != 200:
             raise Exception
