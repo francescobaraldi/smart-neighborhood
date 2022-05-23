@@ -9,7 +9,7 @@ class DatiAmbientaliSerializer(serializers.ModelSerializer):
 class ChatTelegramSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatTelegram
-        fields = ['chat_id']
+        fields = ['chat_id', 'ultimo_messaggio']
         
 class FinestraSerializer(serializers.ModelSerializer):
     class Meta:

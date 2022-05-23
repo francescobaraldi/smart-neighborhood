@@ -143,6 +143,15 @@ def get_chats_telegram(request):
     data['chats'] = dataChats
     return JsonResponse(data)
 
+@csrf_exempt
+def update_chat(request, chat_id):
+    chats = ChatTelegram.objects.filter(chat_id=chat_id)
+    if len(chats) != 1:
+        return JsonResponse({'error': "Errore"})
+    chats[0].ultimo_messaggio = timezone.now()
+    chats[0].save()
+    return JsonResponse({'message': 'Chat aggiornata correttamente'})
+
 
 @csrf_exempt
 def get_last_changes(request):

@@ -1,7 +1,11 @@
 import logging
 import json
+from pyparsing import one_of
 from telegram.ext import Updater, CommandHandler
 import requests
+import pytz
+import datetime
+from dateutil import parser
 import sys
 from pathlib import Path
 root = Path(__file__).resolve().parent.parent
@@ -58,11 +62,19 @@ def send_notification(new_state):
         raise Exception
     chats = json.loads(ret.content)['chats']
     for chat in chats:
-        text = "Il+sistema+smart\_neighborhood+ha+deciso+che+i+tuoi+scuri+verrano+%s.+Se+vuoi+gestirli+manualmente+utilizza+la+web+app+%s" % (state_dict[new_state], config.WEB_APP_URL)
-        url = "https://api.telegram.org/bot" + config.BOTKEY_TELEGRAM + "/sendMessage?chat_id=" + chat['chat_id'] + "&parse_mode=Markdown&text=" + text
-        ret = requests.get(url)
-        if ret.status_code != 200:
-            raise Exception
+        one_hour_ago = datetime.datetime.now() - datetime.timedelta(hours=1)
+        local_timezone = pytz.timezone('Europe/Rome')
+        one_hour_ago = local_timezone.localize(one_hour_ago)
+        ultimo_messaggio = parser.parse(chat['ultimo_messaggio'])
+        if ultimo_messaggio < one_hour_ago:
+            text = "Il+sistema+smart\_neighborhood+ha+deciso+che+i+tuoi+scuri+verrano+%s.+Se+vuoi+gestirli+manualmente+utilizza+la+web+app+%s" % (state_dict[new_state], config.WEB_APP_URL)
+            url = "https://api.telegram.org/bot" + config.BOTKEY_TELEGRAM + "/sendMessage?chat_id=" + chat['chat_id'] + "&parse_mode=Markdown&text=" + text
+            ret = requests.get(url)
+            if ret.status_code != 200:
+                raise Exception
+            ret = requests.get(config.WEB_APP_URL + "chat/update/" + chat['chat_id'] + "/")
+            if ret.status_code != 200:
+                raise Exception
 
 
 if __name__ == "__main__":
