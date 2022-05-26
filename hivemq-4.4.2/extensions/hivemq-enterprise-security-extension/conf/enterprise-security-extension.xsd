@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="access-log" type="accessLogEntity"/>
+
+  <xs:element name="allow-all-authentication-manager" type="allowAllAuthenticationManagerEntity"/>
+
+  <xs:element name="allow-all-authorization-manager" type="allowAllAuthorizationManagerEntity"/>
+
+  <xs:element name="claim" type="customClaim"/>
+
+  <xs:element name="concatenation-preprocessor" type="concatenationPreprocessorEntity"/>
+
+  <xs:element name="configuration" type="dbConfigurationEntity"/>
+
+  <xs:element name="control-center-pipeline" type="controlCenterPipelineEntity"/>
+
+  <xs:element name="enable-introspection" type="enable-introspection"/>
+
+  <xs:element name="enterprise-security-extension" type="securityExtensionConfiguration"/>
+
+  <xs:element name="exp-grace" type="expGrace"/>
+
+  <xs:element name="introspection-endpoint" type="introspection-endpoint"/>
+
+  <xs:element name="jwt-authentication-manager" type="jwtAuthenticationManagerEntity"/>
+
+  <xs:element name="jwt-configuration" type="jwtConfigurationEntity"/>
+
+  <xs:element name="jwt-extraction" type="jwtExtractionEntity"/>
+
+  <xs:element name="jwt-preprocessor" type="jwtPreprocessorEntity"/>
+
+  <xs:element name="jwt-realm" type="jwtRealmEntity"/>
+
+  <xs:element name="jwt-validation" type="validation"/>
+
+  <xs:element name="ldap-authentication-manager" type="ldapAuthenticationManagerEntity"/>
+
+  <xs:element name="ldap-authorization-manager" type="ldapAuthorizationManagerEntity"/>
+
+  <xs:element name="ldap-configuration" type="ldapConfigurationEntity"/>
+
+  <xs:element name="ldap-realm" type="ldapRealmEntity"/>
+
+  <xs:element name="ldap-server" type="ldapServer"/>
+
+  <xs:element name="listener-pipeline" type="listenerPipelineEntity"/>
+
+  <xs:element name="logging-preprocessor" type="loggingPreprocessorEntity"/>
+
+  <xs:element name="plain-preprocessor" type="plainPreprocessorEntity"/>
+
+  <xs:element name="regex-preprocessor" type="regexPreprocessorEntity"/>
+
+  <xs:element name="reserved-claims" type="reservedClaims"/>
+
+  <xs:element name="runtime" type="runtimeEntity"/>
+
+  <xs:element name="scope" type="scope"/>
+
+  <xs:element name="simple-auth" type="simpleAuthEntity"/>
+
+  <xs:element name="simple-bind" type="ldapSimpleBindEntity"/>
+
+  <xs:element name="split-preprocessor" type="splitPreprocessorEntity"/>
+
+  <xs:element name="sql-authentication-manager" type="sqlAuthenticationManagerEntity"/>
+
+  <xs:element name="sql-authorization-manager" type="sqlAuthorizationManagerEntity"/>
+
+  <xs:element name="sql-realm" type="sqlRealmEntity"/>
+
+  <xs:element name="transformation" type="plainTransformationEntity"/>
+
+  <xs:element name="trust-store" type="trustStoreEntity"/>
+
+  <xs:element name="x509-extraction" type="x509ExtractionEntity"/>
+
+  <xs:element name="x509-preprocessor" type="x509PreprocessorEntity"/>
+
+  <xs:complexType name="securityExtensionConfiguration">
+    <xs:sequence>
+      <xs:element ref="runtime" minOccurs="0"/>
+      <xs:element ref="access-log" minOccurs="0"/>
+      <xs:element name="realms" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="sql-realm"/>
+              <xs:element ref="jwt-realm"/>
+              <xs:element ref="ldap-realm"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="pipelines" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="listener-pipeline"/>
+              <xs:element ref="control-center-pipeline"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="version" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="runtimeEntity">
+    <xs:sequence>
+      <xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="accessLogEntity">
+    <xs:sequence>
+      <xs:element name="enabled" type="xs:boolean" default="true" minOccurs="0"/>
+      <xs:element name="file-name" type="xs:string" default="access" minOccurs="0"/>
+      <xs:element name="sub-folder" type="xs:string" default="access" minOccurs="0"/>
+      <xs:element name="write-through" type="xs:boolean" default="false" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sqlRealmEntity">
+    <xs:complexContent>
+      <xs:extension base="realmEntity">
+        <xs:sequence>
+          <xs:element ref="configuration"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="realmEntity" abstract="true">
+    <xs:sequence>
+      <xs:element name="name" type="xs:ID"/>
+      <xs:element name="enabled" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dbConfigurationEntity">
+    <xs:sequence>
+      <xs:element name="db-type" type="db-type"/>
+      <xs:element name="db-name" type="xs:string"/>
+      <xs:element name="db-host" type="xs:string"/>
+      <xs:element name="db-port" type="xs:int"/>
+      <xs:element name="db-username" type="xs:string"/>
+      <xs:element name="db-password" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="jwtRealmEntity">
+    <xs:complexContent>
+      <xs:extension base="realmEntity">
+        <xs:sequence>
+          <xs:element name="configuration" type="jwtConfigurationEntity" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="jwtConfigurationEntity">
+    <xs:sequence>
+      <xs:element name="jwks-endpoint" type="xs:string"/>
+      <xs:element name="jwks-default-cache-duration" type="xs:int" default="1800" minOccurs="0"/>
+      <xs:element name="tls-trust-store" type="trustStoreEntity" minOccurs="0"/>
+      <xs:element ref="introspection-endpoint" minOccurs="0"/>
+      <xs:element ref="simple-auth" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="trustStoreEntity">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="password" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="introspection-endpoint">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="timeout" type="xs:int"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="simpleAuthEntity">
+    <xs:sequence>
+      <xs:element name="username" type="xs:string"/>
+      <xs:element name="password" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ldapRealmEntity">
+    <xs:complexContent>
+      <xs:extension base="realmEntity">
+        <xs:sequence>
+          <xs:element name="configuration" type="ldapConfigurationEntity"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ldapConfigurationEntity">
+    <xs:sequence>
+      <xs:element name="servers" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="ldap-server" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="tls" type="tls-type" minOccurs="0"/>
+      <xs:element name="tls-trust-store" type="trustStoreEntity" minOccurs="0"/>
+      <xs:element name="base-dn" type="xs:string"/>
+      <xs:element ref="simple-bind"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ldapServer">
+    <xs:sequence>
+      <xs:element name="host" type="xs:string"/>
+      <xs:element name="port" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ldapSimpleBindEntity">
+    <xs:sequence>
+      <xs:element name="rdns" type="xs:string"/>
+      <xs:element name="userPassword" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="listenerPipelineEntity">
+    <xs:sequence>
+      <xs:element name="authentication-preprocessors" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="plain-preprocessor"/>
+              <xs:element ref="regex-preprocessor"/>
+              <xs:element ref="x509-preprocessor"/>
+              <xs:element ref="split-preprocessor"/>
+              <xs:element ref="concatenation-preprocessor"/>
+              <xs:element ref="logging-preprocessor"/>
+              <xs:element ref="jwt-preprocessor"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:choice>
+        <xs:element ref="sql-authentication-manager"/>
+        <xs:element ref="allow-all-authentication-manager"/>
+        <xs:element ref="jwt-authentication-manager"/>
+        <xs:element ref="ldap-authentication-manager"/>
+      </xs:choice>
+      <xs:element name="authorization-preprocessors" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element ref="plain-preprocessor"/>
+              <xs:element ref="regex-preprocessor"/>
+              <xs:element ref="x509-preprocessor"/>
+              <xs:element ref="split-preprocessor"/>
+              <xs:element ref="concatenation-preprocessor"/>
+              <xs:element ref="logging-preprocessor"/>
+              <xs:element ref="jwt-preprocessor"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:choice>
+        <xs:element ref="sql-authorization-manager"/>
+        <xs:element ref="allow-all-authorization-manager"/>
+        <xs:element ref="ldap-authorization-manager"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:ID"/>
+    <xs:attribute name="listener" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="plainPreprocessorEntity">
+    <xs:complexContent>
+      <xs:extension base="preprocessorEntity">
+        <xs:sequence>
+          <xs:element name="transformations" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element ref="transformation" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="preprocessorEntity" abstract="true">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="plainTransformationEntity">
+    <xs:sequence>
+      <xs:element name="from" type="ese-variable"/>
+      <xs:element name="to" type="ese-variable"/>
+    </xs:sequence>
+    <xs:attribute name="encoding" type="encoding"/>
+  </xs:complexType>
+
+  <xs:complexType name="regexPreprocessorEntity">
+    <xs:complexContent>
+      <xs:extension base="preprocessorEntity">
+        <xs:sequence>
+          <xs:element name="pattern" type="xs:string"/>
+          <xs:element name="group" type="xs:int" default="0" minOccurs="0"/>
+          <xs:element name="variable" type="ese-variable" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="x509PreprocessorEntity">
+    <xs:complexContent>
+      <xs:extension base="preprocessorEntity">
+        <xs:sequence>
+          <xs:element name="x509-extractions" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element ref="x509-extraction" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="prefix" type="xs:string"/>
+        <xs:attribute name="postfix" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="x509ExtractionEntity">
+    <xs:sequence>
+      <xs:element name="x509-field" type="x509-field"/>
+      <xs:element name="ese-variable" type="ese-variable"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="splitPreprocessorEntity">
+    <xs:complexContent>
+      <xs:extension base="enclosingPreprocessorEntity">
+        <xs:sequence>
+          <xs:element name="from" type="ese-variable" minOccurs="0"/>
+          <xs:element name="to" type="ese-variable" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="enclosingPreprocessorEntity" abstract="true">
+    <xs:complexContent>
+      <xs:extension base="preprocessorEntity">
+        <xs:sequence/>
+        <xs:attribute name="prefix" type="xs:string"/>
+        <xs:attribute name="postfix" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="concatenationPreprocessorEntity">
+    <xs:complexContent>
+      <xs:extension base="enclosingPreprocessorEntity">
+        <xs:sequence>
+          <xs:element name="from" type="ese-variable" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="to" type="ese-variable" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="loggingPreprocessorEntity">
+    <xs:complexContent>
+      <xs:extension base="preprocessorEntity">
+        <xs:sequence>
+          <xs:element name="message" type="xs:string"/>
+          <xs:element name="level" type="level" minOccurs="0"/>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="codec" type="encoding" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="jwtPreprocessorEntity">
+    <xs:complexContent>
+      <xs:extension base="enclosingPreprocessorEntity">
+        <xs:sequence>
+          <xs:element name="source" type="ese-variable"/>
+          <xs:element name="jwt-extractions" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element ref="jwt-extraction" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="jwtExtractionEntity">
+    <xs:sequence>
+      <xs:element name="jwt-claim" type="xs:string"/>
+      <xs:element name="ese-variable" type="ese-variable"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sqlAuthenticationManagerEntity">
+    <xs:complexContent>
+      <xs:extension base="authenticationManagerEntity">
+        <xs:sequence>
+          <xs:element name="realm" type="xs:IDREF"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="authenticationManagerEntity" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="name" type="xs:ID"/>
+  </xs:complexType>
+
+  <xs:complexType name="allowAllAuthenticationManagerEntity">
+    <xs:complexContent>
+      <xs:extension base="authenticationManagerEntity">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="jwtAuthenticationManagerEntity">
+    <xs:complexContent>
+      <xs:extension base="authenticationManagerEntity">
+        <xs:sequence>
+          <xs:element name="realm" type="xs:IDREF"/>
+          <xs:element ref="jwt-validation" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="validation">
+    <xs:sequence>
+      <xs:element ref="exp-grace" minOccurs="0"/>
+      <xs:element name="enable-introspection" type="enable-introspection" default="false" minOccurs="0"/>
+      <xs:element ref="reserved-claims" minOccurs="0"/>
+      <xs:element name="custom-claims" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="claim" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="expGrace">
+    <xs:simpleContent>
+      <xs:extension base="xs:int">
+        <xs:attribute name="disconnect-after-expiry" type="xs:boolean"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="enable-introspection">
+    <xs:simpleContent>
+      <xs:extension base="xs:boolean">
+        <xs:attribute name="sampling" type="xs:double"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="reservedClaims">
+    <xs:sequence>
+      <xs:element name="aud" type="xs:string" minOccurs="0"/>
+      <xs:element name="sub" type="xs:string" minOccurs="0"/>
+      <xs:element name="iss" minOccurs="0">
+        <xs:simpleType>
+          <xs:list itemType="xs:string"/>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element ref="scope" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="scope">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="alt" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="customClaim">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ldapAuthenticationManagerEntity">
+    <xs:complexContent>
+      <xs:extension base="authenticationManagerEntity">
+        <xs:sequence>
+          <xs:element name="realm" type="xs:IDREF"/>
+          <xs:element name="clients-rdns" type="xs:string"/>
+          <xs:element name="uid-attribute" type="xs:string" minOccurs="0"/>
+          <xs:element name="required-object-class" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="sqlAuthorizationManagerEntity">
+    <xs:complexContent>
+      <xs:extension base="authorizationManagerEntity">
+        <xs:sequence>
+          <xs:element name="realm" type="xs:IDREF"/>
+          <xs:element name="use-authorization-key" type="xs:boolean" default="false" minOccurs="0"/>
+          <xs:element name="use-authorization-role-key" type="xs:boolean" default="true" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="authorizationManagerEntity" abstract="true">
+    <xs:sequence/>
+    <xs:attribute name="name" type="xs:ID"/>
+  </xs:complexType>
+
+  <xs:complexType name="allowAllAuthorizationManagerEntity">
+    <xs:complexContent>
+      <xs:extension base="authorizationManagerEntity">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ldapAuthorizationManagerEntity">
+    <xs:complexContent>
+      <xs:extension base="authorizationManagerEntity">
+        <xs:sequence>
+          <xs:element name="realm" type="xs:IDREF"/>
+          <xs:element name="directory-descent" type="xs:boolean" default="false" minOccurs="0"/>
+          <xs:element name="use-authorization-key" type="xs:boolean" default="true" minOccurs="0"/>
+          <xs:element name="use-authorization-role-key" type="xs:boolean" default="true" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="controlCenterPipelineEntity">
+    <xs:sequence>
+      <xs:choice>
+        <xs:element ref="sql-authentication-manager"/>
+        <xs:element ref="allow-all-authentication-manager"/>
+        <xs:element ref="jwt-authentication-manager"/>
+        <xs:element ref="ldap-authentication-manager"/>
+      </xs:choice>
+      <xs:choice>
+        <xs:element ref="sql-authorization-manager"/>
+        <xs:element ref="allow-all-authorization-manager"/>
+        <xs:element ref="ldap-authorization-manager"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:ID"/>
+  </xs:complexType>
+
+  <xs:simpleType name="db-type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MYSQL"/>
+      <xs:enumeration value="POSTGRES"/>
+      <xs:enumeration value="MSSQL"/>
+      <xs:enumeration value="AZURE_SQL"/>
+      <xs:enumeration value="AURORA_POSTGRES"/>
+      <xs:enumeration value="AURORA_MYSQL"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tls-type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="tcp"/>
+      <xs:enumeration value="tls"/>
+      <xs:enumeration value="start-tls"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="encoding">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UTF8"/>
+      <xs:enumeration value="Base64"/>
+      <xs:enumeration value="Hex"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ese-variable">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="mqtt-clientid"/>
+      <xs:enumeration value="mqtt-username"/>
+      <xs:enumeration value="mqtt-password"/>
+      <xs:enumeration value="mqtt-authentication-method"/>
+      <xs:enumeration value="mqtt-authentication-data"/>
+      <xs:enumeration value="byte-1"/>
+      <xs:enumeration value="byte-2"/>
+      <xs:enumeration value="byte-3"/>
+      <xs:enumeration value="byte-4"/>
+      <xs:enumeration value="byte-5"/>
+      <xs:enumeration value="byte-6"/>
+      <xs:enumeration value="string-1"/>
+      <xs:enumeration value="string-2"/>
+      <xs:enumeration value="string-3"/>
+      <xs:enumeration value="string-4"/>
+      <xs:enumeration value="string-5"/>
+      <xs:enumeration value="string-6"/>
+      <xs:enumeration value="authentication-key"/>
+      <xs:enumeration value="authentication-byte-secret"/>
+      <xs:enumeration value="authorization-key"/>
+      <xs:enumeration value="authorization-role-key"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="x509-field">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="issuer-common-name"/>
+      <xs:enumeration value="subject-common-name"/>
+      <xs:enumeration value="issuer-alternative-common-names"/>
+      <xs:enumeration value="subject-alternative-common-names"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="level">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="trace"/>
+      <xs:enumeration value="debug"/>
+      <xs:enumeration value="info"/>
+      <xs:enumeration value="warn"/>
+      <xs:enumeration value="error"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

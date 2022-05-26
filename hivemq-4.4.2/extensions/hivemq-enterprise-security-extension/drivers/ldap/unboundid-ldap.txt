@@ -1,0 +1,6 @@
+You can replace this file with the latest UnboundID LDAP SDK.
+
+    https://github.com/pingidentity/ldapsdk/releases/latest
+
+This is not needed to deploy and/or operate the HiveMQ Enterprise Security Extension under any circumstance.
+HiveMQ will not provide support for an UnboundID LDAP SDK loaded from this folder.

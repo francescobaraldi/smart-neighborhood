@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<enterprise-security-extension
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="enterprise-security-extension.xsd"
+        version="1">
+    <realms>
+        <!-- a replicated ldap server -->
+        <ldap-realm>
+            <name>ldap-server</name>
+            <enabled>true</enabled>
+            <configuration>
+                <servers>
+                    <ldap-server>
+                        <host>server1.my-ldap.com</host>
+                        <port>636</port>
+                    </ldap-server>
+                    <ldap-server>
+                        <host>server2.my-ldap.com</host>
+                        <port>636</port>
+                    </ldap-server>
+                </servers>
+                <tls>tls</tls>
+                <base-dn>dc=my-company,dc=com</base-dn>
+                <simple-bind>
+                    <rdns>cn=hivemq,ou=services</rdns>
+                    <userPassword>password</userPassword>
+                </simple-bind>
+            </configuration>
+        </ldap-realm>
+    </realms>
+    <pipelines>
+        <!-- secure access to the mqtt broker -->
+        <listener-pipeline listener="ALL">
+            <!-- authenticate against a ldap server -->
+            <ldap-authentication-manager>
+                <realm>ldap-server</realm>
+                <clients-rdns>ou=mqtt-clients</clients-rdns>
+                <uid-attribute>cn</uid-attribute>
+            </ldap-authentication-manager>
+            <!-- authorize over a ldap server -->
+            <ldap-authorization-manager>
+                <realm>ldap-server</realm>
+                <use-authorization-key>false</use-authorization-key>
+                <use-authorization-role-key>true</use-authorization-role-key>
+            </ldap-authorization-manager>
+        </listener-pipeline>
+        <!-- secure access to the control center -->
+        <control-center-pipeline>
+            <!-- authenticate against a ldap server -->
+            <ldap-authentication-manager>
+                <realm>ldap-server</realm>
+                <clients-rdn>ou=hivemq-users</clients-rdn>
+                <uid-attribute>cn</uid-attribute>
+            </ldap-authentication-manager>
+            <!-- authorize over a ldap server -->
+            <ldap-authorization-manager>
+                <realm>ldap-server</realm>
+                <use-authorization-key>false</use-authorization-key>
+                <use-authorization-role-key>true</use-authorization-role-key>
+            </ldap-authorization-manager>
+        </control-center-pipeline>
+    </pipelines>
+</enterprise-security-extension>

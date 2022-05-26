@@ -1,0 +1,31 @@
+2020-10-26 10:48:39,864 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2020-10-26 10:48:41,907 INFO  - Shutting down extension system
+2020-10-26 10:48:41,934 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2020-10-26 10:48:49,884 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.
+2020-10-26 10:49:02,898 INFO  - Starting HiveMQ Enterprise Server
+2020-10-26 10:49:02,899 INFO  - HiveMQ version: 4.4.2
+2020-10-26 10:49:02,900 INFO  - HiveMQ home directory: D:\dati\didattica\hivemq-4.4.2
+2020-10-26 10:49:02,901 INFO  - Log Configuration was overridden by D:\dati\didattica\hivemq-4.4.2\conf\logback.xml
+2020-10-26 10:49:03,052 INFO  - This node's ID is 9nPAN
+2020-10-26 10:49:03,053 INFO  - Clustering is disabled
+2020-10-26 10:49:09,631 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2020-10-26 10:49:10,819 INFO  - This node uses '12' CPU cores.
+2020-10-26 10:49:10,824 INFO  - Starting HiveMQ extension system.
+2020-10-26 10:49:10,966 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2020-10-26 10:49:10,968 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2020-10-26 10:49:13,488 INFO  - 9nPAN: no members discovered after 2002 ms: creating cluster as first member
+2020-10-26 10:49:13,503 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2020-10-26 10:49:13,503 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2020-10-26 10:49:13,613 INFO  - Control Center Audit Logging started.
+2020-10-26 10:49:13,614 INFO  - Started HiveMQ Control Center in 111ms
+2020-10-26 10:49:13,621 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2020-10-26 10:49:13,946 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2020-10-26 10:49:13,947 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2020-10-26 10:49:13,948 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2020-10-26 10:49:13,948 INFO  - Started HiveMQ in 11053ms

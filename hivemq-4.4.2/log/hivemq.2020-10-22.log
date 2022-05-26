@@ -1,0 +1,64 @@
+2020-10-22 16:03:30,286 INFO  - Starting HiveMQ Enterprise Server
+2020-10-22 16:03:30,292 INFO  - HiveMQ version: 4.4.2
+2020-10-22 16:03:30,292 INFO  - HiveMQ home directory: D:\dati\didattica\hivemq-4.4.2
+2020-10-22 16:03:30,299 INFO  - Log Configuration was overridden by D:\dati\didattica\hivemq-4.4.2\conf\logback.xml
+2020-10-22 16:03:30,834 INFO  - This node's ID is UFa6b
+2020-10-22 16:03:30,835 INFO  - Clustering is disabled
+2020-10-22 16:03:43,167 INFO  - Starting HiveMQ Enterprise Server
+2020-10-22 16:03:43,169 INFO  - HiveMQ version: 4.4.2
+2020-10-22 16:03:43,169 INFO  - HiveMQ home directory: D:\dati\didattica\hivemq-4.4.2
+2020-10-22 16:03:43,171 INFO  - Log Configuration was overridden by D:\dati\didattica\hivemq-4.4.2\conf\logback.xml
+2020-10-22 16:03:43,390 INFO  - This node's ID is sKJLa
+2020-10-22 16:03:43,390 INFO  - Clustering is disabled
+2020-10-22 16:03:50,120 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2020-10-22 16:03:52,477 INFO  - This node uses '12' CPU cores.
+2020-10-22 16:03:52,484 INFO  - Starting HiveMQ extension system.
+2020-10-22 16:03:52,802 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2020-10-22 16:03:52,804 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2020-10-22 16:03:55,617 INFO  - sKJLa: no members discovered after 2001 ms: creating cluster as first member
+2020-10-22 16:03:55,701 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2020-10-22 16:03:55,701 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2020-10-22 16:03:56,170 INFO  - Control Center Audit Logging started.
+2020-10-22 16:03:56,171 INFO  - Started HiveMQ Control Center in 470ms
+2020-10-22 16:03:56,199 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2020-10-22 16:03:56,967 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2020-10-22 16:03:56,971 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2020-10-22 16:03:56,971 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2020-10-22 16:03:56,973 INFO  - Started HiveMQ in 13810ms
+2020-10-22 17:22:56,564 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2020-10-22 17:22:58,590 INFO  - Shutting down extension system
+2020-10-22 17:22:58,594 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2020-10-22 17:23:06,568 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.
+2020-10-22 17:23:17,558 INFO  - Starting HiveMQ Enterprise Server
+2020-10-22 17:23:17,559 INFO  - HiveMQ version: 4.4.2
+2020-10-22 17:23:17,559 INFO  - HiveMQ home directory: D:\dati\didattica\hivemq-4.4.2
+2020-10-22 17:23:17,560 INFO  - Log Configuration was overridden by D:\dati\didattica\hivemq-4.4.2\conf\logback.xml
+2020-10-22 17:23:17,723 INFO  - This node's ID is FIyOQ
+2020-10-22 17:23:17,723 INFO  - Clustering is disabled
+2020-10-22 17:23:22,010 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2020-10-22 17:23:23,350 INFO  - This node uses '12' CPU cores.
+2020-10-22 17:23:23,355 INFO  - Starting HiveMQ extension system.
+2020-10-22 17:23:23,393 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2020-10-22 17:23:23,394 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2020-10-22 17:23:25,967 INFO  - FIyOQ: no members discovered after 2002 ms: creating cluster as first member
+2020-10-22 17:23:25,999 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2020-10-22 17:23:25,999 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2020-10-22 17:23:26,129 INFO  - Control Center Audit Logging started.
+2020-10-22 17:23:26,130 INFO  - Started HiveMQ Control Center in 131ms
+2020-10-22 17:23:26,139 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2020-10-22 17:23:26,481 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2020-10-22 17:23:26,484 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2020-10-22 17:23:26,484 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2020-10-22 17:23:26,485 INFO  - Started HiveMQ in 8931ms

@@ -1,0 +1,940 @@
+2020-10-19 19:04:51,531 - Client ID: clientId-f4RgzLxwzj, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-19 19:04:57,278 - Client ID: clientId-cqGKRwyvY2, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-19 19:05:41,763 - Client ID: clientId-f4RgzLxwzj, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-19 19:05:42,450 - Client ID: clientId-cqGKRwyvY2, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-22 16:04:07,524 - Client ID: clientId-0oAHLDsW5Q, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-22 16:04:10,428 - Client ID: clientId-0oAHLDsW5Q, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-22 16:11:16,337 - Client ID: clientId-f4RgzLxwzj session has expired at 2020-10-19 19:05:41. All persistent data for this client has been removed.
+2020-10-22 16:16:16,580 - Client ID: clientId-0oAHLDsW5Q session has expired at 2020-10-22 16:04:10. All persistent data for this client has been removed.
+2020-10-22 16:22:56,812 - Client ID: clientId-cqGKRwyvY2 session has expired at 2020-10-19 19:05:42. All persistent data for this client has been removed.
+2020-10-22 17:25:42,866 - Client ID: Roberto-bowWQdesln, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-22 17:26:20,410 - Client ID: clientId-OqP6gKLhw8, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-22 17:27:46,514 - Client ID: clientId-OqP6gKLhw8, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-22 17:42:27,645 - Client ID: clientId-OqP6gKLhw8 session has expired at 2020-10-22 17:27:46. All persistent data for this client has been removed.
+2020-10-22 19:31:33,693 - Client ID: Roberto-bowWQdesln, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-22 19:50:11,123 - Client ID: Roberto-bowWQdesln session has expired at 2020-10-22 19:31:33. All persistent data for this client has been removed.
+2020-10-26 10:46:36,260 - Client ID: hmq_FIyOQ_0_780bb4ba51139c28d53cf33a031970b3, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:47:18,940 - Client ID: clientId-Kk0lSzZjeR, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:47:26,573 - Client ID: clientId-Kk0lSzZjeR, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:48:06,244 - Client ID: hmq_FIyOQ_0_780bb4ba51139c28d53cf33a031970b3, IP: 127.0.0.1 was disconnected. reason: Client was idle for too long.
+2020-10-26 10:48:27,500 - Client ID: hmq_FIyOQ_1_e6801c30bc3c3942b562fdca2210a3cf, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:48:35,385 - Client ID: hmq_FIyOQ_1_e6801c30bc3c3942b562fdca2210a3cf, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:49:15,154 - Client ID: hmq_9nPAN_0_ba954d210cf876027b7630bc6655e8da, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:49:27,318 - Client ID: hmq_9nPAN_0_ba954d210cf876027b7630bc6655e8da, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:50:06,479 - Client ID: hmq_9nPAN_1_6f847546b67902236b83c9dd18565780, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:50:22,495 - Client ID: hmq_9nPAN_1_6f847546b67902236b83c9dd18565780, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:50:38,285 - Client ID: hmq_9nPAN_2_67ddc3083159e9a3a0296edce3c2060e, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:50:46,820 - Client ID: hmq_9nPAN_3_a979067acbbfba5cb020867ecc7dc214, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:50:50,318 - Client ID: hmq_9nPAN_3_a979067acbbfba5cb020867ecc7dc214, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:51:07,032 - Client ID: hmq_9nPAN_4_4ae1b6a209e66b2587e8c94dfe849e92, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:51:25,276 - Client ID: clientId-DtIS9yEWZ0, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 10:51:36,469 - Client ID: hmq_9nPAN_4_4ae1b6a209e66b2587e8c94dfe849e92, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:52:54,834 - Client ID: hmq_9nPAN_3_a979067acbbfba5cb020867ecc7dc214 session has expired at 2020-10-26 10:50:50. All persistent data for this client has been removed.
+2020-10-26 10:54:58,044 - Client ID: clientId-DtIS9yEWZ0, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 10:55:55,019 - Client ID: hmq_9nPAN_4_4ae1b6a209e66b2587e8c94dfe849e92 session has expired at 2020-10-26 10:51:36. All persistent data for this client has been removed.
+2020-10-26 10:56:15,143 - Client ID: hmq_FIyOQ_0_780bb4ba51139c28d53cf33a031970b3 session has expired at 2020-10-26 10:48:06. All persistent data for this client has been removed.
+2020-10-26 10:58:35,306 - Client ID: clientId-DtIS9yEWZ0 session has expired at 2020-10-26 10:54:58. All persistent data for this client has been removed.
+2020-10-26 10:58:55,432 - Client ID: hmq_9nPAN_0_ba954d210cf876027b7630bc6655e8da session has expired at 2020-10-26 10:49:27. All persistent data for this client has been removed.
+2020-10-26 11:00:35,589 - Client ID: clientId-Kk0lSzZjeR session has expired at 2020-10-26 10:47:26. All persistent data for this client has been removed.
+2020-10-26 11:04:55,799 - Client ID: hmq_9nPAN_1_6f847546b67902236b83c9dd18565780 session has expired at 2020-10-26 10:50:22. All persistent data for this client has been removed.
+2020-10-26 11:05:55,869 - Client ID: hmq_FIyOQ_1_e6801c30bc3c3942b562fdca2210a3cf session has expired at 2020-10-26 10:48:35. All persistent data for this client has been removed.
+2020-10-26 11:11:16,092 - Client ID: hmq_9nPAN_2_67ddc3083159e9a3a0296edce3c2060e session has expired at 2020-10-26 10:50:38. All persistent data for this client has been removed.
+2020-10-26 12:54:57,331 - Client ID: hmq_9nPAN_5_e30d14e669e8b4fb74f203bf39034405, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 12:55:03,125 - Client ID: hmq_9nPAN_5_e30d14e669e8b4fb74f203bf39034405, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 12:55:30,549 - Client ID: hmq_9nPAN_6_2faa77c491002c08d2ecc4726e0a4737, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 12:55:37,605 - Client ID: hmq_9nPAN_6_2faa77c491002c08d2ecc4726e0a4737, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 12:57:03,909 - Client ID: hmq_9nPAN_7_97fc6fa3126929f2f09dede5ef296049, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 12:57:38,125 - Client ID: hmq_9nPAN_6_2faa77c491002c08d2ecc4726e0a4737 session has expired at 2020-10-26 12:55:37. All persistent data for this client has been removed.
+2020-10-26 12:57:41,923 - Client ID: hmq_9nPAN_7_97fc6fa3126929f2f09dede5ef296049, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 12:58:51,186 - Client ID: hmq_9nPAN_8_89e73b7775eca8cb41359e689242ddbc, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 12:58:58,539 - Client ID: hmq_9nPAN_8_89e73b7775eca8cb41359e689242ddbc, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 13:01:58,303 - Client ID: hmq_9nPAN_5_e30d14e669e8b4fb74f203bf39034405 session has expired at 2020-10-26 12:55:03. All persistent data for this client has been removed.
+2020-10-26 13:04:58,601 - Client ID: hmq_9nPAN_8_89e73b7775eca8cb41359e689242ddbc session has expired at 2020-10-26 12:58:58. All persistent data for this client has been removed.
+2020-10-26 13:14:18,881 - Client ID: hmq_9nPAN_7_97fc6fa3126929f2f09dede5ef296049 session has expired at 2020-10-26 12:57:41. All persistent data for this client has been removed.
+2020-10-26 15:22:54,816 - Client ID: hmq_9nPAN_9_c004821b947138afca1e389228ebfed3, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:22:55,768 - Client ID: hmq_9nPAN_9_c004821b947138afca1e389228ebfed3, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:24:16,703 - Client ID: hmq_9nPAN_10_853065b528107117e3ffd1057bb34aef, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:24:18,146 - Client ID: hmq_9nPAN_10_853065b528107117e3ffd1057bb34aef, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:24:28,232 - Client ID: clientId-hxVnZGS6IW, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:26:20,742 - Client ID: hmq_9nPAN_11_0f96e7a158bbc8580a7641c25f2327cb, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:26:40,417 - Client ID: hmq_9nPAN_11_0f96e7a158bbc8580a7641c25f2327cb, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:27:32,914 - Client ID: hmq_9nPAN_12_74e116fdd4158072bb6b767485610dfe, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:30:53,174 - Client ID: hmq_9nPAN_12_74e116fdd4158072bb6b767485610dfe, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:31:03,617 - Client ID: hmq_9nPAN_13_b4b8c33352b7a00511f4dbb6a023daf8, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:31:15,725 - Client ID: hmq_9nPAN_13_b4b8c33352b7a00511f4dbb6a023daf8, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:31:19,948 - Client ID: clientId-hxVnZGS6IW, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:33:22,339 - Client ID: hmq_9nPAN_13_b4b8c33352b7a00511f4dbb6a023daf8 session has expired at 2020-10-26 15:31:15. All persistent data for this client has been removed.
+2020-10-26 15:43:22,617 - Client ID: hmq_9nPAN_11_0f96e7a158bbc8580a7641c25f2327cb session has expired at 2020-10-26 15:26:40. All persistent data for this client has been removed.
+2020-10-26 15:44:02,712 - Client ID: hmq_9nPAN_9_c004821b947138afca1e389228ebfed3 session has expired at 2020-10-26 15:22:55. All persistent data for this client has been removed.
+2020-10-26 15:44:22,836 - Client ID: hmq_9nPAN_10_853065b528107117e3ffd1057bb34aef session has expired at 2020-10-26 15:24:18. All persistent data for this client has been removed.
+2020-10-26 15:44:36,586 - Client ID: hmq_9nPAN_14_4d18a52b496c30ac2f107a95f1dc7467, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:44:43,383 - Client ID: clientId-E8BfQTfEt1, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:45:57,034 - Client ID: clientId-E8BfQTfEt1, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:46:03,699 - Client ID: hmq_9nPAN_14_4d18a52b496c30ac2f107a95f1dc7467, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:47:57,573 - Client ID: hmq_9nPAN_15_28eab92d2c2aed5498df08258ad60b87, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2020-10-26 15:48:10,950 - Client ID: hmq_9nPAN_15_28eab92d2c2aed5498df08258ad60b87, IP: 127.0.0.1 disconnected ungracefully.
+2020-10-26 15:49:23,035 - Client ID: hmq_9nPAN_12_74e116fdd4158072bb6b767485610dfe session has expired at 2020-10-26 15:30:53. All persistent data for this client has been removed.
+2020-10-26 15:50:23,165 - Client ID: clientId-hxVnZGS6IW session has expired at 2020-10-26 15:31:19. All persistent data for this client has been removed.
+2020-10-26 15:56:24,025 - Client ID: hmq_9nPAN_15_28eab92d2c2aed5498df08258ad60b87 session has expired at 2020-10-26 15:48:10. All persistent data for this client has been removed.
+2020-10-26 16:03:44,546 - Client ID: hmq_9nPAN_14_4d18a52b496c30ac2f107a95f1dc7467 session has expired at 2020-10-26 15:46:03. All persistent data for this client has been removed.
+2020-10-26 16:07:04,826 - Client ID: clientId-E8BfQTfEt1 session has expired at 2020-10-26 15:45:57. All persistent data for this client has been removed.
+2021-10-12 09:19:45,960 - Client ID: clientId-uTMW7lI9SW, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-12 09:19:49,020 - Client ID: clientId-uTMW7lI9SW, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-12 09:31:44,651 - Client ID: clientId-K9h5zSLA6k, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-12 09:36:41,456 - Client ID: clientId-K9h5zSLA6k, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 10:08:42,140 - Client ID: clientId-K9h5zSLA6k session has expired at 2021-10-12 09:36:41. All persistent data for this client has been removed.
+2021-10-18 10:15:22,568 - Client ID: clientId-uTMW7lI9SW session has expired at 2021-10-12 09:19:49. All persistent data for this client has been removed.
+2021-10-18 16:27:30,246 - Client ID: UNKNOWN, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:27:30,261 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:30,270 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:30,284 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:30,720 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:27:31,341 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:31,357 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:31,378 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:36,407 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:36,416 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:36,429 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-10-18 16:27:51,530 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:27:51,539 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:27:53,013 - Client ID: UNKNOWN, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:28:03,019 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:28:03,032 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:28:13,045 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:28:24,070 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:28:24,078 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:28:39,103 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:28:39,103 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:28:49,117 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-10-18 16:29:16,341 - Client ID: clientId-7fdCPdF4kL, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:29:28,828 - Client ID: hmq_hfVAq_0_6c806865b4a17f550ee86f530390fdac, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:34:00,545 - Client ID: hmq_hfVAq_0_6c806865b4a17f550ee86f530390fdac, IP: 127.0.0.1 was disconnected. reason: Client was idle for too long.
+2021-10-18 16:43:53,019 - Client ID: hmq_hfVAq_1_0535f3702593a20fb1e5ab649dcf646f, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:44:44,007 - Client ID: hmq_hfVAq_1_0535f3702593a20fb1e5ab649dcf646f, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:44:45,317 - Client ID: hmq_hfVAq_2_f8b67a2e58c6b519d19b0217d0896d15, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:44:49,519 - Client ID: hmq_hfVAq_2_f8b67a2e58c6b519d19b0217d0896d15, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:46:16,622 - Client ID: hmq_hfVAq_3_1467c0f638649c88620e9e00eaead144, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:48:50,752 - Client ID: hmq_hfVAq_3_1467c0f638649c88620e9e00eaead144, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:49:02,150 - Client ID: hmq_hfVAq_4_a56a0d53140985b81a572ffd21cb0e11, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:49:05,770 - Client ID: hmq_hfVAq_4_a56a0d53140985b81a572ffd21cb0e11, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:49:12,692 - Client ID: hmq_hfVAq_2_f8b67a2e58c6b519d19b0217d0896d15 session has expired at 2021-10-18 16:44:49. All persistent data for this client has been removed.
+2021-10-18 16:49:15,764 - Client ID: clientId-7fdCPdF4kL, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:49:48,921 - Client ID: francesco-qWaKN4Aa3e, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:50:02,873 - Client ID: hmq_8nivb_0_693778af87d570744c6215a0377052fb, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:51:43,017 - Client ID: francesco2-UWCLwiN7lO, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:51:44,233 - Client ID: hmq_hfVAq_3_1467c0f638649c88620e9e00eaead144 session has expired at 2021-10-18 16:48:50. All persistent data for this client has been removed.
+2021-10-18 16:52:48,164 - Client ID: hmq_8nivb_0_693778af87d570744c6215a0377052fb, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:53:24,329 - Client ID: hmq_hfVAq_0_6c806865b4a17f550ee86f530390fdac session has expired at 2021-10-18 16:34:00. All persistent data for this client has been removed.
+2021-10-18 16:53:24,801 - Client ID: hmq_8nivb_1_42d6936b12c4767c04269e656cad5619, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:58:02,905 - Client ID: hmq_8nivb_1_42d6936b12c4767c04269e656cad5619, IP: 127.0.0.1 was disconnected. reason: Client was idle for too long.
+2021-10-18 16:58:14,774 - Client ID: hmq_8nivb_2_b09df5d482c6ef8a6a58f9c252f84705, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 16:58:24,598 - Client ID: hmq_hfVAq_1_0535f3702593a20fb1e5ab649dcf646f session has expired at 2021-10-18 16:44:44. All persistent data for this client has been removed.
+2021-10-18 16:58:28,432 - Client ID: hmq_8nivb_2_b09df5d482c6ef8a6a58f9c252f84705, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 16:59:00,384 - Client ID: hmq_8nivb_3_2d6b53772d5fa590df37e45a1744bed9, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:02:04,788 - Client ID: hmq_8nivb_2_b09df5d482c6ef8a6a58f9c252f84705 session has expired at 2021-10-18 16:58:28. All persistent data for this client has been removed.
+2021-10-18 17:03:44,878 - Client ID: hmq_8nivb_0_693778af87d570744c6215a0377052fb session has expired at 2021-10-18 16:52:48. All persistent data for this client has been removed.
+2021-10-18 17:04:44,950 - Client ID: hmq_hfVAq_4_a56a0d53140985b81a572ffd21cb0e11 session has expired at 2021-10-18 16:49:05. All persistent data for this client has been removed.
+2021-10-18 17:07:49,006 - Client ID: hmq_8nivb_3_2d6b53772d5fa590df37e45a1744bed9, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:07:51,609 - Client ID: hmq_8nivb_4_5f4fd478799408b5a046ced04b66d001, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:08:41,976 - Client ID: hmq_8nivb_5_ee78af8f4c7adff78e8418a1944e5b26, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:09:14,751 - Client ID: hmq_8nivb_5_ee78af8f4c7adff78e8418a1944e5b26, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:10:05,212 - Client ID: clientId-7fdCPdF4kL session has expired at 2021-10-18 16:49:15. All persistent data for this client has been removed.
+2021-10-18 17:10:05,213 - Client ID: hmq_8nivb_5_ee78af8f4c7adff78e8418a1944e5b26 session has expired at 2021-10-18 17:09:14. All persistent data for this client has been removed.
+2021-10-18 17:11:17,165 - Client ID: hmq_8nivb_6_1607d7abcd079992ca7a7e22abddaaec, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:12:00,473 - Client ID: hmq_8nivb_6_1607d7abcd079992ca7a7e22abddaaec, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:12:01,538 - Client ID: hmq_8nivb_7_69362e902b44935e32b226ee14d61cc8, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:12:05,345 - Client ID: hmq_8nivb_1_42d6936b12c4767c04269e656cad5619 session has expired at 2021-10-18 16:58:02. All persistent data for this client has been removed.
+2021-10-18 17:12:40,904 - Client ID: hmq_8nivb_7_69362e902b44935e32b226ee14d61cc8, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:12:42,910 - Client ID: hmq_8nivb_8_1bd3d8ddead699746935aa85f55cc488, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:12:45,400 - Client ID: hmq_8nivb_6_1607d7abcd079992ca7a7e22abddaaec session has expired at 2021-10-18 17:12:00. All persistent data for this client has been removed.
+2021-10-18 17:13:45,478 - Client ID: hmq_8nivb_3_2d6b53772d5fa590df37e45a1744bed9 session has expired at 2021-10-18 17:07:49. All persistent data for this client has been removed.
+2021-10-18 17:14:55,483 - Client ID: hmq_8nivb_8_1bd3d8ddead699746935aa85f55cc488, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:14:57,432 - Client ID: hmq_8nivb_9_ad388ef2fe5fd53491c2aea31e566c1a, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:15:32,442 - Client ID: hmq_8nivb_9_ad388ef2fe5fd53491c2aea31e566c1a, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:15:39,738 - Client ID: hmq_8nivb_10_f84934103b470bab33693e52540e5377, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:15:55,263 - Client ID: hmq_8nivb_10_f84934103b470bab33693e52540e5377, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:15:56,315 - Client ID: hmq_8nivb_11_c7ec2f2ba1be43b790dbe1432bddae39, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:16:03,738 - Client ID: hmq_8nivb_11_c7ec2f2ba1be43b790dbe1432bddae39, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:16:05,056 - Client ID: hmq_8nivb_12_96068122ca3c46d116cf643acf49ace8, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 17:19:45,749 - Client ID: hmq_8nivb_4_5f4fd478799408b5a046ced04b66d001 session has expired at 2021-10-18 17:07:51. All persistent data for this client has been removed.
+2021-10-18 17:20:25,807 - Client ID: hmq_8nivb_8_1bd3d8ddead699746935aa85f55cc488 session has expired at 2021-10-18 17:14:55. All persistent data for this client has been removed.
+2021-10-18 17:22:22,969 - Client ID: hmq_8nivb_12_96068122ca3c46d116cf643acf49ace8, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:24:05,994 - Client ID: hmq_8nivb_7_69362e902b44935e32b226ee14d61cc8 session has expired at 2021-10-18 17:12:40. All persistent data for this client has been removed.
+2021-10-18 17:24:45,442 - Client ID: francesco2-UWCLwiN7lO, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 17:24:46,167 - Client ID: francesco-qWaKN4Aa3e, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 18:35:49,454 - Client ID: hmq_8nivb_12_96068122ca3c46d116cf643acf49ace8 session has expired at 2021-10-18 17:22:22. All persistent data for this client has been removed.
+2021-10-18 18:37:29,631 - Client ID: hmq_8nivb_11_c7ec2f2ba1be43b790dbe1432bddae39 session has expired at 2021-10-18 17:16:03. All persistent data for this client has been removed.
+2021-10-18 18:38:01,800 - Client ID: hmq_N8xec_0_aab4ade9646edeeafd0a5755e9380c23, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 18:38:08,351 - Client ID: clientId-dpzleqS1Re, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 18:38:12,847 - Client ID: clientId-dpzleqS1Re, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 18:38:17,863 - Client ID: clientId-vGbCMMri1w, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-18 18:41:49,971 - Client ID: clientId-dpzleqS1Re session has expired at 2021-10-18 18:38:12. All persistent data for this client has been removed.
+2021-10-18 18:42:01,058 - Client ID: hmq_N8xec_0_aab4ade9646edeeafd0a5755e9380c23, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-18 18:42:30,036 - Client ID: francesco2-UWCLwiN7lO session has expired at 2021-10-18 17:24:45. All persistent data for this client has been removed.
+2021-10-18 18:53:10,996 - Client ID: hmq_8nivb_10_f84934103b470bab33693e52540e5377 session has expired at 2021-10-18 17:15:55. All persistent data for this client has been removed.
+2021-10-18 18:54:51,122 - Client ID: francesco-qWaKN4Aa3e session has expired at 2021-10-18 17:24:46. All persistent data for this client has been removed.
+2021-10-18 18:55:31,223 - Client ID: hmq_8nivb_9_ad388ef2fe5fd53491c2aea31e566c1a session has expired at 2021-10-18 17:15:32. All persistent data for this client has been removed.
+2021-10-18 18:57:51,406 - Client ID: hmq_N8xec_0_aab4ade9646edeeafd0a5755e9380c23 session has expired at 2021-10-18 18:42:01. All persistent data for this client has been removed.
+2021-10-18 19:05:53,019 - Client ID: clientId-vGbCMMri1w, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-19 10:05:10,612 - Client ID: hmq_TIBcE_0_373b1a943c1716c5351a44ffbc0408c3, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-19 10:05:17,422 - Client ID: clientId-IQx8XO4All, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-10-19 10:05:45,033 - Client ID: clientId-IQx8XO4All, IP: 127.0.0.1 disconnected ungracefully.
+2021-10-19 10:05:56,271 - Client ID: hmq_TIBcE_0_373b1a943c1716c5351a44ffbc0408c3, IP: 127.0.0.1 disconnected ungracefully.
+2021-11-14 11:15:28,871 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-11-14 11:15:28,881 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-11-14 11:15:28,897 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-11-14 11:15:29,975 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-11-14 11:15:29,985 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-11-14 11:15:29,997 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: Sent other message before CONNECT.
+2021-11-14 11:15:35,074 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-11-14 11:15:35,074 - Client ID: UNKNOWN, IP: 127.0.0.1 was disconnected. reason: No CONNECT sent in time.
+2021-11-14 11:16:03,647 - Client ID: clientId-uw2j7RnfLT, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-11-14 11:16:10,336 - Client ID: hmq_IheCE_0_53b06688400f50be452529423e694457, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-11-14 11:18:06,860 - Client ID: hmq_IheCE_0_53b06688400f50be452529423e694457, IP: 127.0.0.1 disconnected ungracefully.
+2021-11-14 11:18:31,275 - Client ID: hmq_IheCE_1_5311f38483d6665f9c57b3c7b32436fe, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-11-14 11:18:57,962 - Client ID: hmq_IheCE_1_5311f38483d6665f9c57b3c7b32436fe, IP: 127.0.0.1 disconnected ungracefully.
+2021-11-14 11:19:29,103 - Client ID: clientId-IQx8XO4All session has expired at 2021-10-19 10:05:45. All persistent data for this client has been removed.
+2021-11-14 11:19:39,011 - Client ID: hmq_IheCE_2_cc1e7b482e379acfa538a8d5f2a00fe9, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-11-14 11:19:54,952 - Client ID: hmq_IheCE_2_cc1e7b482e379acfa538a8d5f2a00fe9, IP: 127.0.0.1 disconnected ungracefully.
+2021-11-14 11:20:18,884 - Client ID: clientId-uw2j7RnfLT, IP: 127.0.0.1 disconnected ungracefully.
+2021-11-14 11:21:29,227 - Client ID: hmq_IheCE_1_5311f38483d6665f9c57b3c7b32436fe session has expired at 2021-11-14 11:18:57. All persistent data for this client has been removed.
+2021-11-14 11:26:49,714 - Client ID: clientId-uw2j7RnfLT session has expired at 2021-11-14 11:20:18. All persistent data for this client has been removed.
+2021-11-14 11:26:49,715 - Client ID: clientId-vGbCMMri1w session has expired at 2021-10-18 19:05:53. All persistent data for this client has been removed.
+2021-11-14 11:27:49,818 - Client ID: hmq_IheCE_0_53b06688400f50be452529423e694457 session has expired at 2021-11-14 11:18:06. All persistent data for this client has been removed.
+2021-11-14 11:28:09,879 - Client ID: hmq_TIBcE_0_373b1a943c1716c5351a44ffbc0408c3 session has expired at 2021-10-19 10:05:56. All persistent data for this client has been removed.
+2021-11-14 11:34:10,287 - Client ID: hmq_IheCE_2_cc1e7b482e379acfa538a8d5f2a00fe9 session has expired at 2021-11-14 11:19:54. All persistent data for this client has been removed.
+2021-11-14 11:41:25,313 - Client ID: clientId-D6FcEMddjw, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-11-14 11:41:47,970 - Client ID: hmq_yWgKF_0_e90e0aa55f55993d656ea2a5631ff48b, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2021-11-14 11:42:30,856 - Client ID: clientId-D6FcEMddjw, IP: 127.0.0.1 disconnected ungracefully.
+2021-11-14 11:42:55,608 - Client ID: hmq_yWgKF_0_e90e0aa55f55993d656ea2a5631ff48b, IP: 127.0.0.1 disconnected ungracefully.
+2022-03-12 15:36:27,201 - Client ID: clientId-Z7X5TCXQmU, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-03-12 15:37:40,583 - Client ID: hmq_yWgKF_0_e90e0aa55f55993d656ea2a5631ff48b session has expired at 2021-11-14 11:42:55. All persistent data for this client has been removed.
+2022-03-12 15:45:01,094 - Client ID: clientId-D6FcEMddjw session has expired at 2021-11-14 11:42:30. All persistent data for this client has been removed.
+2022-03-12 15:45:32,711 - Client ID: hmq_teByC_0_97c565a39036afbfd99b077e84c4ee97, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-03-12 15:46:04,514 - Client ID: hmq_teByC_0_97c565a39036afbfd99b077e84c4ee97, IP: 127.0.0.1 disconnected ungracefully.
+2022-03-12 15:46:08,984 - Client ID: hmq_teByC_1_0ed8535bcd73a6fb77108529b4ca9e38, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-03-12 15:46:47,782 - Client ID: hmq_teByC_2_a2ec18ff938b1e2155c730d7876649a7, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-03-12 15:46:54,746 - Client ID: hmq_teByC_3_2adf851fd70017622aef87ce1e9b0ef7, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-03-12 15:47:00,550 - Client ID: hmq_teByC_4_6ce746a371f6323d0c8a7194f2209f49, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-03-12 15:47:37,814 - Client ID: hmq_teByC_1_0ed8535bcd73a6fb77108529b4ca9e38, IP: 127.0.0.1 disconnected ungracefully.
+2022-03-12 15:47:37,814 - Client ID: hmq_teByC_2_a2ec18ff938b1e2155c730d7876649a7, IP: 127.0.0.1 disconnected ungracefully.
+2022-03-12 15:47:37,814 - Client ID: hmq_teByC_4_6ce746a371f6323d0c8a7194f2209f49, IP: 127.0.0.1 disconnected ungracefully.
+2022-03-12 15:47:37,814 - Client ID: hmq_teByC_3_2adf851fd70017622aef87ce1e9b0ef7, IP: 127.0.0.1 disconnected ungracefully.
+2022-03-12 15:48:08,728 - Client ID: clientId-Z7X5TCXQmU, IP: 127.0.0.1 disconnected ungracefully.
+2022-03-12 15:48:41,422 - Client ID: hmq_teByC_2_a2ec18ff938b1e2155c730d7876649a7 session has expired at 2022-03-12 15:47:37. All persistent data for this client has been removed.
+2022-03-12 15:51:01,680 - Client ID: hmq_teByC_3_2adf851fd70017622aef87ce1e9b0ef7 session has expired at 2022-03-12 15:47:37. All persistent data for this client has been removed.
+2022-03-12 15:51:41,758 - Client ID: clientId-Z7X5TCXQmU session has expired at 2022-03-12 15:48:08. All persistent data for this client has been removed.
+2022-04-02 10:07:05,656 - Client ID: hmq_teByC_4_6ce746a371f6323d0c8a7194f2209f49 session has expired at 2022-03-12 15:47:37. All persistent data for this client has been removed.
+2022-04-02 10:11:45,970 - Client ID: hmq_teByC_0_97c565a39036afbfd99b077e84c4ee97 session has expired at 2022-03-12 15:46:04. All persistent data for this client has been removed.
+2022-04-02 10:15:06,190 - Client ID: hmq_teByC_1_0ed8535bcd73a6fb77108529b4ca9e38 session has expired at 2022-03-12 15:47:37. All persistent data for this client has been removed.
+2022-04-02 10:19:30,843 - Client ID: hmq_rk7Vb_0_9dcedec4007829cdeb83786ad8c0960f, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:20:23,787 - Client ID: hmq_rk7Vb_1_7020b47910d43d23d950c4103ea80867, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:20:55,522 - Client ID: hmq_rk7Vb_2_80d7fd98e9a0d155d99a743b53b4b42d, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:21:15,217 - Client ID: hmq_rk7Vb_3_d39f22ab0168d6b5cd7b91d973d76606, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:21:27,244 - Client ID: hmq_rk7Vb_4_8ed967eb1ef35e2b678cfd90a7b1c855, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:22:57,238 - Client ID: hmq_rk7Vb_4_8ed967eb1ef35e2b678cfd90a7b1c855, IP: 192.168.1.9 was disconnected. reason: Client was idle for too long.
+2022-04-02 10:25:06,884 - Client ID: hmq_rk7Vb_0_9dcedec4007829cdeb83786ad8c0960f session has expired at 2022-04-02 10:19:30. All persistent data for this client has been removed.
+2022-04-02 10:25:58,276 - Client ID: hmq_rk7Vb_5_83cbe8fec37aaae22eb70ca960effb05, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:26:27,024 - Client ID: hmq_rk7Vb_3_d39f22ab0168d6b5cd7b91d973d76606 session has expired at 2022-04-02 10:21:15. All persistent data for this client has been removed.
+2022-04-02 10:27:27,113 - Client ID: hmq_rk7Vb_1_7020b47910d43d23d950c4103ea80867 session has expired at 2022-04-02 10:20:23. All persistent data for this client has been removed.
+2022-04-02 10:27:28,273 - Client ID: hmq_rk7Vb_5_83cbe8fec37aaae22eb70ca960effb05, IP: 192.168.1.9 was disconnected. reason: Client was idle for too long.
+2022-04-02 10:27:35,563 - Client ID: hmq_rk7Vb_6_0683aee3400c9c3c9a6e5b576359e1e1, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:30:08,744 - Client ID: hmq_rk7Vb_7_2d0eb9eafaa821aeb51e49b47c8b5845, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:30:55,530 - Client ID: clientId-BSE4akxBcX, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:31:07,383 - Client ID: hmq_rk7Vb_2_80d7fd98e9a0d155d99a743b53b4b42d session has expired at 2022-04-02 10:20:55. All persistent data for this client has been removed.
+2022-04-02 10:32:49,858 - Client ID: hmq_rk7Vb_8_d9f6304a664d4992dfaad21513e4a55e, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:33:54,998 - Client ID: hmq_rk7Vb_6_0683aee3400c9c3c9a6e5b576359e1e1, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:34:01,089 - Client ID: hmq_rk7Vb_9_88e035fefb40ed0c643df5d48d7c8396, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:34:05,226 - Client ID: hmq_rk7Vb_10_0a6bdd7ad162d345dc7149c9ecf22e3b, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:35:31,120 - Client ID: hmq_rk7Vb_9_88e035fefb40ed0c643df5d48d7c8396, IP: 192.168.1.9 was disconnected. reason: Client was idle for too long.
+2022-04-02 10:35:55,048 - Client ID: hmq_rk7Vb_11_72ae9107d79da0412ab4c1739bacf8b8, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:36:03,369 - Client ID: hmq_rk7Vb_12_8354a4990e980c09b281df3947e8cba3, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:36:04,821 - Client ID: hmq_rk7Vb_13_7209e276ed6a4052a7f1cd6861830dab, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:36:47,766 - Client ID: hmq_rk7Vb_4_8ed967eb1ef35e2b678cfd90a7b1c855 session has expired at 2022-04-02 10:22:57. All persistent data for this client has been removed.
+2022-04-02 10:37:33,430 - Client ID: hmq_rk7Vb_12_8354a4990e980c09b281df3947e8cba3, IP: 192.168.1.9 was disconnected. reason: Client was idle for too long.
+2022-04-02 10:38:35,151 - Client ID: hmq_rk7Vb_14_59a98c60f3554be9b77d159f6c8e7358, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:38:35,941 - Client ID: hmq_rk7Vb_15_8cb5310b0e1bbdb45baf60da9920b103, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:38:43,204 - Client ID: hmq_rk7Vb_16_5e0b8073ca6bec50a318d82e33974ab8, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:39:45,223 - Client ID: hmq_rk7Vb_15_8cb5310b0e1bbdb45baf60da9920b103, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:39:48,246 - Client ID: hmq_rk7Vb_17_e33d1c5fdd0b35c4b4e509fd6e8be42e, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:39:51,462 - Client ID: hmq_rk7Vb_18_f54418831e0aaa4e6d86ab0cdde18db9, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:40:20,947 - Client ID: hmq_rk7Vb_17_e33d1c5fdd0b35c4b4e509fd6e8be42e, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:40:22,095 - Client ID: hmq_rk7Vb_19_ef7ad39ff9690058049cffd8049644aa, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:40:24,291 - Client ID: hmq_rk7Vb_20_42c153c840deabb420bbd0998abc8058, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:40:52,353 - Client ID: hmq_rk7Vb_19_ef7ad39ff9690058049cffd8049644aa, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:40:57,044 - Client ID: hmq_rk7Vb_21_665b9f69a48e0366a95666f5dc6839b0, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:40:59,626 - Client ID: hmq_rk7Vb_22_dbdf6d781e4ddda0a45635c06ac82dcb, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:41:48,052 - Client ID: hmq_rk7Vb_5_83cbe8fec37aaae22eb70ca960effb05 session has expired at 2022-04-02 10:27:28. All persistent data for this client has been removed.
+2022-04-02 10:42:27,076 - Client ID: hmq_rk7Vb_21_665b9f69a48e0366a95666f5dc6839b0, IP: 192.168.1.9 was disconnected. reason: Client was idle for too long.
+2022-04-02 10:42:35,965 - Client ID: hmq_rk7Vb_23_3e42d904284ce35f61c78128af563333, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:43:28,174 - Client ID: hmq_rk7Vb_6_0683aee3400c9c3c9a6e5b576359e1e1 session has expired at 2022-04-02 10:33:54. All persistent data for this client has been removed.
+2022-04-02 10:43:48,221 - Client ID: hmq_rk7Vb_9_88e035fefb40ed0c643df5d48d7c8396 session has expired at 2022-04-02 10:35:31. All persistent data for this client has been removed.
+2022-04-02 10:44:25,228 - Client ID: hmq_rk7Vb_23_3e42d904284ce35f61c78128af563333, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:44:26,389 - Client ID: hmq_rk7Vb_24_ca81208eb263a4d561b137a867ce7dd5, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:44:31,903 - Client ID: hmq_rk7Vb_25_df706549201972212e23c6f99a342113, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:46:09,822 - Client ID: hmq_rk7Vb_24_ca81208eb263a4d561b137a867ce7dd5, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:46:24,329 - Client ID: hmq_rk7Vb_26_ecf99ddd6d954d97249e53f878470411, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:46:31,989 - Client ID: hmq_rk7Vb_27_6408f7983fa08bd3e6ff6bf297d1bfe7, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:46:48,408 - Client ID: hmq_rk7Vb_21_665b9f69a48e0366a95666f5dc6839b0 session has expired at 2022-04-02 10:42:27. All persistent data for this client has been removed.
+2022-04-02 10:48:59,908 - Client ID: hmq_rk7Vb_26_ecf99ddd6d954d97249e53f878470411, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:49:07,839 - Client ID: hmq_rk7Vb_28_a0f246d934ea281b5ccda3eda8c4db34, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:49:12,146 - Client ID: hmq_rk7Vb_29_d67ea91ced30de7779ee155c21b4cff5, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:50:04,932 - Client ID: hmq_rk7Vb_28_a0f246d934ea281b5ccda3eda8c4db34, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:50:17,159 - Client ID: hmq_rk7Vb_30_5886068479f95fc2ea990f5535a82eb5, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:50:19,847 - Client ID: hmq_rk7Vb_31_a8634c0165cdebaef5fe37f12184cad3, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:50:28,628 - Client ID: hmq_rk7Vb_17_e33d1c5fdd0b35c4b4e509fd6e8be42e session has expired at 2022-04-02 10:40:20. All persistent data for this client has been removed.
+2022-04-02 10:50:43,957 - Client ID: hmq_rk7Vb_30_5886068479f95fc2ea990f5535a82eb5, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:50:56,795 - Client ID: hmq_rk7Vb_32_a15693c3b57a19a6a2a42b44524cf16a, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:51:01,442 - Client ID: hmq_rk7Vb_33_9d86603674b31a16881aa32103ae00ee, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:52:29,840 - Client ID: hmq_rk7Vb_32_a15693c3b57a19a6a2a42b44524cf16a, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:52:43,351 - Client ID: hmq_rk7Vb_34_92bacff2f3949e0d92e5bbf393f307c3, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:52:49,588 - Client ID: hmq_rk7Vb_35_91b187c2935667f5b8b799e415b9893a, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:53:28,827 - Client ID: hmq_rk7Vb_19_ef7ad39ff9690058049cffd8049644aa session has expired at 2022-04-02 10:40:52. All persistent data for this client has been removed.
+2022-04-02 10:54:08,889 - Client ID: hmq_rk7Vb_26_ecf99ddd6d954d97249e53f878470411 session has expired at 2022-04-02 10:48:59. All persistent data for this client has been removed.
+2022-04-02 10:54:46,852 - Client ID: hmq_rk7Vb_34_92bacff2f3949e0d92e5bbf393f307c3, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:54:48,952 - Client ID: hmq_rk7Vb_15_8cb5310b0e1bbdb45baf60da9920b103 session has expired at 2022-04-02 10:39:45. All persistent data for this client has been removed.
+2022-04-02 10:54:48,952 - Client ID: hmq_rk7Vb_23_3e42d904284ce35f61c78128af563333 session has expired at 2022-04-02 10:44:25. All persistent data for this client has been removed.
+2022-04-02 10:54:48,953 - Client ID: hmq_rk7Vb_32_a15693c3b57a19a6a2a42b44524cf16a session has expired at 2022-04-02 10:52:29. All persistent data for this client has been removed.
+2022-04-02 10:55:15,578 - Client ID: hmq_rk7Vb_36_a75049cfb0291b991a9f02078b646769, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:55:18,255 - Client ID: hmq_rk7Vb_37_766a91f8247aa71428e03d4ccd6cb9a7, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:55:49,037 - Client ID: hmq_rk7Vb_12_8354a4990e980c09b281df3947e8cba3 session has expired at 2022-04-02 10:37:33. All persistent data for this client has been removed.
+2022-04-02 10:57:08,677 - Client ID: hmq_rk7Vb_36_a75049cfb0291b991a9f02078b646769, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 10:57:26,411 - Client ID: hmq_rk7Vb_38_295c9041222379f51c83bfee0f17dcf6, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:57:30,956 - Client ID: hmq_rk7Vb_39_576215ac0d40f60560b1763e23f57331, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 10:58:49,218 - Client ID: hmq_rk7Vb_28_a0f246d934ea281b5ccda3eda8c4db34 session has expired at 2022-04-02 10:50:04. All persistent data for this client has been removed.
+2022-04-02 10:59:57,463 - Client ID: hmq_rk7Vb_38_295c9041222379f51c83bfee0f17dcf6, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:00:11,645 - Client ID: hmq_rk7Vb_40_daf9a39a11c812e5ba2ece0e48a87a13, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:00:15,016 - Client ID: hmq_rk7Vb_41_8773ceadf2f5385467e89f0f0e7715d1, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:00:58,254 - Client ID: hmq_rk7Vb_40_daf9a39a11c812e5ba2ece0e48a87a13, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:01:07,834 - Client ID: hmq_rk7Vb_42_bba9ac390b7084f28bf4335cf4865ff4, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:01:13,990 - Client ID: hmq_rk7Vb_43_cf82daee5d9200607b05ffa6c523194f, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:01:16,655 - Client ID: hmq_rk7Vb_44_0cda6362c239c225308ea8420c9ead41, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:01:29,381 - Client ID: hmq_rk7Vb_36_a75049cfb0291b991a9f02078b646769 session has expired at 2022-04-02 10:57:08. All persistent data for this client has been removed.
+2022-04-02 11:01:30,584 - Client ID: hmq_rk7Vb_45_2e57c43ffdb19777ce85717910a65678, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:01:32,929 - Client ID: hmq_rk7Vb_46_2d8086fa3648060b20bb749de6e44ec1, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:01:35,980 - Client ID: hmq_rk7Vb_47_aa1c3deb983c90affb4a958a6161ecf7, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:01:36,988 - Client ID: hmq_rk7Vb_48_1d0969e7ae3cdd1903b4815789899823, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:01:38,999 - Client ID: hmq_rk7Vb_49_2b642084380e2c5764ef421f6e954a9e, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:01:43,004 - Client ID: hmq_rk7Vb_50_f32da83bbf8973ef15912f6e6cb9a220, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:01:51,014 - Client ID: hmq_rk7Vb_51_bbf1de62a5fdf972ab97225ec0859602, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:07,018 - Client ID: hmq_rk7Vb_52_fb00739dc21e31a3a239b6b58cdac3e6, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:27,360 - Client ID: hmq_rk7Vb_53_d7a11fb5643e7a14623814409489c1ae, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:28,365 - Client ID: hmq_rk7Vb_54_779872477ec3c4d85911df4e20105341, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:29,450 - Client ID: hmq_rk7Vb_34_92bacff2f3949e0d92e5bbf393f307c3 session has expired at 2022-04-02 10:54:46. All persistent data for this client has been removed.
+2022-04-02 11:02:30,373 - Client ID: hmq_rk7Vb_55_4458c6e378d02ec091a6c75b834f191f, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:31,288 - Client ID: hmq_rk7Vb_56_86b9999289dc2b8241205732bb6371e5, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:32,298 - Client ID: hmq_rk7Vb_57_e830227f3c16b820a5dccc481828e3f1, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:34,308 - Client ID: hmq_rk7Vb_58_645d6f2ef12aacfede7504f0a104d296, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:34,382 - Client ID: hmq_rk7Vb_59_35a4d21fa889d1cef6b571b09453f77f, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:38,318 - Client ID: hmq_rk7Vb_60_312ebbc1e64dd554208c9afe4ae268b6, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:39,025 - Client ID: hmq_rk7Vb_61_44ca187bd87964834d918b4e2930d6d3, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:40,791 - Client ID: hmq_rk7Vb_62_f8e9b9acb57940e3546486561d6ddc4c, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:41,798 - Client ID: hmq_rk7Vb_63_43cb4f0c6bec121492afd94aeae74d5c, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:42,391 - Client ID: hmq_rk7Vb_64_e3de71a1f569f6b65bd02e948cf288a3, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:43,042 - Client ID: hmq_rk7Vb_65_3aabec581e7cfae5f94fb32ac9595313, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:43,810 - Client ID: hmq_rk7Vb_66_00f125ae2e215c15046fd598d8a24702, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:44,051 - Client ID: hmq_rk7Vb_67_4f479fc5c7c7f59f26955fd0c31455e4, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:46,058 - Client ID: hmq_rk7Vb_68_315b02c961d9418152dcbaf23cacaa67, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:46,325 - Client ID: hmq_rk7Vb_69_fb105557f185aed6b4948a99507c34da, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:46,621 - Client ID: hmq_rk7Vb_70_9ed658f19cf41ede275b92a3e8f0aa3c, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:47,630 - Client ID: hmq_rk7Vb_71_d8acd507480a48d6e952797e7d63f06e, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:47,819 - Client ID: hmq_rk7Vb_72_43166e8cd6f8509663881f874b6ca903, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:48,570 - Client ID: hmq_rk7Vb_73_b7d5a2dc6a3cd3fc4352f441e135308c, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:49,582 - Client ID: hmq_rk7Vb_74_14deac8ad40226d5a0c03c0ed10f12cf, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:49,639 - Client ID: hmq_rk7Vb_75_9911b082aaee4ece4ffdb833ee576240, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:50,070 - Client ID: hmq_rk7Vb_76_64469f5dbe3612ecbd8e4ccf1e6e5360, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:51,590 - Client ID: hmq_rk7Vb_77_7538af823ab6a1459aff93b5240134bb, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:53,647 - Client ID: hmq_rk7Vb_78_40775f24dde708d4147108e51ab5aa35, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:55,596 - Client ID: hmq_rk7Vb_79_ec417ba840ce2f6a8b0d1cc4ad5643ee, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:55,826 - Client ID: hmq_rk7Vb_80_6a98575cd42d7ba9a696a4fd11843795, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:02:56,077 - Client ID: hmq_rk7Vb_45_2e57c43ffdb19777ce85717910a65678, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_31_a8634c0165cdebaef5fe37f12184cad3, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_44_0cda6362c239c225308ea8420c9ead41, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,077 - Client ID: hmq_rk7Vb_37_766a91f8247aa71428e03d4ccd6cb9a7, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_22_dbdf6d781e4ddda0a45635c06ac82dcb, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_35_91b187c2935667f5b8b799e415b9893a, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_29_d67ea91ced30de7779ee155c21b4cff5, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_18_f54418831e0aaa4e6d86ab0cdde18db9, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_46_2d8086fa3648060b20bb749de6e44ec1, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,077 - Client ID: hmq_rk7Vb_43_cf82daee5d9200607b05ffa6c523194f, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,077 - Client ID: hmq_rk7Vb_41_8773ceadf2f5385467e89f0f0e7715d1, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,079 - Client ID: hmq_rk7Vb_8_d9f6304a664d4992dfaad21513e4a55e, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_20_42c153c840deabb420bbd0998abc8058, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_33_9d86603674b31a16881aa32103ae00ee, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_7_2d0eb9eafaa821aeb51e49b47c8b5845, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_10_0a6bdd7ad162d345dc7149c9ecf22e3b, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,079 - Client ID: hmq_rk7Vb_25_df706549201972212e23c6f99a342113, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_16_5e0b8073ca6bec50a318d82e33974ab8, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_13_7209e276ed6a4052a7f1cd6861830dab, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,078 - Client ID: hmq_rk7Vb_39_576215ac0d40f60560b1763e23f57331, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,079 - Client ID: hmq_rk7Vb_14_59a98c60f3554be9b77d159f6c8e7358, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,079 - Client ID: hmq_rk7Vb_11_72ae9107d79da0412ab4c1739bacf8b8, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:02:56,196 - Client ID: hmq_rk7Vb_27_6408f7983fa08bd3e6ff6bf297d1bfe7, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:03:09,497 - Client ID: hmq_rk7Vb_38_295c9041222379f51c83bfee0f17dcf6 session has expired at 2022-04-02 10:59:57. All persistent data for this client has been removed.
+2022-04-02 11:03:46,074 - Client ID: hmq_rk7Vb_42_bba9ac390b7084f28bf4335cf4865ff4, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:04:09,560 - Client ID: hmq_rk7Vb_16_5e0b8073ca6bec50a318d82e33974ab8 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:04:24,063 - Client ID: hmq_rk7Vb_81_01edc385e9196f6bbb053318dd90a295, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:04:28,770 - Client ID: hmq_rk7Vb_82_b8d227a6e2f7fb350ea1ae83a1c58fd6, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:04:36,856 - Client ID: hmq_rk7Vb_83_1f093799899e5bb2f085d8e14c39d58e, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:04:44,111 - Client ID: hmq_rk7Vb_84_eadd651c55db40ccfd5cbb5407e4cec8, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:04:48,521 - Client ID: hmq_rk7Vb_85_944265c5d8f619531e9a4f60ffb01a82, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:04:55,067 - Client ID: hmq_rk7Vb_86_192cb7f384967eeaabd7b974b03398d1, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:04:57,054 - Client ID: hmq_rk7Vb_87_2324cf173c7140af046d0e179af39f0b, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:04:58,763 - Client ID: hmq_rk7Vb_88_724deeb5d85dbde5beeadd61fe001020, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:00,402 - Client ID: hmq_rk7Vb_89_4a6a46b657687ba8c6de46510c446c14, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:06,401 - Client ID: hmq_rk7Vb_90_0cd4cc01eac84b580a988816d11b51a3, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:11,154 - Client ID: hmq_rk7Vb_91_d1b5d34697b1e4f58bf343a02c168892, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:15,123 - Client ID: hmq_rk7Vb_92_b20300548a7a3db6743b3d0bca1e18f5, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:18,720 - Client ID: hmq_rk7Vb_93_48cf44f455b93dd4d3ea455549c3d953, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:22,225 - Client ID: hmq_rk7Vb_94_cb1f426c1daa8f9f82e6e26b9b8e2fe9, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:24,138 - Client ID: hmq_rk7Vb_95_05174bc84321e6ad0a44e586fac4869c, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:25,877 - Client ID: hmq_rk7Vb_96_898aca09b33a8285b676d27d85a17291, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:27,729 - Client ID: hmq_rk7Vb_97_16ca9661b649addf485fac093a5d2c42, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:29,655 - Client ID: hmq_rk7Vb_30_5886068479f95fc2ea990f5535a82eb5 session has expired at 2022-04-02 10:50:43. All persistent data for this client has been removed.
+2022-04-02 11:05:29,665 - Client ID: hmq_rk7Vb_98_2c91973cdb4efee5393b0a0db1a030fe, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:31,622 - Client ID: hmq_rk7Vb_99_8c1a98db41e36ff97309375e0f0c1cd5, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:33,158 - Client ID: hmq_rk7Vb_100_3c3e597559fbfb62716079b47341484d, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:34,797 - Client ID: hmq_rk7Vb_101_615248bc833756f5caab1cee5bf52b71, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:36,385 - Client ID: hmq_rk7Vb_102_cbf237fe3ba62f80e5b0d7c491566da8, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:37,882 - Client ID: hmq_rk7Vb_103_b0401712f03ae095a35af859f62883b0, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:39,377 - Client ID: hmq_rk7Vb_104_de5e784a454a6800a8e7ee31b959fb4f, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:05:50,924 - Client ID: hmq_rk7Vb_105_f03a22f548d8609b190318d2c2af08c5, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:05:51,933 - Client ID: hmq_rk7Vb_106_2bad5ba971fe23c8d665dda0b4657990, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:05:53,941 - Client ID: hmq_rk7Vb_107_259996b8413520b5707c41fb316201e1, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:05:57,951 - Client ID: hmq_rk7Vb_108_192ebe32f133c5433b17f15a281b20c5, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:06:05,960 - Client ID: hmq_rk7Vb_109_6a5dd6213612d9eea78e14901ea09966, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:06:21,968 - Client ID: hmq_rk7Vb_110_c36dabe2e4b42be350e9227e997ffae6, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:06:29,727 - Client ID: hmq_rk7Vb_24_ca81208eb263a4d561b137a867ce7dd5 session has expired at 2022-04-02 10:46:09. All persistent data for this client has been removed.
+2022-04-02 11:06:29,728 - Client ID: hmq_rk7Vb_31_a8634c0165cdebaef5fe37f12184cad3 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:06:53,975 - Client ID: hmq_rk7Vb_111_12e7c1ecc3ae053832c32b06d3468db9, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:07:06,640 - Client ID: hmq_rk7Vb_112_4ce101b69b561cb4fb5867a2a57cbc2c, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:07:07,650 - Client ID: hmq_rk7Vb_113_72ecd93d12f7d290066f44b5d4cb3a96, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:07:09,659 - Client ID: hmq_rk7Vb_114_1a9b01f443539237b763f60b29fa67e0, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:07:09,788 - Client ID: hmq_rk7Vb_40_daf9a39a11c812e5ba2ece0e48a87a13 session has expired at 2022-04-02 11:00:58. All persistent data for this client has been removed.
+2022-04-02 11:07:13,667 - Client ID: hmq_rk7Vb_115_867161eb1b84a8bff4aaeab23cc9752b, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:07:21,678 - Client ID: hmq_rk7Vb_116_2c87e72246b6dec632ac2b4979b6054f, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:07:29,828 - Client ID: hmq_rk7Vb_14_59a98c60f3554be9b77d159f6c8e7358 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:07:37,683 - Client ID: hmq_rk7Vb_117_279eeda8389d05efadedb271af10e1f3, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:07:57,981 - Client ID: hmq_rk7Vb_118_7e93e85d8e430341db54904b1d2ddfc0, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:08:09,690 - Client ID: hmq_rk7Vb_119_62f3952498b4346d697e8f2f9b48ae98, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_103_b0401712f03ae095a35af859f62883b0, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_104_de5e784a454a6800a8e7ee31b959fb4f, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_97_16ca9661b649addf485fac093a5d2c42, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_101_615248bc833756f5caab1cee5bf52b71, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_95_05174bc84321e6ad0a44e586fac4869c, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_94_cb1f426c1daa8f9f82e6e26b9b8e2fe9, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_100_3c3e597559fbfb62716079b47341484d, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,062 - Client ID: hmq_rk7Vb_88_724deeb5d85dbde5beeadd61fe001020, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_93_48cf44f455b93dd4d3ea455549c3d953, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_92_b20300548a7a3db6743b3d0bca1e18f5, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,062 - Client ID: hmq_rk7Vb_90_0cd4cc01eac84b580a988816d11b51a3, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_102_cbf237fe3ba62f80e5b0d7c491566da8, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_99_8c1a98db41e36ff97309375e0f0c1cd5, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,062 - Client ID: hmq_rk7Vb_91_d1b5d34697b1e4f58bf343a02c168892, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,062 - Client ID: hmq_rk7Vb_89_4a6a46b657687ba8c6de46510c446c14, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_96_898aca09b33a8285b676d27d85a17291, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,061 - Client ID: hmq_rk7Vb_98_2c91973cdb4efee5393b0a0db1a030fe, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,062 - Client ID: hmq_rk7Vb_87_2324cf173c7140af046d0e179af39f0b, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,062 - Client ID: hmq_rk7Vb_85_944265c5d8f619531e9a4f60ffb01a82, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,063 - Client ID: hmq_rk7Vb_84_eadd651c55db40ccfd5cbb5407e4cec8, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,139 - Client ID: hmq_rk7Vb_86_192cb7f384967eeaabd7b974b03398d1, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,139 - Client ID: hmq_rk7Vb_83_1f093799899e5bb2f085d8e14c39d58e, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:08:57,197 - Client ID: hmq_rk7Vb_82_b8d227a6e2f7fb350ea1ae83a1c58fd6, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:09:09,926 - Client ID: hmq_rk7Vb_29_d67ea91ced30de7779ee155c21b4cff5 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:09:14,484 - Client ID: hmq_rk7Vb_81_01edc385e9196f6bbb053318dd90a295, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:09:17,090 - Client ID: hmq_rk7Vb_120_207eab0e3e9c6099fb15e0f2136cb613, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:09:49,988 - Client ID: hmq_rk7Vb_42_bba9ac390b7084f28bf4335cf4865ff4 session has expired at 2022-04-02 11:03:46. All persistent data for this client has been removed.
+2022-04-02 11:10:10,021 - Client ID: hmq_rk7Vb_86_192cb7f384967eeaabd7b974b03398d1 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:10:17,328 - Client ID: hmq_rk7Vb_121_f6a0a731882edc2f74f5c22014e1ec9a, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:11:30,118 - Client ID: hmq_rk7Vb_103_b0401712f03ae095a35af859f62883b0 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:11:50,154 - Client ID: hmq_rk7Vb_10_0a6bdd7ad162d345dc7149c9ecf22e3b session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:11:50,155 - Client ID: hmq_rk7Vb_94_cb1f426c1daa8f9f82e6e26b9b8e2fe9 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:12:30,214 - Client ID: hmq_rk7Vb_87_2324cf173c7140af046d0e179af39f0b session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:12:50,266 - Client ID: hmq_rk7Vb_41_8773ceadf2f5385467e89f0f0e7715d1 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:13:30,329 - Client ID: hmq_rk7Vb_102_cbf237fe3ba62f80e5b0d7c491566da8 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:13:30,330 - Client ID: hmq_rk7Vb_8_d9f6304a664d4992dfaad21513e4a55e session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:14:10,379 - Client ID: hmq_rk7Vb_85_944265c5d8f619531e9a4f60ffb01a82 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:14:30,423 - Client ID: hmq_rk7Vb_22_dbdf6d781e4ddda0a45635c06ac82dcb session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:14:30,424 - Client ID: hmq_rk7Vb_39_576215ac0d40f60560b1763e23f57331 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:14:30,424 - Client ID: hmq_rk7Vb_43_cf82daee5d9200607b05ffa6c523194f session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:15:10,475 - Client ID: hmq_rk7Vb_83_1f093799899e5bb2f085d8e14c39d58e session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:15:30,515 - Client ID: hmq_rk7Vb_33_9d86603674b31a16881aa32103ae00ee session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:15:30,516 - Client ID: hmq_rk7Vb_81_01edc385e9196f6bbb053318dd90a295 session has expired at 2022-04-02 11:09:14. All persistent data for this client has been removed.
+2022-04-02 11:17:07,631 - Client ID: hmq_rk7Vb_121_f6a0a731882edc2f74f5c22014e1ec9a, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:17:10,635 - Client ID: hmq_rk7Vb_98_2c91973cdb4efee5393b0a0db1a030fe session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:17:24,381 - Client ID: hmq_rk7Vb_120_207eab0e3e9c6099fb15e0f2136cb613, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:17:25,454 - Client ID: hmq_rk7Vb_122_f7df20665c7464c7a356d839c1254a87, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:30,677 - Client ID: hmq_rk7Vb_25_df706549201972212e23c6f99a342113 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:17:31,515 - Client ID: hmq_rk7Vb_123_c2fd608a6e366a050ef12b067bcb56a4, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:34,155 - Client ID: hmq_rk7Vb_124_785214db2940d7d648086f19cbdfbc73, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:36,604 - Client ID: hmq_rk7Vb_125_a98f631291256a5a4ff778503bf90c2e, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:38,887 - Client ID: hmq_rk7Vb_126_7efb74fc1d328b30d4a352aa2ac63ab4, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:41,134 - Client ID: hmq_rk7Vb_127_4a1df6e6a7e898fe1ed161cacab837bb, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:43,489 - Client ID: hmq_rk7Vb_128_6bf50001c32c1307c95111fb7677a1b2, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:45,660 - Client ID: hmq_rk7Vb_129_c40ed6d2adc2c33f56fb66dee4924fa5, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:47,788 - Client ID: hmq_rk7Vb_130_abbe0b4689a589d2ecef87c2e2bb8623, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:50,150 - Client ID: hmq_rk7Vb_131_f66c33dfed41a82b2680b2d7ca34ef30, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:50,721 - Client ID: hmq_rk7Vb_11_72ae9107d79da0412ab4c1739bacf8b8 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:17:52,913 - Client ID: hmq_rk7Vb_132_4c45e1f660e2918b045d7161c543d8da, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:55,580 - Client ID: hmq_rk7Vb_133_4067220fd231eb833862d89539d790cb, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:17:57,995 - Client ID: hmq_rk7Vb_134_fc6ad812bc25b5c5a953c99b3ef9b511, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:01,202 - Client ID: hmq_rk7Vb_135_99484db1b0fce1d43a78bec93237d817, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:03,912 - Client ID: hmq_rk7Vb_136_f0534c86fa831f978529c9b9b9f918c6, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:12,065 - Client ID: hmq_rk7Vb_137_c949737874ce78978c46db831df24682, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:14,620 - Client ID: hmq_rk7Vb_138_c519fa77022d5cd0856004ff1c4ab075, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:17,286 - Client ID: hmq_rk7Vb_139_448f66e74f9a332bef3f632419be7862, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:19,871 - Client ID: hmq_rk7Vb_140_8ee9da5862e46de8e5b17c57fd6526f9, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:22,311 - Client ID: hmq_rk7Vb_141_846b1e682e5b46cf6d9ff457bf5d93b2, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:24,280 - Client ID: hmq_rk7Vb_142_e1bc31c4de1a8366edc118ee82d726d6, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:26,253 - Client ID: hmq_rk7Vb_143_1b772e04ac4e0882d22e1d1a6c65136e, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:28,030 - Client ID: hmq_rk7Vb_144_198e148f075599aea43b9fa2a6f06dac, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:29,669 - Client ID: hmq_rk7Vb_145_e8a1db45f7691fe90966b23bf3020575, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:18:31,086 - Client ID: hmq_rk7Vb_146_ee786b9897dbcdeca7583b3e3f190667, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:18:32,097 - Client ID: hmq_rk7Vb_147_c7341457021d2a05cc38fdf77eea2dab, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:18:34,108 - Client ID: hmq_rk7Vb_148_4517b868bcaddb39ccfadbabdd0d5711, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:18:38,117 - Client ID: hmq_rk7Vb_149_c877e3868b92876b51f3ec3e8c2075bd, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:18:46,123 - Client ID: hmq_rk7Vb_150_cafb11cd8f45645c03de464f596adbe1, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:19:02,134 - Client ID: hmq_rk7Vb_151_9c37f53b9010f9dbf23653fce6b6fbab, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:19:02,598 - Client ID: hmq_rk7Vb_122_f7df20665c7464c7a356d839c1254a87, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:19:03,830 - Client ID: hmq_rk7Vb_152_89351a0cc7c3ff7e48800e3880ff84c3, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:19:31,036 - Client ID: hmq_rk7Vb_153_17714a6abbf05bed0fd09200d7130c83, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:19:32,045 - Client ID: hmq_rk7Vb_154_a504206e47bc7d1c384be7ad0a334207, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:19:34,054 - Client ID: hmq_rk7Vb_155_2bb13b37d3117d95875a763500c0823c, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:19:34,142 - Client ID: hmq_rk7Vb_156_dfbf35b9945bddf11bc88e1296f447ea, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:19:38,065 - Client ID: hmq_rk7Vb_157_ce575835852095bfdeefcfb8b1e9f898, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_140_8ee9da5862e46de8e5b17c57fd6526f9, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_143_1b772e04ac4e0882d22e1d1a6c65136e, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_137_c949737874ce78978c46db831df24682, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_138_c519fa77022d5cd0856004ff1c4ab075, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_124_785214db2940d7d648086f19cbdfbc73, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_132_4c45e1f660e2918b045d7161c543d8da, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_134_fc6ad812bc25b5c5a953c99b3ef9b511, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,276 - Client ID: hmq_rk7Vb_127_4a1df6e6a7e898fe1ed161cacab837bb, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,276 - Client ID: hmq_rk7Vb_131_f66c33dfed41a82b2680b2d7ca34ef30, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_139_448f66e74f9a332bef3f632419be7862, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,276 - Client ID: hmq_rk7Vb_130_abbe0b4689a589d2ecef87c2e2bb8623, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_135_99484db1b0fce1d43a78bec93237d817, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_142_e1bc31c4de1a8366edc118ee82d726d6, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_136_f0534c86fa831f978529c9b9b9f918c6, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,276 - Client ID: hmq_rk7Vb_123_c2fd608a6e366a050ef12b067bcb56a4, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_133_4067220fd231eb833862d89539d790cb, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,275 - Client ID: hmq_rk7Vb_141_846b1e682e5b46cf6d9ff457bf5d93b2, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,276 - Client ID: hmq_rk7Vb_126_7efb74fc1d328b30d4a352aa2ac63ab4, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,276 - Client ID: hmq_rk7Vb_145_e8a1db45f7691fe90966b23bf3020575, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,276 - Client ID: hmq_rk7Vb_144_198e148f075599aea43b9fa2a6f06dac, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,277 - Client ID: hmq_rk7Vb_125_a98f631291256a5a4ff778503bf90c2e, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,277 - Client ID: hmq_rk7Vb_129_c40ed6d2adc2c33f56fb66dee4924fa5, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:38,277 - Client ID: hmq_rk7Vb_128_6bf50001c32c1307c95111fb7677a1b2, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:19:43,581 - Client ID: hmq_rk7Vb_152_89351a0cc7c3ff7e48800e3880ff84c3, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:19:44,670 - Client ID: hmq_rk7Vb_158_826d001758acfb2c8025e8630c4af7d4, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:19:50,854 - Client ID: hmq_rk7Vb_143_1b772e04ac4e0882d22e1d1a6c65136e session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:19:50,855 - Client ID: hmq_rk7Vb_93_48cf44f455b93dd4d3ea455549c3d953 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:19:52,746 - Client ID: hmq_rk7Vb_159_fd6b3846685b88766a546107f74bd9b4, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:19:54,460 - Client ID: hmq_rk7Vb_160_72b952a88db82beea8f185c4adb34447, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:19:55,966 - Client ID: hmq_rk7Vb_161_d66b5ff20f43cc0f15b58cc6a35671dc, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:19:57,332 - Client ID: hmq_rk7Vb_162_544c025f598c62f69add67f4771f9175, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:19:58,259 - Client ID: hmq_rk7Vb_163_abfc7ee2d57d5f1591ce4d7dfa481ee7, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:19:59,278 - Client ID: hmq_rk7Vb_164_d34d879e73e8c30607b3eac62a8a8bfb, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:00,294 - Client ID: hmq_rk7Vb_165_1c46938674551efeb94cf008faaa419e, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:01,220 - Client ID: hmq_rk7Vb_166_975f01063cfa9cc0a582dc5c990019d4, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:02,287 - Client ID: hmq_rk7Vb_167_05ca5c3815b94774bcc0ab58a5360d22, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:03,478 - Client ID: hmq_rk7Vb_168_3aceb5f1974bc8342a9f7b5cecf9b80b, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:04,694 - Client ID: hmq_rk7Vb_169_02f17c147d1f1c9232d0ffbf0810b38a, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:06,022 - Client ID: hmq_rk7Vb_170_550a3eb205af155b59b80fbe553544e6, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:07,256 - Client ID: hmq_rk7Vb_171_bda3b41a28081c238ad61b5653290de3, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:08,492 - Client ID: hmq_rk7Vb_172_8a5bb13166387f2051cc9ebb1874edc6, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:09,714 - Client ID: hmq_rk7Vb_173_daf5e01e4cbf3b4c7af185ff66d7b513, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:10,897 - Client ID: hmq_rk7Vb_133_4067220fd231eb833862d89539d790cb session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:20:11,047 - Client ID: hmq_rk7Vb_174_57a1e7cbcd8dd46c1f57f3a568828dfb, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:12,177 - Client ID: hmq_rk7Vb_175_aa841d3825a73e4cebf88345e1a855a0, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:13,308 - Client ID: hmq_rk7Vb_176_5c547cf207e6e7a56a6d0432b48d7828, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:14,575 - Client ID: hmq_rk7Vb_177_a1d0d28ca04eeff9ce833e02cd6ae5d5, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:15,756 - Client ID: hmq_rk7Vb_178_4a69a47f0d4b2d98f0047c826e51aaa3, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:16,988 - Client ID: hmq_rk7Vb_179_0acce9b8787735f8f831e6079138b101, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:18,127 - Client ID: hmq_rk7Vb_180_b41c4d5099a2cef1496577fb0a201508, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:19,295 - Client ID: hmq_rk7Vb_181_d13cf33ee27ea33ab2741bae929ff018, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:20:20,522 - Client ID: hmq_rk7Vb_182_40c4884c2acd67138bc79af5269dbac1, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:20:21,531 - Client ID: hmq_rk7Vb_183_6e852836bce805bc9f219f1633a1a077, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:20:23,539 - Client ID: hmq_rk7Vb_184_af901ccf41225cd12feb7d2d6ed9d745, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:20:27,549 - Client ID: hmq_rk7Vb_185_9f83aa119b37cc1d5027c1e1c7a13a8b, IP: 192.168.1.5 was disconnected. reason: License limit reached.
+2022-04-02 11:20:30,942 - Client ID: hmq_rk7Vb_126_7efb74fc1d328b30d4a352aa2ac63ab4 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_181_d13cf33ee27ea33ab2741bae929ff018, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_171_bda3b41a28081c238ad61b5653290de3, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_170_550a3eb205af155b59b80fbe553544e6, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_179_0acce9b8787735f8f831e6079138b101, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_180_b41c4d5099a2cef1496577fb0a201508, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,987 - Client ID: hmq_rk7Vb_167_05ca5c3815b94774bcc0ab58a5360d22, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_177_a1d0d28ca04eeff9ce833e02cd6ae5d5, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_173_daf5e01e4cbf3b4c7af185ff66d7b513, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,987 - Client ID: hmq_rk7Vb_163_abfc7ee2d57d5f1591ce4d7dfa481ee7, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_176_5c547cf207e6e7a56a6d0432b48d7828, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_172_8a5bb13166387f2051cc9ebb1874edc6, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_178_4a69a47f0d4b2d98f0047c826e51aaa3, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,987 - Client ID: hmq_rk7Vb_161_d66b5ff20f43cc0f15b58cc6a35671dc, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_174_57a1e7cbcd8dd46c1f57f3a568828dfb, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_175_aa841d3825a73e4cebf88345e1a855a0, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,988 - Client ID: hmq_rk7Vb_160_72b952a88db82beea8f185c4adb34447, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,986 - Client ID: hmq_rk7Vb_169_02f17c147d1f1c9232d0ffbf0810b38a, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,987 - Client ID: hmq_rk7Vb_168_3aceb5f1974bc8342a9f7b5cecf9b80b, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,987 - Client ID: hmq_rk7Vb_166_975f01063cfa9cc0a582dc5c990019d4, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,987 - Client ID: hmq_rk7Vb_164_d34d879e73e8c30607b3eac62a8a8bfb, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,988 - Client ID: hmq_rk7Vb_162_544c025f598c62f69add67f4771f9175, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,987 - Client ID: hmq_rk7Vb_165_1c46938674551efeb94cf008faaa419e, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:30,988 - Client ID: hmq_rk7Vb_159_fd6b3846685b88766a546107f74bd9b4, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 11:20:50,974 - Client ID: hmq_rk7Vb_13_7209e276ed6a4052a7f1cd6861830dab session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:20:50,975 - Client ID: hmq_rk7Vb_18_f54418831e0aaa4e6d86ab0cdde18db9 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:20:50,976 - Client ID: hmq_rk7Vb_20_42c153c840deabb420bbd0998abc8058 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:20:50,976 - Client ID: hmq_rk7Vb_46_2d8086fa3648060b20bb749de6e44ec1 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:20:50,976 - Client ID: hmq_rk7Vb_7_2d0eb9eafaa821aeb51e49b47c8b5845 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:20:50,976 - Client ID: hmq_rk7Vb_95_05174bc84321e6ad0a44e586fac4869c session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:21:31,029 - Client ID: hmq_rk7Vb_44_0cda6362c239c225308ea8420c9ead41 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:21:31,029 - Client ID: hmq_rk7Vb_82_b8d227a6e2f7fb350ea1ae83a1c58fd6 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:21:31,029 - Client ID: hmq_rk7Vb_91_d1b5d34697b1e4f58bf343a02c168892 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:21:51,064 - Client ID: hmq_rk7Vb_90_0cd4cc01eac84b580a988816d11b51a3 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:22:11,102 - Client ID: hmq_rk7Vb_175_aa841d3825a73e4cebf88345e1a855a0 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:22:11,102 - Client ID: hmq_rk7Vb_35_91b187c2935667f5b8b799e415b9893a session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:23:11,168 - Client ID: hmq_rk7Vb_123_c2fd608a6e366a050ef12b067bcb56a4 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:23:11,169 - Client ID: hmq_rk7Vb_27_6408f7983fa08bd3e6ff6bf297d1bfe7 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:23:11,169 - Client ID: hmq_rk7Vb_92_b20300548a7a3db6743b3d0bca1e18f5 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:23:31,204 - Client ID: hmq_rk7Vb_120_207eab0e3e9c6099fb15e0f2136cb613 session has expired at 2022-04-02 11:17:24. All persistent data for this client has been removed.
+2022-04-02 11:23:31,204 - Client ID: hmq_rk7Vb_138_c519fa77022d5cd0856004ff1c4ab075 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:23:31,205 - Client ID: hmq_rk7Vb_159_fd6b3846685b88766a546107f74bd9b4 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:23:51,233 - Client ID: hmq_rk7Vb_37_766a91f8247aa71428e03d4ccd6cb9a7 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:23:51,234 - Client ID: hmq_rk7Vb_97_16ca9661b649addf485fac093a5d2c42 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:24:11,269 - Client ID: hmq_rk7Vb_45_2e57c43ffdb19777ce85717910a65678 session has expired at 2022-04-02 11:02:56. All persistent data for this client has been removed.
+2022-04-02 11:24:51,324 - Client ID: hmq_rk7Vb_164_d34d879e73e8c30607b3eac62a8a8bfb session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:25:11,358 - Client ID: hmq_rk7Vb_137_c949737874ce78978c46db831df24682 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:25:51,408 - Client ID: hmq_rk7Vb_100_3c3e597559fbfb62716079b47341484d session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:26:11,456 - Client ID: hmq_rk7Vb_125_a98f631291256a5a4ff778503bf90c2e session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:26:11,457 - Client ID: hmq_rk7Vb_177_a1d0d28ca04eeff9ce833e02cd6ae5d5 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:26:11,458 - Client ID: hmq_rk7Vb_178_4a69a47f0d4b2d98f0047c826e51aaa3 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:26:11,458 - Client ID: hmq_rk7Vb_179_0acce9b8787735f8f831e6079138b101 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:26:31,503 - Client ID: hmq_rk7Vb_135_99484db1b0fce1d43a78bec93237d817 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:26:51,542 - Client ID: hmq_rk7Vb_122_f7df20665c7464c7a356d839c1254a87 session has expired at 2022-04-02 11:19:02. All persistent data for this client has been removed.
+2022-04-02 11:27:11,586 - Client ID: hmq_rk7Vb_144_198e148f075599aea43b9fa2a6f06dac session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:27:11,588 - Client ID: hmq_rk7Vb_84_eadd651c55db40ccfd5cbb5407e4cec8 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:27:11,588 - Client ID: hmq_rk7Vb_89_4a6a46b657687ba8c6de46510c446c14 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:27:31,619 - Client ID: hmq_rk7Vb_101_615248bc833756f5caab1cee5bf52b71 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:27:51,677 - Client ID: hmq_rk7Vb_162_544c025f598c62f69add67f4771f9175 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:28:11,737 - Client ID: hmq_rk7Vb_88_724deeb5d85dbde5beeadd61fe001020 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:28:31,811 - Client ID: hmq_rk7Vb_96_898aca09b33a8285b676d27d85a17291 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:28:31,812 - Client ID: hmq_rk7Vb_99_8c1a98db41e36ff97309375e0f0c1cd5 session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:28:51,886 - Client ID: hmq_rk7Vb_104_de5e784a454a6800a8e7ee31b959fb4f session has expired at 2022-04-02 11:08:57. All persistent data for this client has been removed.
+2022-04-02 11:29:11,983 - Client ID: hmq_rk7Vb_136_f0534c86fa831f978529c9b9b9f918c6 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:29:11,984 - Client ID: hmq_rk7Vb_176_5c547cf207e6e7a56a6d0432b48d7828 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:30:12,088 - Client ID: hmq_rk7Vb_166_975f01063cfa9cc0a582dc5c990019d4 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:30:12,089 - Client ID: hmq_rk7Vb_170_550a3eb205af155b59b80fbe553544e6 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:30:52,184 - Client ID: hmq_rk7Vb_152_89351a0cc7c3ff7e48800e3880ff84c3 session has expired at 2022-04-02 11:19:43. All persistent data for this client has been removed.
+2022-04-02 11:30:52,185 - Client ID: hmq_rk7Vb_181_d13cf33ee27ea33ab2741bae929ff018 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:31:12,233 - Client ID: hmq_rk7Vb_141_846b1e682e5b46cf6d9ff457bf5d93b2 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:32:12,302 - Client ID: hmq_rk7Vb_127_4a1df6e6a7e898fe1ed161cacab837bb session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:32:12,304 - Client ID: hmq_rk7Vb_165_1c46938674551efeb94cf008faaa419e session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:32:12,304 - Client ID: hmq_rk7Vb_167_05ca5c3815b94774bcc0ab58a5360d22 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:32:12,305 - Client ID: hmq_rk7Vb_168_3aceb5f1974bc8342a9f7b5cecf9b80b session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:32:16,274 - Client ID: hmq_rk7Vb_158_826d001758acfb2c8025e8630c4af7d4, IP: 192.168.1.9 was disconnected. reason: Client was idle for too long.
+2022-04-02 11:32:32,349 - Client ID: hmq_rk7Vb_128_6bf50001c32c1307c95111fb7677a1b2 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:33:12,412 - Client ID: hmq_rk7Vb_140_8ee9da5862e46de8e5b17c57fd6526f9 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:33:12,413 - Client ID: hmq_rk7Vb_163_abfc7ee2d57d5f1591ce4d7dfa481ee7 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:33:32,456 - Client ID: hmq_rk7Vb_142_e1bc31c4de1a8366edc118ee82d726d6 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:33:32,457 - Client ID: hmq_rk7Vb_158_826d001758acfb2c8025e8630c4af7d4 session has expired at 2022-04-02 11:32:16. All persistent data for this client has been removed.
+2022-04-02 11:34:12,557 - Client ID: hmq_rk7Vb_171_bda3b41a28081c238ad61b5653290de3 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:34:52,615 - Client ID: hmq_rk7Vb_169_02f17c147d1f1c9232d0ffbf0810b38a session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:35:52,691 - Client ID: hmq_rk7Vb_145_e8a1db45f7691fe90966b23bf3020575 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:36:12,733 - Client ID: hmq_rk7Vb_130_abbe0b4689a589d2ecef87c2e2bb8623 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:36:12,733 - Client ID: hmq_rk7Vb_139_448f66e74f9a332bef3f632419be7862 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:36:52,800 - Client ID: hmq_rk7Vb_134_fc6ad812bc25b5c5a953c99b3ef9b511 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:37:52,874 - Client ID: hmq_rk7Vb_161_d66b5ff20f43cc0f15b58cc6a35671dc session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:38:12,921 - Client ID: hmq_rk7Vb_121_f6a0a731882edc2f74f5c22014e1ec9a session has expired at 2022-04-02 11:17:07. All persistent data for this client has been removed.
+2022-04-02 11:38:12,921 - Client ID: hmq_rk7Vb_129_c40ed6d2adc2c33f56fb66dee4924fa5 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:38:32,963 - Client ID: hmq_rk7Vb_160_72b952a88db82beea8f185c4adb34447 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:38:32,964 - Client ID: hmq_rk7Vb_174_57a1e7cbcd8dd46c1f57f3a568828dfb session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:38:53,005 - Client ID: hmq_rk7Vb_172_8a5bb13166387f2051cc9ebb1874edc6 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:39:53,077 - Client ID: hmq_rk7Vb_124_785214db2940d7d648086f19cbdfbc73 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:39:53,078 - Client ID: hmq_rk7Vb_131_f66c33dfed41a82b2680b2d7ca34ef30 session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:39:53,078 - Client ID: hmq_rk7Vb_180_b41c4d5099a2cef1496577fb0a201508 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:40:13,119 - Client ID: hmq_rk7Vb_132_4c45e1f660e2918b045d7161c543d8da session has expired at 2022-04-02 11:19:38. All persistent data for this client has been removed.
+2022-04-02 11:40:53,172 - Client ID: hmq_rk7Vb_173_daf5e01e4cbf3b4c7af185ff66d7b513 session has expired at 2022-04-02 11:20:30. All persistent data for this client has been removed.
+2022-04-02 11:44:03,914 - Client ID: hmq_rk7Vb_186_2b942f634832e46f3fae37b1285fd7e7, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:44:31,078 - Client ID: hmq_rk7Vb_186_2b942f634832e46f3fae37b1285fd7e7, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 11:44:32,332 - Client ID: hmq_rk7Vb_187_088c99c7974dd65b92f4b588a380803a, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:44:45,440 - Client ID: hmq_rk7Vb_188_a724e5cad28ea2b67a284e7f4bdb51ed, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 11:49:13,637 - Client ID: hmq_rk7Vb_186_2b942f634832e46f3fae37b1285fd7e7 session has expired at 2022-04-02 11:44:31. All persistent data for this client has been removed.
+2022-04-02 11:54:53,263 - Client ID: hmq_rk7Vb_187_088c99c7974dd65b92f4b588a380803a, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:03:42,284 - Client ID: hmq_rk7Vb_188_a724e5cad28ea2b67a284e7f4bdb51ed, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 12:08:12,552 - Client ID: hmq_rk7Vb_189_6fd2ce34802781c77a6d71dcb3a91f67, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:08:40,677 - Client ID: hmq_rk7Vb_189_6fd2ce34802781c77a6d71dcb3a91f67, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:08:54,749 - Client ID: hmq_rk7Vb_187_088c99c7974dd65b92f4b588a380803a session has expired at 2022-04-02 11:54:53. All persistent data for this client has been removed.
+2022-04-02 12:09:04,770 - Client ID: hmq_rk7Vb_190_ed32a1b8128463738a509f0218989fea, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:09:10,854 - Client ID: hmq_rk7Vb_191_b92cfce6d183abb173f2c7a63c4879f8, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:09:18,872 - Client ID: hmq_rk7Vb_190_ed32a1b8128463738a509f0218989fea, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:09:23,642 - Client ID: hmq_rk7Vb_192_e6543b0186b8079b18a278f53b7cf0bd, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:11:46,536 - Client ID: hmq_rk7Vb_192_e6543b0186b8079b18a278f53b7cf0bd, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:11:47,757 - Client ID: hmq_rk7Vb_193_080f689e203de873c7d30261d50792e9, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:13:26,418 - Client ID: hmq_rk7Vb_191_b92cfce6d183abb173f2c7a63c4879f8, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 12:14:15,054 - Client ID: hmq_rk7Vb_189_6fd2ce34802781c77a6d71dcb3a91f67 session has expired at 2022-04-02 12:08:40. All persistent data for this client has been removed.
+2022-04-02 12:16:52,596 - Client ID: hmq_rk7Vb_193_080f689e203de873c7d30261d50792e9, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:16:54,018 - Client ID: hmq_rk7Vb_194_7d3fed4ac550abca8033c57ff114c084, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:17:51,877 - Client ID: hmq_rk7Vb_195_6a54789310dfb16b921346e93ebd8ad3, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:19:23,707 - Client ID: hmq_rk7Vb_195_6a54789310dfb16b921346e93ebd8ad3, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 12:19:35,375 - Client ID: hmq_rk7Vb_192_e6543b0186b8079b18a278f53b7cf0bd session has expired at 2022-04-02 12:11:46. All persistent data for this client has been removed.
+2022-04-02 12:21:15,491 - Client ID: hmq_rk7Vb_188_a724e5cad28ea2b67a284e7f4bdb51ed session has expired at 2022-04-02 12:03:42. All persistent data for this client has been removed.
+2022-04-02 12:21:35,890 - Client ID: hmq_rk7Vb_194_7d3fed4ac550abca8033c57ff114c084, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:21:37,289 - Client ID: hmq_rk7Vb_196_d1edb52d4b0a15dff46b4ad0dd383c2e, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:22:44,400 - Client ID: hmq_rk7Vb_196_d1edb52d4b0a15dff46b4ad0dd383c2e, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:22:45,841 - Client ID: hmq_rk7Vb_197_ec97ece555797f00b3f8f4218e042b54, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:23:23,380 - Client ID: hmq_rk7Vb_197_ec97ece555797f00b3f8f4218e042b54, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:23:55,658 - Client ID: hmq_rk7Vb_191_b92cfce6d183abb173f2c7a63c4879f8 session has expired at 2022-04-02 12:13:26. All persistent data for this client has been removed.
+2022-04-02 12:24:15,703 - Client ID: hmq_rk7Vb_190_ed32a1b8128463738a509f0218989fea session has expired at 2022-04-02 12:09:18. All persistent data for this client has been removed.
+2022-04-02 12:24:32,550 - Client ID: hmq_rk7Vb_198_67ef0638863d95850c84c9073569621c, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:24:56,247 - Client ID: hmq_rk7Vb_198_67ef0638863d95850c84c9073569621c, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:25:15,758 - Client ID: hmq_rk7Vb_196_d1edb52d4b0a15dff46b4ad0dd383c2e session has expired at 2022-04-02 12:22:44. All persistent data for this client has been removed.
+2022-04-02 12:29:36,001 - Client ID: hmq_rk7Vb_193_080f689e203de873c7d30261d50792e9 session has expired at 2022-04-02 12:16:52. All persistent data for this client has been removed.
+2022-04-02 12:31:36,120 - Client ID: hmq_rk7Vb_195_6a54789310dfb16b921346e93ebd8ad3 session has expired at 2022-04-02 12:19:23. All persistent data for this client has been removed.
+2022-04-02 12:35:56,413 - Client ID: hmq_rk7Vb_194_7d3fed4ac550abca8033c57ff114c084 session has expired at 2022-04-02 12:21:35. All persistent data for this client has been removed.
+2022-04-02 12:37:36,505 - Client ID: hmq_rk7Vb_198_67ef0638863d95850c84c9073569621c session has expired at 2022-04-02 12:24:56. All persistent data for this client has been removed.
+2022-04-02 12:42:56,808 - Client ID: hmq_rk7Vb_197_ec97ece555797f00b3f8f4218e042b54 session has expired at 2022-04-02 12:23:23. All persistent data for this client has been removed.
+2022-04-02 12:42:58,396 - Client ID: hmq_rk7Vb_199_e3662de852eafbf23d84314f9767a609, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:48:56,901 - Client ID: hmq_rk7Vb_200_9e4a73920febf14629f29718764dfa72, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:52:05,005 - Client ID: hmq_rk7Vb_199_e3662de852eafbf23d84314f9767a609, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 12:54:44,838 - Client ID: hmq_rk7Vb_200_9e4a73920febf14629f29718764dfa72, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 12:54:47,016 - Client ID: hmq_rk7Vb_201_6d54d1d732f7160d1717faba5aa96e64, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:55:35,598 - Client ID: hmq_rk7Vb_201_6d54d1d732f7160d1717faba5aa96e64, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 12:56:31,825 - Client ID: hmq_rk7Vb_202_350c64f3272dc1aaee1b88400697c315, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 12:56:37,483 - Client ID: hmq_rk7Vb_199_e3662de852eafbf23d84314f9767a609 session has expired at 2022-04-02 12:52:05. All persistent data for this client has been removed.
+2022-04-02 12:59:37,654 - Client ID: hmq_rk7Vb_201_6d54d1d732f7160d1717faba5aa96e64 session has expired at 2022-04-02 12:55:35. All persistent data for this client has been removed.
+2022-04-02 13:00:08,249 - Client ID: hmq_rk7Vb_203_cc59a9f618bbfbafc9390007cce7ee49, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:00:50,528 - Client ID: hmq_rk7Vb_203_cc59a9f618bbfbafc9390007cce7ee49, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:00:55,678 - Client ID: hmq_rk7Vb_204_a0d5b822a46cf8679c1b520a41115637, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:01:33,937 - Client ID: hmq_rk7Vb_204_a0d5b822a46cf8679c1b520a41115637, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:01:38,581 - Client ID: hmq_rk7Vb_205_8c9d38b7044e30943a9c5863fbbcf984, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:02:17,467 - Client ID: hmq_rk7Vb_205_8c9d38b7044e30943a9c5863fbbcf984, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:02:19,118 - Client ID: hmq_rk7Vb_206_b0c5e325194a4d9fdc46b97f509f0840, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:03:19,925 - Client ID: hmq_rk7Vb_206_b0c5e325194a4d9fdc46b97f509f0840, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:03:21,498 - Client ID: hmq_rk7Vb_207_27973b4303f0364ea2044fb615689e42, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:03:37,869 - Client ID: hmq_rk7Vb_204_a0d5b822a46cf8679c1b520a41115637 session has expired at 2022-04-02 13:01:33. All persistent data for this client has been removed.
+2022-04-02 13:03:39,080 - Client ID: hmq_rk7Vb_207_27973b4303f0364ea2044fb615689e42, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:03:43,612 - Client ID: hmq_rk7Vb_208_b739eb23d65a1b4cc6194e0d98f2f4bc, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:05:13,643 - Client ID: hmq_rk7Vb_208_b739eb23d65a1b4cc6194e0d98f2f4bc, IP: 192.168.1.9 was disconnected. reason: Client was idle for too long.
+2022-04-02 13:06:38,052 - Client ID: hmq_rk7Vb_208_b739eb23d65a1b4cc6194e0d98f2f4bc session has expired at 2022-04-02 13:05:13. All persistent data for this client has been removed.
+2022-04-02 13:07:14,850 - Client ID: hmq_rk7Vb_209_a510131ad033118cd3f6ab2d821b5ce3, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:08:26,675 - Client ID: hmq_rk7Vb_209_a510131ad033118cd3f6ab2d821b5ce3, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:08:38,446 - Client ID: hmq_rk7Vb_210_af48a0bd798c88acca15b9b7940536b7, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:11:58,320 - Client ID: hmq_rk7Vb_200_9e4a73920febf14629f29718764dfa72 session has expired at 2022-04-02 12:54:44. All persistent data for this client has been removed.
+2022-04-02 13:12:38,379 - Client ID: hmq_rk7Vb_209_a510131ad033118cd3f6ab2d821b5ce3 session has expired at 2022-04-02 13:08:26. All persistent data for this client has been removed.
+2022-04-02 13:12:54,398 - Client ID: hmq_rk7Vb_210_af48a0bd798c88acca15b9b7940536b7, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:13:18,418 - Client ID: hmq_rk7Vb_207_27973b4303f0364ea2044fb615689e42 session has expired at 2022-04-02 13:03:39. All persistent data for this client has been removed.
+2022-04-02 13:13:18,505 - Client ID: hmq_rk7Vb_211_aa487c488cfcda2c25c61d41f0578cb8, IP: 192.168.1.9, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:13:22,404 - Client ID: hmq_rk7Vb_211_aa487c488cfcda2c25c61d41f0578cb8, IP: 192.168.1.9 disconnected ungracefully.
+2022-04-02 13:15:38,555 - Client ID: hmq_rk7Vb_206_b0c5e325194a4d9fdc46b97f509f0840 session has expired at 2022-04-02 13:03:19. All persistent data for this client has been removed.
+2022-04-02 13:15:38,555 - Client ID: hmq_rk7Vb_210_af48a0bd798c88acca15b9b7940536b7 session has expired at 2022-04-02 13:12:54. All persistent data for this client has been removed.
+2022-04-02 13:16:07,723 - Client ID: hmq_rk7Vb_202_350c64f3272dc1aaee1b88400697c315, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 13:16:12,332 - Client ID: hmq_rk7Vb_212_c984a3fc1c348123a89f25baba9c84e4, IP: 192.168.1.5, Clean Start: true, Session Expiry: 0 connected.
+2022-04-02 13:16:38,630 - Client ID: hmq_rk7Vb_205_8c9d38b7044e30943a9c5863fbbcf984 session has expired at 2022-04-02 13:02:17. All persistent data for this client has been removed.
+2022-04-02 13:16:57,192 - Client ID: hmq_rk7Vb_212_c984a3fc1c348123a89f25baba9c84e4, IP: 192.168.1.5 disconnected ungracefully.
+2022-04-02 13:17:58,755 - Client ID: hmq_rk7Vb_203_cc59a9f618bbfbafc9390007cce7ee49 session has expired at 2022-04-02 13:00:50. All persistent data for this client has been removed.
+2022-04-02 13:18:58,836 - Client ID: hmq_rk7Vb_211_aa487c488cfcda2c25c61d41f0578cb8 session has expired at 2022-04-02 13:13:22. All persistent data for this client has been removed.
+2022-04-02 13:19:50,004 - Client ID: clientId-BSE4akxBcX, IP: 127.0.0.1 disconnected ungracefully.
+2022-04-02 14:51:59,775 - Client ID: hmq_rk7Vb_202_350c64f3272dc1aaee1b88400697c315 session has expired at 2022-04-02 13:16:07. All persistent data for this client has been removed.
+2022-04-02 14:58:40,581 - Client ID: clientId-BSE4akxBcX session has expired at 2022-04-02 13:19:50. All persistent data for this client has been removed.
+2022-04-02 15:04:01,273 - Client ID: hmq_rk7Vb_212_c984a3fc1c348123a89f25baba9c84e4 session has expired at 2022-04-02 13:16:57. All persistent data for this client has been removed.
+2022-05-21 09:34:29,658 - Client ID: clientId-rLYyeMoefU, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 09:58:18,552 - Client ID: hmq_wfgeh_0_caea4f18b4ecf39f675a0e0fd1b99a8c, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 09:58:44,401 - Client ID: hmq_wfgeh_1_c42a556bd131165d5d0d9e4d7a2794d5, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:05:32,141 - Client ID: hmq_wfgeh_1_c42a556bd131165d5d0d9e4d7a2794d5, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 10:05:53,244 - Client ID: hmq_wfgeh_2_4dc630c5b7f1ce5cfb46c90e6c6dcf3b, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:08:22,388 - Client ID: hmq_wfgeh_2_4dc630c5b7f1ce5cfb46c90e6c6dcf3b, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 10:10:05,154 - Client ID: hmq_wfgeh_3_58e7a1eac627709a7c26c63e38e1715d, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:10:49,317 - Client ID: hmq_wfgeh_1_c42a556bd131165d5d0d9e4d7a2794d5 session has expired at 2022-05-21 10:05:32. All persistent data for this client has been removed.
+2022-05-21 10:11:45,699 - Client ID: hmq_wfgeh_3_58e7a1eac627709a7c26c63e38e1715d, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 10:12:29,371 - Client ID: hmq_wfgeh_4_60640c1d6297c9d3be1756516f650a7c, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:13:09,486 - Client ID: hmq_wfgeh_2_4dc630c5b7f1ce5cfb46c90e6c6dcf3b session has expired at 2022-05-21 10:08:22. All persistent data for this client has been removed.
+2022-05-21 10:15:16,749 - Client ID: hmq_wfgeh_4_60640c1d6297c9d3be1756516f650a7c, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 10:15:23,242 - Client ID: hmq_wfgeh_5_fcecac9bf7f232c9fbba46f83fa4ad5c, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:16:53,334 - Client ID: hmq_wfgeh_5_fcecac9bf7f232c9fbba46f83fa4ad5c, IP: 192.168.1.3 was disconnected. reason: Client was idle for too long.
+2022-05-21 10:18:01,266 - Client ID: hmq_wfgeh_6_c7ed32ec9e60672436b3d306b4904376, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:19:11,752 - Client ID: hmq_wfgeh_6_c7ed32ec9e60672436b3d306b4904376, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 10:19:20,926 - Client ID: hmq_wfgeh_7_abfaeb70004158b4a39d2866a54b22da, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:20:23,159 - Client ID: hmq_wfgeh_7_abfaeb70004158b4a39d2866a54b22da, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 10:20:27,269 - Client ID: hmq_wfgeh_8_bd0443939ab72480086b10f5447d9cdb, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:22:37,065 - Client ID: hmq_wfgeh_0_caea4f18b4ecf39f675a0e0fd1b99a8c, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 10:23:16,934 - Client ID: hmq_wfgeh_9_19c6bb0481ddc642c3f7702d191e735e, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:23:30,127 - Client ID: hmq_wfgeh_0_caea4f18b4ecf39f675a0e0fd1b99a8c session has expired at 2022-05-21 10:22:37. All persistent data for this client has been removed.
+2022-05-21 10:24:10,176 - Client ID: hmq_wfgeh_3_58e7a1eac627709a7c26c63e38e1715d session has expired at 2022-05-21 10:11:45. All persistent data for this client has been removed.
+2022-05-21 10:25:50,265 - Client ID: hmq_wfgeh_5_fcecac9bf7f232c9fbba46f83fa4ad5c session has expired at 2022-05-21 10:16:53. All persistent data for this client has been removed.
+2022-05-21 10:30:10,423 - Client ID: hmq_wfgeh_7_abfaeb70004158b4a39d2866a54b22da session has expired at 2022-05-21 10:20:23. All persistent data for this client has been removed.
+2022-05-21 10:33:10,595 - Client ID: hmq_wfgeh_4_60640c1d6297c9d3be1756516f650a7c session has expired at 2022-05-21 10:15:16. All persistent data for this client has been removed.
+2022-05-21 10:34:53,123 - Client ID: hmq_wfgeh_9_19c6bb0481ddc642c3f7702d191e735e, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 10:34:57,183 - Client ID: hmq_wfgeh_10_763ae6517d4a93f54d94b1ec3ac5045e, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 10:36:50,793 - Client ID: hmq_wfgeh_6_c7ed32ec9e60672436b3d306b4904376 session has expired at 2022-05-21 10:19:11. All persistent data for this client has been removed.
+2022-05-21 10:36:51,748 - Client ID: hmq_wfgeh_10_763ae6517d4a93f54d94b1ec3ac5045e, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 10:37:30,852 - Client ID: hmq_wfgeh_9_19c6bb0481ddc642c3f7702d191e735e session has expired at 2022-05-21 10:34:53. All persistent data for this client has been removed.
+2022-05-21 10:39:50,985 - Client ID: hmq_wfgeh_10_763ae6517d4a93f54d94b1ec3ac5045e session has expired at 2022-05-21 10:36:51. All persistent data for this client has been removed.
+2022-05-21 10:51:56,883 - Client ID: hmq_wfgeh_8_bd0443939ab72480086b10f5447d9cdb, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 11:02:12,294 - Client ID: hmq_wfgeh_8_bd0443939ab72480086b10f5447d9cdb session has expired at 2022-05-21 10:51:56. All persistent data for this client has been removed.
+2022-05-21 11:06:21,597 - Client ID: clientId-rLYyeMoefU, IP: 127.0.0.1 disconnected ungracefully.
+2022-05-21 11:08:23,643 - Client ID: clientId-rLYyeMoefU, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:09:47,401 - Client ID: hmq_gTPEF_0_c1f77894f5fbb893815b3c069fc76c89, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:10:52,908 - Client ID: hmq_gTPEF_1_e4231ea605c02755aff85e65634eb2a9, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:12:17,518 - Client ID: hmq_gTPEF_0_c1f77894f5fbb893815b3c069fc76c89, IP: 192.168.1.3 was disconnected. reason: Client was idle for too long.
+2022-05-21 11:13:18,135 - Client ID: hmq_gTPEF_2_0496d1b65b2344dba8121ace2c81b896, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:13:49,674 - Client ID: hmq_gTPEF_2_0496d1b65b2344dba8121ace2c81b896, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 11:13:55,186 - Client ID: hmq_gTPEF_3_decadaebb04602c0d0885844cb4d731e, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:15:25,199 - Client ID: hmq_gTPEF_3_decadaebb04602c0d0885844cb4d731e, IP: 192.168.1.3 was disconnected. reason: Client was idle for too long.
+2022-05-21 11:16:05,373 - Client ID: hmq_gTPEF_1_e4231ea605c02755aff85e65634eb2a9, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 11:16:08,061 - Client ID: hmq_gTPEF_4_9925536eb938a21c9b56fb19dd35100e, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:16:18,572 - Client ID: hmq_gTPEF_4_9925536eb938a21c9b56fb19dd35100e, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 11:16:23,070 - Client ID: hmq_gTPEF_5_f5cc6c090b638d6d94b87e855d7cbbd2, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:17:01,129 - Client ID: hmq_gTPEF_6_3723341ec2b3ae33d32856799f53ce9d, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:17:10,820 - Client ID: hmq_gTPEF_6_3723341ec2b3ae33d32856799f53ce9d, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 11:17:18,663 - Client ID: hmq_gTPEF_7_8fe9ea6ada92251a2906e7b5de4f12fe, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:19:55,327 - Client ID: hmq_gTPEF_0_c1f77894f5fbb893815b3c069fc76c89 session has expired at 2022-05-21 11:12:17. All persistent data for this client has been removed.
+2022-05-21 11:20:27,557 - Client ID: hmq_gTPEF_5_f5cc6c090b638d6d94b87e855d7cbbd2, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 11:20:56,456 - Client ID: hmq_gTPEF_8_4c5efd56d86210d0e9b0cd3dd8d22809, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:22:55,510 - Client ID: hmq_gTPEF_3_decadaebb04602c0d0885844cb4d731e session has expired at 2022-05-21 11:15:25. All persistent data for this client has been removed.
+2022-05-21 11:23:35,562 - Client ID: hmq_gTPEF_4_9925536eb938a21c9b56fb19dd35100e session has expired at 2022-05-21 11:16:18. All persistent data for this client has been removed.
+2022-05-21 11:23:55,601 - Client ID: hmq_gTPEF_1_e4231ea605c02755aff85e65634eb2a9 session has expired at 2022-05-21 11:16:05. All persistent data for this client has been removed.
+2022-05-21 11:24:55,666 - Client ID: hmq_gTPEF_5_f5cc6c090b638d6d94b87e855d7cbbd2 session has expired at 2022-05-21 11:20:27. All persistent data for this client has been removed.
+2022-05-21 11:28:49,577 - Client ID: hmq_gTPEF_8_4c5efd56d86210d0e9b0cd3dd8d22809, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 11:28:51,685 - Client ID: hmq_gTPEF_9_7040121697ce827b24f0b82dd2f95894, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:32:56,111 - Client ID: hmq_gTPEF_8_4c5efd56d86210d0e9b0cd3dd8d22809 session has expired at 2022-05-21 11:28:49. All persistent data for this client has been removed.
+2022-05-21 11:33:36,162 - Client ID: hmq_gTPEF_2_0496d1b65b2344dba8121ace2c81b896 session has expired at 2022-05-21 11:13:49. All persistent data for this client has been removed.
+2022-05-21 11:35:56,751 - Client ID: hmq_gTPEF_9_7040121697ce827b24f0b82dd2f95894, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 11:36:19,204 - Client ID: hmq_gTPEF_10_9c2b842b57e198f0240471ab7d63b208, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:36:56,367 - Client ID: hmq_gTPEF_6_3723341ec2b3ae33d32856799f53ce9d session has expired at 2022-05-21 11:17:10. All persistent data for this client has been removed.
+2022-05-21 11:38:16,467 - Client ID: hmq_gTPEF_9_7040121697ce827b24f0b82dd2f95894 session has expired at 2022-05-21 11:35:56. All persistent data for this client has been removed.
+2022-05-21 11:41:13,584 - Client ID: hmq_gTPEF_10_9c2b842b57e198f0240471ab7d63b208, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 11:42:06,652 - Client ID: hmq_gTPEF_11_cc7bb1f6c84988ebc51810408e2aa506, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 11:53:57,434 - Client ID: hmq_gTPEF_10_9c2b842b57e198f0240471ab7d63b208 session has expired at 2022-05-21 11:41:13. All persistent data for this client has been removed.
+2022-05-21 12:05:25,171 - Client ID: hmq_gTPEF_11_cc7bb1f6c84988ebc51810408e2aa506, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:05:57,451 - Client ID: hmq_gTPEF_12_6b524c074033696bf12a87f2ad34363f, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:15:33,530 - Client ID: hmq_gTPEF_12_6b524c074033696bf12a87f2ad34363f, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:15:44,481 - Client ID: hmq_gTPEF_13_4525a1c4491a8ab19f8906c8b9251719, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:17:59,377 - Client ID: hmq_gTPEF_12_6b524c074033696bf12a87f2ad34363f session has expired at 2022-05-21 12:15:33. All persistent data for this client has been removed.
+2022-05-21 12:18:55,194 - Client ID: hmq_gTPEF_13_4525a1c4491a8ab19f8906c8b9251719, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:19:09,662 - Client ID: hmq_gTPEF_14_a87c0250b395185813d9b996670967ed, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:20:01,119 - Client ID: hmq_gTPEF_7_8fe9ea6ada92251a2906e7b5de4f12fe, IP: 192.168.1.3 was disconnected. reason: Client was idle for too long.
+2022-05-21 12:20:39,754 - Client ID: hmq_gTPEF_14_a87c0250b395185813d9b996670967ed, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:21:59,710 - Client ID: hmq_gTPEF_7_8fe9ea6ada92251a2906e7b5de4f12fe session has expired at 2022-05-21 12:20:01. All persistent data for this client has been removed.
+2022-05-21 12:22:19,059 - Client ID: hmq_gTPEF_15_b4c1eea8c75828f70bbc355464ea5c11, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:22:32,326 - Client ID: hmq_gTPEF_15_b4c1eea8c75828f70bbc355464ea5c11, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:22:39,772 - Client ID: hmq_gTPEF_11_cc7bb1f6c84988ebc51810408e2aa506 session has expired at 2022-05-21 12:05:25. All persistent data for this client has been removed.
+2022-05-21 12:23:31,990 - Client ID: hmq_gTPEF_16_9bb06de16145954369c80c4c2d23e987, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:24:17,393 - Client ID: hmq_gTPEF_16_9bb06de16145954369c80c4c2d23e987, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:24:26,842 - Client ID: hmq_gTPEF_17_70771afd99a1f1c2a627c02d8d0dbbe8, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:24:34,308 - Client ID: hmq_gTPEF_17_70771afd99a1f1c2a627c02d8d0dbbe8, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:24:59,950 - Client ID: hmq_gTPEF_14_a87c0250b395185813d9b996670967ed session has expired at 2022-05-21 12:20:39. All persistent data for this client has been removed.
+2022-05-21 12:25:18,978 - Client ID: hmq_gTPEF_18_bfaba2b9f0d3bee841bf510b2c571e9e, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:29:50,279 - Client ID: hmq_gTPEF_18_bfaba2b9f0d3bee841bf510b2c571e9e, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:30:41,945 - Client ID: hmq_gTPEF_19_6c50ac971d715073aeca1813540a5c2e, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:31:20,307 - Client ID: hmq_gTPEF_16_9bb06de16145954369c80c4c2d23e987 session has expired at 2022-05-21 12:24:17. All persistent data for this client has been removed.
+2022-05-21 12:31:28,259 - Client ID: hmq_gTPEF_19_6c50ac971d715073aeca1813540a5c2e, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:33:20,443 - Client ID: hmq_gTPEF_13_4525a1c4491a8ab19f8906c8b9251719 session has expired at 2022-05-21 12:18:55. All persistent data for this client has been removed.
+2022-05-21 12:34:40,549 - Client ID: hmq_gTPEF_15_b4c1eea8c75828f70bbc355464ea5c11 session has expired at 2022-05-21 12:22:32. All persistent data for this client has been removed.
+2022-05-21 12:34:40,551 - Client ID: hmq_gTPEF_18_bfaba2b9f0d3bee841bf510b2c571e9e session has expired at 2022-05-21 12:29:50. All persistent data for this client has been removed.
+2022-05-21 12:36:00,749 - Client ID: hmq_gTPEF_20_937e754e4a23614bdc83b5d27c1f62b5, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:37:41,150 - Client ID: hmq_gTPEF_20_937e754e4a23614bdc83b5d27c1f62b5, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:38:25,555 - Client ID: hmq_gTPEF_21_07b2f3981037eb36a826f273ae7b6b10, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:39:00,844 - Client ID: hmq_gTPEF_17_70771afd99a1f1c2a627c02d8d0dbbe8 session has expired at 2022-05-21 12:24:34. All persistent data for this client has been removed.
+2022-05-21 12:39:59,591 - Client ID: hmq_gTPEF_21_07b2f3981037eb36a826f273ae7b6b10, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:41:08,995 - Client ID: hmq_gTPEF_22_092816780416fcb131798141a7518d57, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:47:21,395 - Client ID: hmq_gTPEF_21_07b2f3981037eb36a826f273ae7b6b10 session has expired at 2022-05-21 12:39:59. All persistent data for this client has been removed.
+2022-05-21 12:49:20,894 - Client ID: hmq_gTPEF_22_092816780416fcb131798141a7518d57, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:51:01,627 - Client ID: hmq_gTPEF_19_6c50ac971d715073aeca1813540a5c2e session has expired at 2022-05-21 12:31:28. All persistent data for this client has been removed.
+2022-05-21 12:53:27,268 - Client ID: hmq_gTPEF_23_dc808557c48c949fcf8d8b775446515b, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:53:52,520 - Client ID: hmq_gTPEF_24_9d66c29fd7b93f1314cbd320915853ae, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 12:55:52,145 - Client ID: hmq_gTPEF_24_9d66c29fd7b93f1314cbd320915853ae, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 12:56:01,954 - Client ID: hmq_gTPEF_20_937e754e4a23614bdc83b5d27c1f62b5 session has expired at 2022-05-21 12:37:41. All persistent data for this client has been removed.
+2022-05-21 12:58:00,572 - Client ID: hmq_gTPEF_23_dc808557c48c949fcf8d8b775446515b, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 12:58:22,100 - Client ID: hmq_gTPEF_24_9d66c29fd7b93f1314cbd320915853ae session has expired at 2022-05-21 12:55:52. All persistent data for this client has been removed.
+2022-05-21 13:05:02,481 - Client ID: hmq_gTPEF_22_092816780416fcb131798141a7518d57 session has expired at 2022-05-21 12:49:20. All persistent data for this client has been removed.
+2022-05-21 13:11:42,886 - Client ID: hmq_gTPEF_23_dc808557c48c949fcf8d8b775446515b session has expired at 2022-05-21 12:58:00. All persistent data for this client has been removed.
+2022-05-21 13:11:58,506 - Client ID: hmq_gTPEF_25_b2126aa8afcfff83ea77fd2251a0ab0d, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 13:16:21,763 - Client ID: hmq_gTPEF_25_b2126aa8afcfff83ea77fd2251a0ab0d, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 13:17:47,850 - Client ID: hmq_gTPEF_26_a8714003a502eaa8e976dd0be1b95e04, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 13:18:30,733 - Client ID: hmq_gTPEF_26_a8714003a502eaa8e976dd0be1b95e04, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 13:18:44,278 - Client ID: hmq_gTPEF_27_9f542c0da25b55084b798deee8563e9c, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 13:18:49,485 - Client ID: hmq_gTPEF_27_9f542c0da25b55084b798deee8563e9c, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 13:26:23,939 - Client ID: hmq_gTPEF_26_a8714003a502eaa8e976dd0be1b95e04 session has expired at 2022-05-21 13:18:30. All persistent data for this client has been removed.
+2022-05-21 13:27:00,648 - Client ID: hmq_gTPEF_28_9152e76c35fb15e65f87fde26a9d9715, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 13:27:12,651 - Client ID: hmq_gTPEF_29_7f4f9c0910c166c36bb0660677f56237, IP: 192.168.1.7, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 13:28:58,181 - Client ID: hmq_gTPEF_28_9152e76c35fb15e65f87fde26a9d9715, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 13:29:04,093 - Client ID: hmq_gTPEF_27_9f542c0da25b55084b798deee8563e9c session has expired at 2022-05-21 13:18:49. All persistent data for this client has been removed.
+2022-05-21 13:29:10,840 - Client ID: hmq_gTPEF_30_21b94685dddfd1c313d49ff13733c8df, IP: 192.168.1.3, Clean Start: true, Session Expiry: 0 connected.
+2022-05-21 13:32:16,125 - Client ID: hmq_gTPEF_30_21b94685dddfd1c313d49ff13733c8df, IP: 192.168.1.3 disconnected ungracefully.
+2022-05-21 13:32:30,676 - Client ID: hmq_gTPEF_29_7f4f9c0910c166c36bb0660677f56237, IP: 192.168.1.7 disconnected ungracefully.
+2022-05-21 13:32:32,740 - Client ID: clientId-rLYyeMoefU, IP: 127.0.0.1 disconnected ungracefully.
+2022-05-22 10:55:45,450 - Client ID: hmq_gTPEF_29_7f4f9c0910c166c36bb0660677f56237 session has expired at 2022-05-21 13:32:30. All persistent data for this client has been removed.
+2022-05-22 10:55:51,209 - Client ID: hmq_gvnxb_0_b08452d8e7e6e5ecc6f6eec9fa1e49ec, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-22 10:58:32,706 - Client ID: hmq_gvnxb_0_b08452d8e7e6e5ecc6f6eec9fa1e49ec, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-22 10:58:41,112 - Client ID: hmq_gvnxb_1_c74b891d5b60d640e82b57d72eb50fbd, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-22 10:59:42,461 - Client ID: hmq_gvnxb_1_c74b891d5b60d640e82b57d72eb50fbd, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-22 10:59:52,354 - Client ID: hmq_gvnxb_2_e1603d645479fc429c037fc4751a0f46, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-22 11:00:46,063 - Client ID: hmq_gTPEF_28_9152e76c35fb15e65f87fde26a9d9715 session has expired at 2022-05-21 13:28:58. All persistent data for this client has been removed.
+2022-05-22 11:01:57,598 - Client ID: hmq_gvnxb_2_e1603d645479fc429c037fc4751a0f46, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-22 11:02:07,280 - Client ID: hmq_gvnxb_3_19b6aefeb14001a9eb29ef260034cff6, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-22 11:04:29,105 - Client ID: hmq_gvnxb_3_19b6aefeb14001a9eb29ef260034cff6, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-22 11:07:46,805 - Client ID: hmq_gTPEF_25_b2126aa8afcfff83ea77fd2251a0ab0d session has expired at 2022-05-21 13:16:21. All persistent data for this client has been removed.
+2022-05-22 11:07:58,497 - Client ID: hmq_gvnxb_4_86c1c9a4fe59de895d052e27fd4a778d, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-22 11:08:20,867 - Client ID: hmq_gvnxb_4_86c1c9a4fe59de895d052e27fd4a778d, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-22 11:08:33,369 - Client ID: hmq_gvnxb_5_515e458aeeb244064c135e47ea6deb4d, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-22 11:09:47,001 - Client ID: clientId-rLYyeMoefU session has expired at 2022-05-21 13:32:32. All persistent data for this client has been removed.
+2022-05-22 11:11:23,999 - Client ID: hmq_gvnxb_5_515e458aeeb244064c135e47ea6deb4d, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-22 11:11:27,170 - Client ID: hmq_gTPEF_30_21b94685dddfd1c313d49ff13733c8df session has expired at 2022-05-21 13:32:16. All persistent data for this client has been removed.
+2022-05-22 11:11:35,657 - Client ID: hmq_gvnxb_6_f4a9aac36e1726ce2af47a7be68fe705, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-22 11:13:07,303 - Client ID: hmq_gvnxb_0_b08452d8e7e6e5ecc6f6eec9fa1e49ec session has expired at 2022-05-22 10:58:32. All persistent data for this client has been removed.
+2022-05-22 11:14:24,543 - Client ID: hmq_gvnxb_6_f4a9aac36e1726ce2af47a7be68fe705, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:13:40,837 - Client ID: hmq_gvnxb_3_19b6aefeb14001a9eb29ef260034cff6 session has expired at 2022-05-22 11:04:29. All persistent data for this client has been removed.
+2022-05-23 21:14:00,899 - Client ID: hmq_gvnxb_1_c74b891d5b60d640e82b57d72eb50fbd session has expired at 2022-05-22 10:59:42. All persistent data for this client has been removed.
+2022-05-23 21:15:00,978 - Client ID: hmq_gvnxb_4_86c1c9a4fe59de895d052e27fd4a778d session has expired at 2022-05-22 11:08:20. All persistent data for this client has been removed.
+2022-05-23 21:18:17,099 - Client ID: hmq_FftPc_0_25c3699ba24c8d9c406c363228021b87, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:18:21,237 - Client ID: hmq_gvnxb_2_e1603d645479fc429c037fc4751a0f46 session has expired at 2022-05-22 11:01:57. All persistent data for this client has been removed.
+2022-05-23 21:18:45,706 - Client ID: hmq_FftPc_0_25c3699ba24c8d9c406c363228021b87, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:18:55,818 - Client ID: hmq_FftPc_1_ded300bae9f5d4e38ec301835832f006, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:23:15,949 - Client ID: hmq_FftPc_1_ded300bae9f5d4e38ec301835832f006, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:23:26,203 - Client ID: hmq_FftPc_2_320d8f06432e9312c0dd31c056017fea, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:23:41,628 - Client ID: hmq_FftPc_0_25c3699ba24c8d9c406c363228021b87 session has expired at 2022-05-23 21:18:45. All persistent data for this client has been removed.
+2022-05-23 21:23:52,541 - Client ID: hmq_FftPc_2_320d8f06432e9312c0dd31c056017fea, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:24:01,190 - Client ID: hmq_FftPc_3_a6d83a1b13eb106a665843d6adcf8559, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:24:32,473 - Client ID: hmq_FftPc_3_a6d83a1b13eb106a665843d6adcf8559, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:24:45,079 - Client ID: hmq_FftPc_4_cef9792e777a80d70b53e5e76ccb6719, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:25:01,722 - Client ID: hmq_FftPc_1_ded300bae9f5d4e38ec301835832f006 session has expired at 2022-05-23 21:23:15. All persistent data for this client has been removed.
+2022-05-23 21:25:06,120 - Client ID: hmq_FftPc_4_cef9792e777a80d70b53e5e76ccb6719, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:25:16,712 - Client ID: hmq_FftPc_5_7fcb310a3106562d7e63128dd9be6b67, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:27:23,413 - Client ID: hmq_FftPc_5_7fcb310a3106562d7e63128dd9be6b67, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:28:41,976 - Client ID: hmq_FftPc_3_a6d83a1b13eb106a665843d6adcf8559 session has expired at 2022-05-23 21:24:32. All persistent data for this client has been removed.
+2022-05-23 21:29:28,188 - Client ID: hmq_FftPc_6_ed98034c47eded53de6d840c520999a6, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:29:51,571 - Client ID: hmq_FftPc_6_ed98034c47eded53de6d840c520999a6, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:30:00,429 - Client ID: hmq_FftPc_7_784120a386cfdbffca94ebe369ebb487, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:30:02,069 - Client ID: hmq_gvnxb_6_f4a9aac36e1726ce2af47a7be68fe705 session has expired at 2022-05-22 11:14:24. All persistent data for this client has been removed.
+2022-05-23 21:30:42,152 - Client ID: hmq_gvnxb_5_515e458aeeb244064c135e47ea6deb4d session has expired at 2022-05-22 11:11:23. All persistent data for this client has been removed.
+2022-05-23 21:31:42,420 - Client ID: hmq_FftPc_7_784120a386cfdbffca94ebe369ebb487, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:31:54,656 - Client ID: hmq_FftPc_8_8fc87357f82b8f60263d6536c4e42b4d, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:32:39,621 - Client ID: hmq_FftPc_8_8fc87357f82b8f60263d6536c4e42b4d, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:32:57,473 - Client ID: hmq_FftPc_9_2882ac0e9831411d2be31fd81fa0f0de, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:33:42,397 - Client ID: hmq_FftPc_5_7fcb310a3106562d7e63128dd9be6b67 session has expired at 2022-05-23 21:27:23. All persistent data for this client has been removed.
+2022-05-23 21:34:32,993 - Client ID: hmq_FftPc_9_2882ac0e9831411d2be31fd81fa0f0de, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:34:55,718 - Client ID: hmq_FftPc_10_dd498437e65544b3ae6b441478b7af04, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:36:25,933 - Client ID: hmq_FftPc_10_dd498437e65544b3ae6b441478b7af04, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:36:34,392 - Client ID: hmq_FftPc_11_7af6902766ede9cc47fecdec9c4c0cb6, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:36:58,758 - Client ID: hmq_FftPc_11_7af6902766ede9cc47fecdec9c4c0cb6, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:37:08,991 - Client ID: hmq_FftPc_12_2871a3235df57fde81a558fa157f2ab1, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:39:22,801 - Client ID: hmq_FftPc_8_8fc87357f82b8f60263d6536c4e42b4d session has expired at 2022-05-23 21:32:39. All persistent data for this client has been removed.
+2022-05-23 21:39:30,618 - Client ID: hmq_FftPc_12_2871a3235df57fde81a558fa157f2ab1, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:39:44,573 - Client ID: hmq_FftPc_13_c0ff7034c943db5c48dd578773f5bd50, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:40:22,911 - Client ID: hmq_FftPc_4_cef9792e777a80d70b53e5e76ccb6719 session has expired at 2022-05-23 21:25:06. All persistent data for this client has been removed.
+2022-05-23 21:41:17,995 - Client ID: hmq_FftPc_13_c0ff7034c943db5c48dd578773f5bd50, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:41:28,418 - Client ID: hmq_FftPc_14_778b0d6fe08f269b137360441461aae5, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:41:41,022 - Client ID: hmq_FftPc_14_778b0d6fe08f269b137360441461aae5, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-23 21:41:43,016 - Client ID: hmq_FftPc_6_ed98034c47eded53de6d840c520999a6 session has expired at 2022-05-23 21:29:51. All persistent data for this client has been removed.
+2022-05-23 21:42:13,926 - Client ID: hmq_FftPc_15_b007611cc2b35d3686faf1b39c0941f1, IP: 192.168.1.52, Clean Start: true, Session Expiry: 0 connected.
+2022-05-23 21:43:01,022 - Client ID: hmq_FftPc_15_b007611cc2b35d3686faf1b39c0941f1, IP: 192.168.1.52 disconnected ungracefully.
+2022-05-26 11:32:58,171 - Client ID: hmq_vUbTa_0_abc12e1d75e10ee229e5fe20f105727e, IP: 172.20.10.2, Clean Start: true, Session Expiry: 0 connected.
+2022-05-26 11:33:29,459 - Client ID: hmq_FftPc_12_2871a3235df57fde81a558fa157f2ab1 session has expired at 2022-05-23 21:39:30. All persistent data for this client has been removed.
+2022-05-26 11:34:09,619 - Client ID: hmq_FftPc_14_778b0d6fe08f269b137360441461aae5 session has expired at 2022-05-23 21:41:41. All persistent data for this client has been removed.
+2022-05-26 11:36:21,702 - Client ID: clientId-H2ekMLJTzx, IP: 127.0.0.1, Clean Start: true, Session Expiry: 0 connected.
+2022-05-26 11:36:45,781 - Client ID: hmq_vUbTa_0_abc12e1d75e10ee229e5fe20f105727e, IP: 172.20.10.2 disconnected ungracefully.
+2022-05-26 11:36:45,781 - Client ID: clientId-H2ekMLJTzx, IP: 127.0.0.1 disconnected ungracefully.
+2022-05-26 11:37:26,389 - Client ID: hmq_p0AMV_0_27ac3536f2d10098bcedbd4181fdf17d, IP: 172.20.10.2, Clean Start: true, Session Expiry: 0 connected.
+2022-05-26 11:38:08,302 - Client ID: hmq_p0AMV_1_554f90cf98e17c489b182bc80ad3c458, IP: 172.20.10.12, Clean Start: true, Session Expiry: 0 connected.
+2022-05-26 11:42:36,561 - Client ID: hmq_p0AMV_0_27ac3536f2d10098bcedbd4181fdf17d, IP: 172.20.10.2 disconnected ungracefully.
+2022-05-26 11:42:37,327 - Client ID: hmq_p0AMV_1_554f90cf98e17c489b182bc80ad3c458, IP: 172.20.10.12 disconnected ungracefully.

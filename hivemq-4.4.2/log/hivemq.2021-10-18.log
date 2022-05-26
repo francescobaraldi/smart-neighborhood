@@ -1,0 +1,151 @@
+2021-10-18 10:02:47,716 INFO  - Starting HiveMQ Enterprise Server
+2021-10-18 10:02:47,719 INFO  - HiveMQ version: 4.4.2
+2021-10-18 10:02:47,719 INFO  - HiveMQ home directory: /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2
+2021-10-18 10:02:47,722 INFO  - Log Configuration was overridden by /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2/conf/logback.xml
+2021-10-18 10:02:47,986 INFO  - This node's ID is lcj9Y
+2021-10-18 10:02:47,986 INFO  - Clustering is disabled
+2021-10-18 10:02:57,265 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2021-10-18 10:02:57,569 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 10:02:57,576 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 10:02:57,580 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 10:02:57,585 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 10:02:57,589 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 10:02:57,593 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 10:02:57,603 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 10:02:57,974 INFO  - This node uses '8' CPU cores.
+2021-10-18 10:02:57,981 INFO  - Starting HiveMQ extension system.
+2021-10-18 10:02:58,047 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2021-10-18 10:02:58,049 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2021-10-18 10:03:00,275 INFO  - lcj9Y: no members discovered after 2004 ms: creating cluster as first member
+2021-10-18 10:03:00,331 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2021-10-18 10:03:00,332 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2021-10-18 10:03:00,631 INFO  - Control Center Audit Logging started.
+2021-10-18 10:03:00,632 INFO  - Started HiveMQ Control Center in 301ms
+2021-10-18 10:03:00,654 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2021-10-18 10:03:00,686 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2021-10-18 10:03:00,691 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2021-10-18 10:03:00,691 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2021-10-18 10:03:00,691 INFO  - Started HiveMQ in 12984ms
+2021-10-18 10:20:18,159 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2021-10-18 10:20:20,234 INFO  - Shutting down extension system
+2021-10-18 10:20:20,240 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2021-10-18 10:20:28,164 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.
+2021-10-18 16:26:37,469 INFO  - Starting HiveMQ Enterprise Server
+2021-10-18 16:26:37,472 INFO  - HiveMQ version: 4.4.2
+2021-10-18 16:26:37,472 INFO  - HiveMQ home directory: /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2
+2021-10-18 16:26:37,476 INFO  - Log Configuration was overridden by /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2/conf/logback.xml
+2021-10-18 16:26:37,766 INFO  - This node's ID is hfVAq
+2021-10-18 16:26:37,766 INFO  - Clustering is disabled
+2021-10-18 16:26:46,934 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2021-10-18 16:26:47,178 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:26:47,184 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:26:47,189 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:26:47,194 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:26:47,199 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:26:47,213 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:26:47,680 INFO  - This node uses '8' CPU cores.
+2021-10-18 16:26:47,690 INFO  - Starting HiveMQ extension system.
+2021-10-18 16:26:47,774 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2021-10-18 16:26:47,777 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2021-10-18 16:26:50,053 INFO  - hfVAq: no members discovered after 2003 ms: creating cluster as first member
+2021-10-18 16:26:50,085 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2021-10-18 16:26:50,085 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2021-10-18 16:26:50,388 INFO  - Control Center Audit Logging started.
+2021-10-18 16:26:50,388 INFO  - Started HiveMQ Control Center in 303ms
+2021-10-18 16:26:50,411 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2021-10-18 16:26:50,441 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2021-10-18 16:26:50,445 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2021-10-18 16:26:50,445 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2021-10-18 16:26:50,445 INFO  - Started HiveMQ in 12988ms
+2021-10-18 16:49:15,757 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2021-10-18 16:49:17,827 INFO  - Shutting down extension system
+2021-10-18 16:49:17,834 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2021-10-18 16:49:25,762 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.
+2021-10-18 16:49:30,553 INFO  - Starting HiveMQ Enterprise Server
+2021-10-18 16:49:30,556 INFO  - HiveMQ version: 4.4.2
+2021-10-18 16:49:30,556 INFO  - HiveMQ home directory: /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2
+2021-10-18 16:49:30,557 INFO  - Log Configuration was overridden by /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2/conf/logback.xml
+2021-10-18 16:49:30,815 INFO  - This node's ID is 8nivb
+2021-10-18 16:49:30,815 INFO  - Clustering is disabled
+2021-10-18 16:49:39,674 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2021-10-18 16:49:39,872 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:49:39,877 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:49:39,881 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:49:39,885 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:49:39,895 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:49:39,899 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:49:39,903 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 16:49:40,244 INFO  - This node uses '8' CPU cores.
+2021-10-18 16:49:40,253 INFO  - Starting HiveMQ extension system.
+2021-10-18 16:49:40,317 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2021-10-18 16:49:40,319 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2021-10-18 16:49:42,516 INFO  - 8nivb: no members discovered after 2002 ms: creating cluster as first member
+2021-10-18 16:49:42,547 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2021-10-18 16:49:42,547 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2021-10-18 16:49:42,801 INFO  - Control Center Audit Logging started.
+2021-10-18 16:49:42,802 INFO  - Started HiveMQ Control Center in 255ms
+2021-10-18 16:49:42,817 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2021-10-18 16:49:42,843 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2021-10-18 16:49:42,846 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2021-10-18 16:49:42,846 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2021-10-18 16:49:42,847 INFO  - Started HiveMQ in 12301ms
+2021-10-18 17:25:09,687 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2021-10-18 17:25:11,755 INFO  - Shutting down extension system
+2021-10-18 17:25:11,762 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2021-10-18 17:25:19,689 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.
+2021-10-18 18:34:35,230 INFO  - Starting HiveMQ Enterprise Server
+2021-10-18 18:34:35,233 INFO  - HiveMQ version: 4.4.2
+2021-10-18 18:34:35,233 INFO  - HiveMQ home directory: /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2
+2021-10-18 18:34:35,234 INFO  - Log Configuration was overridden by /Users/francescobaraldi/Library/Mobile Documents/com~apple~CloudDocs/Università/Laurea Magistrale/Primo anno/IOT and 3D intelligent systems/hivemq-4.4.2/conf/logback.xml
+2021-10-18 18:34:35,481 INFO  - This node's ID is N8xec
+2021-10-18 18:34:35,482 INFO  - Clustering is disabled
+2021-10-18 18:34:44,514 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2021-10-18 18:34:44,879 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 18:34:44,885 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 18:34:44,889 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 18:34:44,894 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 18:34:44,898 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 18:34:44,902 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 18:34:44,911 ERROR - Failed syctl call: kern.procargs2, Error code: 22
+2021-10-18 18:34:45,263 INFO  - This node uses '8' CPU cores.
+2021-10-18 18:34:45,271 INFO  - Starting HiveMQ extension system.
+2021-10-18 18:34:45,326 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2021-10-18 18:34:45,327 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2021-10-18 18:34:47,523 INFO  - N8xec: no members discovered after 2001 ms: creating cluster as first member
+2021-10-18 18:34:47,549 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2021-10-18 18:34:47,549 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2021-10-18 18:34:47,756 INFO  - Control Center Audit Logging started.
+2021-10-18 18:34:47,756 INFO  - Started HiveMQ Control Center in 207ms
+2021-10-18 18:34:47,770 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2021-10-18 18:34:47,790 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2021-10-18 18:34:47,793 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2021-10-18 18:34:47,793 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2021-10-18 18:34:47,793 INFO  - Started HiveMQ in 12569ms
+2021-10-18 19:05:53,010 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2021-10-18 19:05:55,110 INFO  - Shutting down extension system
+2021-10-18 19:05:55,116 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2021-10-18 19:06:03,014 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.

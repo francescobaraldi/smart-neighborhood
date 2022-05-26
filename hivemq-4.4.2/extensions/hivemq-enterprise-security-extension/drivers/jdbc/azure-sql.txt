@@ -1,0 +1,23 @@
+Please replace this file with the latest mssql jdbc driver.
+
+The current mssql jdbc drivers are available here:
+
+    1. https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017
+    2. Open the download page by clicking on the newest available JDBC driver version
+    3. Click "Download", select the archive and click "Next"
+    4. Unzip the archive and move the contained jar file to this folder
+
+A SQL Realm using mssql can be configured like this:
+
+        <sql-realm>
+            <name>azure-sql-backend</name>
+            <enabled>true</enabled>
+            <configuration>
+                <db-type>MSSQL</db-type>
+                <db-name>dbname</db-name>
+                <db-host>hostname</db-host>
+                <db-port>1433</db-port>
+                <db-username>username</db-username>
+                <db-password>password</db-password>
+            </configuration>
+        </sql-realm>

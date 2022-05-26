@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hivemq-bridge-extension>
+    <bridges>
+        <bridge>
+            <!-- change host before enabling the bridge -->
+            <enabled>false</enabled>
+            <name>my-bridge</name>
+            <remote-broker>
+                <connection>
+                    <static>
+                        <host>remote-host</host>
+                        <port>1883</port>
+                    </static>
+                </connection>
+            </remote-broker>
+            <topics>
+                <topic>
+                    <filter>my/local/topic/#</filter>
+                    <mode>PUB</mode>
+                    <destination>my/remote/topic/{4-#}</destination>
+                </topic>
+            </topics>
+        </bridge>
+    </bridges>
+</hivemq-bridge-extension>

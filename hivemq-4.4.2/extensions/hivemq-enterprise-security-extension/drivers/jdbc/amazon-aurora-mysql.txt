@@ -1,0 +1,25 @@
+Please replace this file with the latest mysql jdbc driver.
+
+The current mysql jdbc drivers are available here:
+
+    1. https://dev.mysql.com/downloads/connector/j/
+    2. Select "Platform Independent" and click "Download"
+    3. Unzip the archive and move the contained jar file to this folder
+
+A SQL Realm using mysql with amazon-aurora can be configured like this:
+
+        <sql-realm>
+            <name>aurora-mysql-backend</name>
+            <enabled>true</enabled>
+            <configuration>
+                <db-type>AURORA_MYSQL</db-type>
+                <db-name>dbname</db-name>
+                <db-host>hostname</db-host>
+                <db-port>3306</db-port>
+                <db-username>username</db-username>
+                <db-password>password</db-password>
+            </configuration>
+        </sql-realm>
+
+Documentation for setting up an Amazon Aurora DB can be found here:
+    https://docs.aws.amazon.com/de_de/AmazonRDS/latest/AuroraUserGuide/CHAP_GettingStartedAurora.html

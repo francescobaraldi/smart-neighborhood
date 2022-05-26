@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<hivemq>
+
+    <listeners>
+        <tcp-listener>
+            <port>1883</port>
+            <bind-address>0.0.0.0</bind-address>
+        </tcp-listener>
+		
+		<websocket-listener>
+            <port>8001</port>
+            <bind-address>0.0.0.0</bind-address>
+            <path>/mqtt</path>
+            <subprotocols>
+                <subprotocol>mqttv3.1</subprotocol>
+                <subprotocol>mqtt</subprotocol>
+            </subprotocols>
+            <allow-extensions>false</allow-extensions>
+        </websocket-listener>
+		
+    </listeners>
+
+    <anonymous-usage-statistics>
+        <enabled>true</enabled>
+    </anonymous-usage-statistics>
+
+</hivemq>

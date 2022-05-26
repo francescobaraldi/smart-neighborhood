@@ -1,0 +1,17 @@
+Private property of Exodus: 27903@MacBook-Pro-di-Francesco.local
+
+jetbrains.exodus.io.LockingManager.lock(Unknown Source)
+jetbrains.exodus.io.LockingManager.lock(Unknown Source)
+jetbrains.exodus.io.FileDataWriter.lock(Unknown Source)
+jetbrains.exodus.log.Log.tryLock(Unknown Source)
+jetbrains.exodus.log.Log.<init>(Unknown Source)
+jetbrains.exodus.env.Environments.newLogInstance(Unknown Source)
+jetbrains.exodus.env.Environments.newLogInstance(Unknown Source)
+jetbrains.exodus.env.Environments.newLogInstance(Unknown Source)
+jetbrains.exodus.env.Environments.newContextualInstance(Unknown Source)
+fQ.o.a(Unknown Source)
+java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+java.base/java.lang.Thread.run(Thread.java:832)

@@ -1,0 +1,78 @@
+HiveMQ Enterprise Extension for Kafka Third Party Libraries
+==============================
+
+HiveMQ Enterprise Extension for Kafka uses the following third party libraries:
+
+Library                                                            | License                                    | License text                                                      | Notes
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ch.qos.logback:logback-classic                                    | Eclipse Public License - v 1.0             | http://www.eclipse.org/legal/epl-v10.html                         | null
+ ch.qos.logback:logback-core                                       | Eclipse Public License - v 1.0             | http://www.eclipse.org/legal/epl-v10.html                         | null
+ com.damnhandy:handy-uri-templates                                 | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.esotericsoftware:kryo                                         | 3-Clause BSD License                       | https://opensource.org/licenses/BSD-3-Clause                      | null
+ com.esotericsoftware:minlog                                       | New BSD License                            | http://www.opensource.org/licenses/bsd-license.php                | null
+ com.esotericsoftware:reflectasm                                   | New BSD License                            | http://www.opensource.org/licenses/bsd-license.php                | null
+ com.fasterxml.jackson.core:jackson-annotations                    | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.fasterxml.jackson.core:jackson-core                           | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.fasterxml.jackson.core:jackson-databind                       | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.fasterxml.jackson.dataformat:jackson-dataformat-yaml          | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.fasterxml.jackson.datatype:jackson-datatype-joda              | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.github.ben-manes.caffeine:caffeine                            | Apache License, Version 2.0                | https://www.apache.org/licenses/LICENSE-2.0.txt                   | null
+ com.github.everit-org.json-schema:org.everit.json.schema          | Apache License, Version 2.0                | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.github.luben:zstd-jni                                         | BSD 2-Clause License                       | https://opensource.org/licenses/BSD-2-Clause                      | null
+ com.google.code.findbugs:jsr305                                   | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.google.code.gson:gson                                         | Apache 2.0                                 | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.google.dagger:dagger                                          | Apache 2.0                                 | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.google.errorprone:error_prone_annotations                     | Apache 2.0                                 | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.google.guava:guava                                            | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.google.j2objc:j2objc-annotations                              | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.google.re2j:re2j                                              | Go License                                 | https://golang.org/LICENSE                                        | null
+ com.sun.activation:jakarta.activation                             | EDL 1.0                                    | http://www.eclipse.org/org/documents/edl-v10.php                  | null
+ com.sun.xml.bind:jaxb-impl                                        | Eclipse Distribution License - v 1.0       | http://www.eclipse.org/org/documents/edl-v10.php                  | null
+ com.vaadin.external.flute:flute                                   | W3C Software Copyright Notice and License  | http://www.w3.org/Consortium/Legal/copyright-software-19980720    | null
+ com.vaadin.external:gentyref                                      | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ com.vaadin:vaadin-charts                                          | cval3                                      | https://vaadin.com/license/cval-3                                 | null
+ com.vaadin:vaadin-charts-model                                    | cval3                                      | https://vaadin.com/license/cval-3                                 | null
+ com.vaadin:vaadin-sass-compiler                                   | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0                        | null
+ com.vaadin:vaadin-server                                          | Apache License Version 2.0                 | http://www.apache.org/licenses/LICENSE-2.0                        | null
+ com.vaadin:vaadin-shared                                          | Apache License Version 2.0                 | http://www.apache.org/licenses/LICENSE-2.0                        | null
+ commons-collections:commons-collections                           | Apache License, Version 2.0                | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ commons-digester:commons-digester                                 | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ commons-logging:commons-logging                                   | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ commons-validator:commons-validator                               | Apache License, Version 2.0                | https://www.apache.org/licenses/LICENSE-2.0.txt                   | null
+ io.confluent:common-config                                        | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ io.confluent:common-utils                                         | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ io.confluent:kafka-avro-serializer                                | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ io.confluent:kafka-schema-registry-client                         | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ io.dropwizard.metrics:metrics-core                                | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ io.github.classgraph:classgraph                                   | MIT License                                | http://opensource.org/licenses/MIT                                | null
+ io.swagger:swagger-annotations                                    | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ io.swagger:swagger-core                                           | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ io.swagger:swagger-models                                         | Apache License 2.0                         | http://www.apache.org/licenses/LICENSE-2.0.html                   | null
+ jakarta.activation:jakarta.activation-api                         | EDL 1.0                                    | http://www.eclipse.org/org/documents/edl-v10.php                  | null
+ jakarta.xml.bind:jakarta.xml.bind-api                             | Eclipse Distribution License - v 1.0       | http://www.eclipse.org/org/documents/edl-v10.php                  | null
+ javax.inject:javax.inject                                         | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ joda-time:joda-time                                               | Apache 2                                   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ org.apache.avro:avro                                              | Apache License, Version 2.0                | https://www.apache.org/licenses/LICENSE-2.0.txt                   | null
+ org.apache.commons:commons-compress                               | Apache License, Version 2.0                | https://www.apache.org/licenses/LICENSE-2.0.txt                   | null
+ org.apache.commons:commons-lang3                                  | Apache License, Version 2.0                | https://www.apache.org/licenses/LICENSE-2.0.txt                   | null
+ org.apache.kafka:kafka-clients                                    | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ org.bouncycastle:bcpkix-jdk15on                                   | Bouncy Castle Licence                      | http://www.bouncycastle.org/licence.html                          | null
+ org.bouncycastle:bcprov-jdk15on                                   | Bouncy Castle Licence                      | http://www.bouncycastle.org/licence.html                          | null
+ org.checkerframework:checker-compat-qual                          | MIT License                                | http://opensource.org/licenses/MIT                                | null
+ org.checkerframework:checker-qual                                 | MIT License                                | http://opensource.org/licenses/MIT                                | null
+ org.codehaus.mojo:animal-sniffer-annotations                      | MIT license                                | http://www.opensource.org/licenses/mit-license.php                | null
+ org.javers:javers-core                                            | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ org.json:json                                                     | The JSON License                           | http://json.org/license.html                                      | null
+ org.jsoup:jsoup                                                   | MIT License                                | https://jsoup.org/license                                         | null
+ org.lz4:lz4-java                                                  | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ org.objenesis:objenesis                                           | Apache 2                                   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ org.ow2.asm:asm                                                   | BSD                                        | http://asm.ow2.org/license.html                                   | null
+ org.picocontainer:picocontainer                                   | BSD                                        | LICENSE.txt                                                       | null
+ org.slf4j:slf4j-api                                               | MIT License                                | http://www.opensource.org/licenses/mit-license.php                | null
+ org.w3c.css:sac                                                   | The W3C Software License                   | http://www.w3.org/Consortium/Legal/copyright-software-19980720    | null
+ org.xerial.snappy:snappy-java                                     | The Apache Software License, Version 2.0   | http://www.apache.org/licenses/LICENSE-2.0.txt                    | null
+ org.yaml:snakeyaml                                                | Apache License Version 2.0                 | LICENSE.txt                                                       | null
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The open source code of the libraries can be obtained by sending an email to legal@hivemq.com.

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="kafka-configuration" type="kafka-configurationType">
+        <xs:key name="ClusterId">
+            <xs:selector xpath="kafka-clusters/kafka-cluster"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:keyref name="ClusterIdRef" refer="ClusterId">
+            <xs:selector xpath="kafka-to-mqtt-mappings/kafka-to-mqtt-mapping"/>
+            <xs:field xpath="cluster-id"/>
+        </xs:keyref>
+    </xs:element>
+    <xs:complexType name="keystoreType">
+        <xs:all>
+            <xs:element type="xs:string" name="path"/>
+            <xs:element type="xs:string" name="password"/>
+            <xs:element type="xs:string" name="private-key-password"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="truststoreType">
+        <xs:all>
+            <xs:element type="xs:string" name="path"/>
+            <xs:element type="xs:string" name="password"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="cipher-suitesType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="cipher-suite" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="protocolsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="protocol" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tlsType">
+        <xs:all>
+            <xs:element type="xs:boolean" name="enabled"/>
+            <xs:element type="keystoreType" name="keystore" minOccurs="0"/>
+            <xs:element type="truststoreType" name="truststore" minOccurs="0"/>
+            <xs:element type="cipher-suitesType" name="cipher-suites" minOccurs="0"/>
+            <xs:element type="protocolsType" name="protocols" minOccurs="0"/>
+            <xs:element type="xs:boolean" name="hostname-verification" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="plainType">
+        <xs:all>
+            <xs:element type="xs:string" name="username"/>
+            <xs:element type="xs:string" name="password"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="scram-sha256Type">
+        <xs:all>
+            <xs:element type="xs:string" name="username"/>
+            <xs:element type="xs:string" name="password"/>
+            <xs:element type="xs:boolean" name="token-auth" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="scram-sha512Type">
+        <xs:all>
+            <xs:element type="xs:string" name="username"/>
+            <xs:element type="xs:string" name="password"/>
+            <xs:element type="xs:boolean" name="token-auth" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="gssapiType">
+        <xs:all>
+            <xs:element type="xs:boolean" name="use-key-tab" minOccurs="0"/>
+            <xs:element type="xs:boolean" name="store-key" minOccurs="0"/>
+            <xs:element type="xs:string" name="key-tab-file" minOccurs="0"/>
+            <xs:element type="xs:string" name="principal" minOccurs="0"/>
+            <xs:element type="xs:boolean" name="use-ticket-cache" minOccurs="0"/>
+            <xs:element type="xs:string" name="kerberos-service-name" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="authenticationType">
+        <xs:group ref="authenticationTypeGroup"/>
+    </xs:complexType>
+    <xs:group name="authenticationTypeGroup">
+        <xs:choice>
+            <xs:sequence>
+                <xs:element type="xs:string" name="none"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element type="plainType" name="plain"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element type="scram-sha256Type" name="scram-sha256"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element type="scram-sha512Type" name="scram-sha512"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element type="gssapiType" name="gssapi"/>
+            </xs:sequence>
+        </xs:choice>
+    </xs:group>
+    <xs:complexType name="kafka-clusterType">
+        <xs:all>
+            <xs:element type="xs:string" name="id"/>
+            <xs:element type="xs:string" name="bootstrap-servers"/>
+            <xs:element type="tlsType" name="tls" minOccurs="0"/>
+            <xs:element type="authenticationType" name="authentication" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="kafka-clustersType">
+        <xs:sequence>
+            <xs:element type="kafka-clusterType" name="kafka-cluster" maxOccurs="unbounded" minOccurs="0">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="mqtt-topic-filtersType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="mqtt-topic-filter" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="mqtt-to-kafka-mappingType">
+        <xs:all>
+            <xs:element type="xs:string" name="id"/>
+            <xs:element type="xs:string" name="cluster-id"/>
+            <xs:element type="mqtt-topic-filtersType" name="mqtt-topic-filters"/>
+            <xs:element type="xs:string" name="kafka-topic"/>
+            <xs:element name="kafka-acks" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="ZERO"/>
+                        <xs:enumeration value="ONE"/>
+                        <xs:enumeration value="ALL"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="mqtt-to-kafka-mappingsType">
+        <xs:sequence>
+            <xs:element type="mqtt-to-kafka-mappingType" name="mqtt-to-kafka-mapping" maxOccurs="unbounded"
+                        minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="mqtt-to-kafka-transformerType">
+        <xs:all>
+            <xs:element type="xs:string" name="id"/>
+            <xs:element type="xs:string" name="cluster-id"/>
+            <xs:element type="mqtt-topic-filtersType" name="mqtt-topic-filters"/>
+            <xs:element type="xs:string" name="transformer"/>
+            <xs:element name="kafka-acks" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="ZERO"/>
+                        <xs:enumeration value="ONE"/>
+                        <xs:enumeration value="ALL"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="mqtt-to-kafka-transformersType">
+        <xs:sequence>
+            <xs:element type="mqtt-to-kafka-transformerType" name="mqtt-to-kafka-transformer" maxOccurs="unbounded"
+                        minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- CONSUMER -->
+
+
+    <xs:complexType name="kafka-to-mqtt-mappingsType">
+        <xs:sequence>
+            <xs:element type="kafka-to-mqtt-mappingType" name="kafka-to-mqtt-mapping" maxOccurs="unbounded"
+                        minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="kafka-to-mqtt-mappingType">
+        <xs:all>
+            <xs:element type="xs:string" name="id"/>
+            <xs:element type="xs:string" name="cluster-id"/>
+            <xs:element name="use-schema-registry" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="none"/>
+                        <xs:enumeration value="local"/>
+                        <xs:enumeration value="confluent"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="kafka-topicsType" name="kafka-topics"/>
+            <xs:element type="mqtt-topicsType" name="mqtt-topics" minOccurs="0"/>
+            <xs:element type="xs:string" name="mqtt-payload" minOccurs="0"/>
+            <xs:element type="mqtt-publish-fieldsType" name="mqtt-publish-fields" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="mqtt-topicsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="mqtt-topic" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="kafka-topicsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="kafka-topic" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="xs:string" name="kafka-topic-pattern" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="mqtt-publish-fieldsType">
+        <xs:all>
+            <xs:element type="xs:boolean" name="retained-flag" minOccurs="0"/>
+            <xs:element name="payload-format-indicator" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="UTF-8"/>
+                        <xs:enumeration value="UNSPECIFIED"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:long" name="message-expiry-interval" minOccurs="0"/>
+            <xs:element type="xs:string" name="response-topic" minOccurs="0"/>
+            <xs:element type="xs:string" name="correlation-data" minOccurs="0"/>
+            <xs:element type="user-propertiesType" name="user-properties" minOccurs="0"/>
+            <xs:element type="xs:string" name="content-type" minOccurs="0"/>
+            <xs:element name="qos" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:int">
+                        <xs:enumeration value="0"/>
+                        <xs:enumeration value="1"/>
+                        <xs:enumeration value="2"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="user-propertiesType">
+        <xs:sequence>
+            <xs:element type="user-propertyType" name="user-property" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="user-propertyType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="key"/>
+            <xs:element type="xs:string" name="value"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="schema-registriesType">
+        <xs:sequence>
+            <xs:element type="local-schema-registryType" name="local-schema-registry" minOccurs="0"/>
+            <xs:element type="confluent-schema-registryType" name="confluent-schema-registry" minOccurs="0"
+                        maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="local-schema-registryType">
+        <xs:all>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="avro-schema-entriesType" name="avro-schema-entries" minOccurs="0"/>
+            <xs:element type="json-schema-entriesType" name="json-schema-entries" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="avro-schema-entriesType">
+        <xs:sequence>
+            <xs:element type="avro-schema-entryType" name="avro-schema-entry" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="json-schema-entriesType">
+        <xs:sequence>
+            <xs:element type="json-schema-entryType" name="json-schema-entry" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="avro-schema-entryType">
+        <xs:all>
+            <xs:element type="kafka-topicsType" name="kafka-topics"/>
+            <xs:element type="xs:string" name="avro-file"/>
+            <xs:element name="serialization" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="binary"/>
+                        <xs:enumeration value="json"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="json-schema-entryType">
+        <xs:all>
+            <xs:element type="kafka-topicsType" name="kafka-topics"/>
+            <xs:element type="xs:string" name="json-file"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="kafka-configurationType">
+        <xs:all>
+            <xs:element type="kafka-clustersType" name="kafka-clusters" minOccurs="0"/>
+            <xs:element type="mqtt-to-kafka-mappingsType" name="mqtt-to-kafka-mappings" minOccurs="0"/>
+            <xs:element type="mqtt-to-kafka-transformersType" name="mqtt-to-kafka-transformers" minOccurs="0"/>
+            <xs:element type="kafka-to-mqtt-mappingsType" name="kafka-to-mqtt-mappings" minOccurs="0"/>
+            <xs:element type="schema-registriesType" name="schema-registries" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <!-- Confluent Schema Registry -->
+    <xs:complexType name="confluent-schema-registryType">
+        <xs:all>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="xs:string" name="url"/>
+            <xs:element type="kafka-topicsType" name="kafka-topics"/>
+            <xs:element type="tlsConfluentType" name="tls" minOccurs="0"/>
+            <xs:element type="confluentSchemaRegistryAuthenticationType" name="authentication" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="tlsConfluentType">
+        <xs:all>
+            <xs:element type="truststoreType" name="truststore" minOccurs="0"/>
+            <xs:element type="cipher-suitesType" name="cipher-suites" minOccurs="0"/>
+            <xs:element type="protocolsType" name="protocols" minOccurs="0"/>
+            <xs:element type="xs:boolean" name="hostname-verification" minOccurs="0"/>
+            <xs:element type="keystoreType" name="keystore" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="confluentSchemaRegistryAuthenticationType">
+        <xs:choice>
+            <xs:element type="plainType" name="plain"/>
+            <xs:element type="xs:string" name="token"/>
+        </xs:choice>
+    </xs:complexType>
+</xs:schema>

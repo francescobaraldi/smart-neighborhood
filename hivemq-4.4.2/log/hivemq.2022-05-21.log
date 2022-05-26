@@ -1,0 +1,62 @@
+2022-05-21 09:34:12,828 INFO  - Starting HiveMQ Enterprise Server
+2022-05-21 09:34:12,831 INFO  - HiveMQ version: 4.4.2
+2022-05-21 09:34:12,831 INFO  - HiveMQ home directory: /Users/francescobaraldi/Desktop/hivemq-4.4.2
+2022-05-21 09:34:12,834 INFO  - Log Configuration was overridden by /Users/francescobaraldi/Desktop/hivemq-4.4.2/conf/logback.xml
+2022-05-21 09:34:13,112 INFO  - This node's ID is wfgeh
+2022-05-21 09:34:13,113 INFO  - Clustering is disabled
+2022-05-21 09:34:21,269 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2022-05-21 09:34:21,931 INFO  - This node uses '8' CPU cores.
+2022-05-21 09:34:21,937 INFO  - Starting HiveMQ extension system.
+2022-05-21 09:34:21,990 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2022-05-21 09:34:21,992 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2022-05-21 09:34:24,179 INFO  - wfgeh: no members discovered after 2002 ms: creating cluster as first member
+2022-05-21 09:34:24,212 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2022-05-21 09:34:24,213 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2022-05-21 09:34:24,439 INFO  - Control Center Audit Logging started.
+2022-05-21 09:34:24,439 INFO  - Started HiveMQ Control Center in 226ms
+2022-05-21 09:34:24,459 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2022-05-21 09:34:24,482 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8001
+2022-05-21 09:34:24,484 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2022-05-21 09:34:24,485 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8001
+2022-05-21 09:34:24,485 INFO  - Started HiveMQ in 11669ms
+2022-05-21 11:06:21,588 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2022-05-21 11:06:23,671 INFO  - Shutting down extension system
+2022-05-21 11:06:23,680 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2022-05-21 11:06:31,592 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.
+2022-05-21 11:08:02,433 INFO  - Starting HiveMQ Enterprise Server
+2022-05-21 11:08:02,436 INFO  - HiveMQ version: 4.4.2
+2022-05-21 11:08:02,436 INFO  - HiveMQ home directory: /Users/francescobaraldi/Desktop/hivemq-4.4.2
+2022-05-21 11:08:02,437 INFO  - Log Configuration was overridden by /Users/francescobaraldi/Desktop/hivemq-4.4.2/conf/logback.xml
+2022-05-21 11:08:02,695 INFO  - This node's ID is gTPEF
+2022-05-21 11:08:02,696 INFO  - Clustering is disabled
+2022-05-21 11:08:10,290 INFO  - No valid license file found. Using trial license, restricted to 25 connections.
+2022-05-21 11:08:10,805 INFO  - This node uses '8' CPU cores.
+2022-05-21 11:08:10,813 INFO  - Starting HiveMQ extension system.
+2022-05-21 11:08:10,869 WARN  - 
+################################################################################################################
+# This HiveMQ deployment is not secure! You are lacking Authentication and Authorization.                      #
+# Right now any MQTT client can connect to the broker with a full set of permissions.                          #
+# For production usage, add an appropriate security extension and remove the hivemq-allow-all extension.       #
+# You can download security extensions from the HiveMQ Marketplace (https://www.hivemq.com/extensions/).       #
+################################################################################################################
+2022-05-21 11:08:10,870 INFO  - Extension "Allow All Extension" version 1.0.0 started successfully.
+2022-05-21 11:08:13,036 INFO  - gTPEF: no members discovered after 2005 ms: creating cluster as first member
+2022-05-21 11:08:13,053 INFO  - No user for HiveMQ Control Center configured. Starting with default user
+2022-05-21 11:08:13,054 INFO  - Starting HiveMQ Control Center on address 127.0.0.1 and port 8080
+2022-05-21 11:08:13,286 INFO  - Control Center Audit Logging started.
+2022-05-21 11:08:13,287 INFO  - Started HiveMQ Control Center in 233ms
+2022-05-21 11:08:13,303 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2022-05-21 11:08:13,322 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8001
+2022-05-21 11:08:13,324 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2022-05-21 11:08:13,325 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8001
+2022-05-21 11:08:13,325 INFO  - Started HiveMQ in 10898ms
+2022-05-21 13:32:32,712 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2022-05-21 13:32:34,815 INFO  - Shutting down extension system
+2022-05-21 13:32:34,838 INFO  - Extension "Allow All Extension" version 1.0.0 stopped successfully.
+2022-05-21 13:32:42,726 INFO  - Still shutting down HiveMQ. Waiting for remaining tasks to be executed. Do not shutdown HiveMQ.

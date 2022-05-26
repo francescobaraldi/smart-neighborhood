@@ -1,0 +1,20 @@
+Please replace this file with the latest postgres jdbc driver.
+
+The current postgres jdbc drivers are available here:
+
+        https://jdbc.postgresql.org/download.html
+
+A SQL Realm using postgres can be configured like this:
+
+        <sql-realm>
+            <name>postgres-backend</name>
+            <enabled>true</enabled>
+            <configuration>
+                <db-type>POSTGRES</db-type>
+                <db-name>dbname</db-name>
+                <db-host>hostname</db-host>
+                <db-port>5432</db-port>
+                <db-username>username</db-username>
+                <db-password>password</db-password>
+            </configuration>
+        </sql-realm>
