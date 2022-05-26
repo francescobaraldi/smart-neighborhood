@@ -1,6 +1,5 @@
 import logging
 import json
-from pyparsing import one_of
 from telegram.ext import Updater, CommandHandler
 import requests
 import pytz
